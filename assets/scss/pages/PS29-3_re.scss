@@ -380,31 +380,31 @@
 
           // 각 상태별 아이콘
           &.prod-ready .icon {
-            background: url(/assets/image/shopping-bag-01.svg) no-repeat center center $primary400;
+            background: url(../image/shopping-bag-01.svg) no-repeat center center $primary400;
           }
 
           &.release .icon {
-            background: url(/assets/image/release_ing.svg) no-repeat center center $primary400;
+            background: url(../image/release_ing.svg) no-repeat center center $primary400;
           }
 
           &.add-request .icon {
-            background: url(/assets/image/add-request2_ing.svg) no-repeat center center $primary400;
+            background: url(../image/add-request2_ing.svg) no-repeat center center $primary400;
           }
 
           &.add-fail .icon {
-            background: url(/assets/image/add-fail_ing.svg) no-repeat center center $primary400;
+            background: url(../image/add-fail_ing.svg) no-repeat center center $primary400;
           }
 
           &.add-complt .icon {
-            background: url(/assets/image/add-complt_ing.svg) no-repeat center center $primary400;
+            background: url(../image/add-complt_ing.svg) no-repeat center center $primary400;
           }
 
           &.refund-request .icon {
-            background: url(/assets/image/refund-request_ing.svg) no-repeat center center $primary400;
+            background: url(../image/refund-request_ing.svg) no-repeat center center $primary400;
           }
 
           &.pay-complt .icon {
-            background: url(/assets/image/credit-card-check.svg) no-repeat center center $primary400;
+            background: url(../image/credit-card-check.svg) no-repeat center center $primary400;
           }
         }
 
@@ -422,31 +422,31 @@
 
           // 각 상태별 아이콘
           &.pay-complt .icon {
-            background: url(/assets/image/credit-card-red.svg) no-repeat center center $white;
+            background: url(../image/credit-card-red.svg) no-repeat center center $white;
           }
 
           &.prod-ready .icon {
-            background: url(/assets/image/shopping-bag-01-done.svg) no-repeat center center $white;
+            background: url(../image/shopping-bag-01-done.svg) no-repeat center center $white;
           }
 
           &.release .icon {
-            background: url(/assets/image/release_done.svg) no-repeat center center $white;
+            background: url(../image/release_done.svg) no-repeat center center $white;
           }
 
           &.add-request .icon {
-            background: url(/assets/image/add-request_done.svg) no-repeat center center $white;
+            background: url(../image/add-request_done.svg) no-repeat center center $white;
           }
 
           &.add-fail .icon {
-            background: url(/assets/image/add-fail_done.svg) no-repeat center center $white;
+            background: url(../image/add-fail_done.svg) no-repeat center center $white;
           }
 
           &.add-complt .icon {
-            background: url(/assets/image/add-complt_done.svg) no-repeat center center $white;
+            background: url(../image/add-complt_done.svg) no-repeat center center $white;
           }
 
           &.refund-request .icon {
-            background: url(/assets/image/refund-request_done.svg) no-repeat center center $white;
+            background: url(../image/refund-request_done.svg) no-repeat center center $white;
           }
         }
 

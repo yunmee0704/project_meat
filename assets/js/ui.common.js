@@ -582,13 +582,13 @@ window.initDatepicker = function () {
             var typingAction = $(this).closest('.state-action');
             typingAction.addClass('is-on');
             $(this).parent().siblings().addClass('typing');
-            $(this).siblings('a').find('img').attr('src', '/assets/image/icon-x-888.svg');
+            $(this).siblings('a').find('img').attr('src', '../assets/image/icon-x-888.svg');
         });
 
         $(document).on('blur', '.search .text', function () {
             var typingAction = $(this).closest('.state-action');
             typingAction.addClass('is-on');
-            $(this).siblings('a').find('img').attr('src', '/assets/image/search-bidding.svg');
+            $(this).siblings('a').find('img').attr('src', '../assets/image/search-bidding.svg');
             $(this).parent().siblings().removeClass('typing');
         });
 

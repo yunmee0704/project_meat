@@ -30,7 +30,7 @@
 @mixin backgroundImage($width, $height, $file, $bgsize: cover) {
   width: $width;
   height: $height;
-  background-image: url("/assets/image/#{$file}");
+  background-image: url("../image/#{$file}");
   background-position: center;
   background-repeat: no-repeat;
   background-size: $bgsize;

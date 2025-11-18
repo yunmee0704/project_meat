@@ -186,7 +186,7 @@
             content: "";
             width: 24px;
             height: 24px;
-            background: url("/assets/image/check_gray.svg") no-repeat center center;
+            background: url("../image/check_gray.svg") no-repeat center center;
             background-size: cover;
             display: inline-block;
             position: absolute;
@@ -209,7 +209,7 @@
             }
 
             &:after {
-              background: url("/assets/image/check_red.svg") no-repeat center center;
+              background: url("../image/check_red.svg") no-repeat center center;
             }
           }
         }
@@ -219,7 +219,7 @@
           content: "";
           width: 24px;
           height: 24px;
-          background: url("/assets/image/check_gray.svg") no-repeat center center;
+          background: url("../image/check_gray.svg") no-repeat center center;
           background-size: cover;
           display: inline-block;
           position: absolute;
@@ -258,7 +258,7 @@
             @include fontStyle(14px, 140%, 500);
             padding: 3px 0 3.5px 20px;
             color: $Neutral300;
-            background: url(/assets/image/ico-plus.svg) no-repeat left center / 18px;
+            background: url(../image/ico-plus.svg) no-repeat left center / 18px;
           }
 
           // File input

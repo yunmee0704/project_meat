@@ -1811,7 +1811,7 @@ header .header-inner.new .product__top .head-logo {
   margin-left: 2px;
   width: 12px;
   height: 12px;
-  background-image: url("/assets/image/new_icon.svg");
+  background-image: url("../image/new_icon.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1890,7 +1890,7 @@ header .header-inner.new .product__top .head-logo {
   display: inline-block;
   width: 9px;
   height: 6px;
-  background-image: url('/assets/image/polygon_gray.svg');
+  background-image: url('../image/polygon_gray.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1916,7 +1916,7 @@ header .header-inner.new .product__top .head-logo {
 }
 
 .index-box.up .day-before .point:before {
-  background-image: url('/assets/image/polygon_red.svg');
+  background-image: url('../image/polygon_red.svg');
 }
 
 /* 지수 하락 */
@@ -1929,7 +1929,7 @@ header .header-inner.new .product__top .head-logo {
 }
 
 .index-box.down .day-before .point:before {
-  background-image: url('/assets/image/polygon_blue.svg');
+  background-image: url('../image/polygon_blue.svg');
 }
 
 /* 검색창 */
@@ -2400,7 +2400,7 @@ header {
   display: inline-block;
   width: 14px;
   height: 14px;
-  background: url('/assets/image/plus.png') center center;
+  background: url('../image/plus.png') center center;
   background-size: cover;
   margin-right: 4px;
 }
@@ -2415,7 +2415,7 @@ header {
   display: inline-block;
   width: 14px;
   height: 14px;
-  background: url('/assets/image/following-btn.png') center center;
+  background: url('../image/following-btn.png') center center;
   background-size: cover;
   margin-right: 4px;
 }
@@ -8277,7 +8277,7 @@ li.tooltip-box .tooltip .tooltip-bottom.price::after {
 }
 
 .main .my__contact ul li.addr::before {
-  background-image: url('/assets/image/building.svg');
+  background-image: url('../image/building.svg');
 }
 
 .main.profile .my__contact ul li .input-wrap.file span {
@@ -8354,7 +8354,7 @@ li.tooltip-box .tooltip .tooltip-bottom.price::after {
 }
 
 .main .my__contact ul li.link::before {
-  background-image: url('/assets/image/link-icon.svg');
+  background-image: url('../image/link-icon.svg');
 }
 
 /* RRMH-2886 전화영역 포함 */
@@ -8366,12 +8366,12 @@ li.tooltip-box .tooltip .tooltip-bottom.price::after {
   }
   
 .main .my__contact ul li.phone::before {
-  background-image: url('/assets/image/phone-icon.svg');
+  background-image: url('../image/phone-icon.svg');
 }
 /* RRMH-2886 전화영역 포함 */
 
 .main .my__contact ul li.file::before {
-  background-image: url('/assets/image/file-icon.svg');
+  background-image: url('../image/file-icon.svg');
 }
 
 .main .my__contact ul li .input-wrap {
@@ -11595,7 +11595,7 @@ img.ani-bounce {
 
 .safe-input-area .input-radio .radio-wrap.disabled [type="radio"]:checked+label:before,
 .safe-input-area .input-radio .radio-wrap.disabled [type="radio"]:not(:checked)+label:before {
-  background: url(/assets/image/radio_disabled.svg) no-repeat center / 100%;
+  background: url(../image/radio_disabled.svg) no-repeat center / 100%;
 }
 
 .safe-input-area .input-radio .radio-wrap .item__input {
@@ -11658,7 +11658,7 @@ img.ani-bounce {
   width: 14px;
   height: 14px;
   border-radius: 100%;
-  background: url(/assets/image/radio_off.svg) no-repeat center / 100%;
+  background: url(../image/radio_off.svg) no-repeat center / 100%;
 }
 
 .red-radio[type="radio"]:checked+label:after,
@@ -11666,7 +11666,7 @@ img.ani-bounce {
   content: "";
   width: 14px;
   height: 14px;
-  background: url(/assets/image/radio_on.svg) no-repeat center / 100%;
+  background: url(../image/radio_on.svg) no-repeat center / 100%;
   position: absolute;
   top: 3px;
   left: 0;
@@ -11725,7 +11725,7 @@ img.ani-bounce {
   font-size: 14px;
   line-height: 20px;
   color: #888888;
-  background: url("/assets/image/ico-plus.svg") no-repeat left center / 16px;
+  background: url("../image/ico-plus.svg") no-repeat left center / 16px;
   padding-left: 18px;
 }
 
@@ -12495,7 +12495,7 @@ img.ani-bounce {
   padding: 7px;
   box-sizing: border-box;
   display: inline-block;
-  background: url("/assets/image/ico-x.svg") no-repeat center/cover;
+  background: url("../image/ico-x.svg") no-repeat center/cover;
 }
 
 .main.community.edit .tag__item .input-wrap+.checkbox {
@@ -12728,78 +12728,78 @@ img.ani-bounce {
 
 /* 주문 확인 */
 .popup__cnt .safe-process ul li.order-check .img__box {
-  background: url(/assets/image/file-download-02.svg) no-repeat center center #f5f5f5;
+  background: url(../image/file-download-02.svg) no-repeat center center #f5f5f5;
 }
 
 /* 주문완료 */
 .popup__cnt .safe-process ul li.order-compl .img__box {
-  background: url(/assets/image/file-check-02.svg) no-repeat center center #f5f5f5;
+  background: url(../image/file-check-02.svg) no-repeat center center #f5f5f5;
 }
 
 /* 결제완료 */
 .popup__cnt .safe-process ul li.pay-compl .img__box {
-  background: url(/assets/image/pay-compl.svg) no-repeat center center #f5f5f5;
+  background: url(../image/pay-compl.svg) no-repeat center center #f5f5f5;
 }
 
 /* 취소완료 */
 .popup__cnt .safe-process ul li.cancel-compl .img__box {
-  background: url(/assets/image/cancel-compl.svg) no-repeat center center #f5f5f5;
+  background: url(../image/cancel-compl.svg) no-repeat center center #f5f5f5;
 }
 
 /* 출고 완료 */
 .popup__cnt .safe-process ul li.release .img__box {
-  background: url(/assets/image/release.svg) no-repeat center center #f5f5f5;
+  background: url(../image/release.svg) no-repeat center center #f5f5f5;
 }
 
 /* 소유주 변경 완료 */
 .popup__cnt .safe-process ul li.owner-change .img__box {
-  background: url(/assets/image/owner-change.svg) no-repeat center center #f5f5f5;
+  background: url(../image/owner-change.svg) no-repeat center center #f5f5f5;
 }
 
 /* 구매 확정*/
 .popup__cnt .safe-process ul li.purchase-confirm .img__box {
-  background: url(/assets/image/purchase-confirm.svg) no-repeat center center #f5f5f5;
+  background: url(../image/purchase-confirm.svg) no-repeat center center #f5f5f5;
 }
 
 /* 2. 진행중 */
 /* 결제방법 */
 .popup__cnt .safe-process ul li.pay.red .img__box {
-  background: url(/assets/image/credit-card-plus-process.svg) no-repeat center center #e45659;
+  background: url(../image/credit-card-plus-process.svg) no-repeat center center #e45659;
 }
 
 /* 주문확인 */
 .popup__cnt .safe-process ul li.order-check.red .img__box {
-  background: url(/assets/image/file-download-02-process.svg) no-repeat center center #e45659;
+  background: url(../image/file-download-02-process.svg) no-repeat center center #e45659;
 }
 
 /* 주문완료 */
 .popup__cnt .safe-process ul li.order-compl.red .img__box {
-  background: url(/assets/image/file-check-02-process.svg) no-repeat center center #e45659;
+  background: url(../image/file-check-02-process.svg) no-repeat center center #e45659;
 }
 
 /* 결제완료 */
 .popup__cnt .safe-process ul li.pay-compl.red .img__box {
-  background: url(/assets/image/credit-card-check.svg) no-repeat center center #e45659;
+  background: url(../image/credit-card-check.svg) no-repeat center center #e45659;
 }
 
 /* 취소완료 */
 .popup__cnt .safe-process ul li.cancel-compl.red .img__box {
-  background: url(/assets/image/credit-card-refresh.svg) no-repeat center center #e45659;
+  background: url(../image/credit-card-refresh.svg) no-repeat center center #e45659;
 }
 
 /* 출고 완료 */
 .popup__cnt .safe-process ul li.release.red .img__box {
-  background: url(/assets/image/release_ing.svg) no-repeat center center #e45659;
+  background: url(../image/release_ing.svg) no-repeat center center #e45659;
 }
 
 /* 소유주 변경 완료 */
 .popup__cnt .safe-process ul li.owner-change.red .img__box {
-  background: url(/assets/image/owner-change_red.svg) no-repeat center center #e45659;
+  background: url(../image/owner-change_red.svg) no-repeat center center #e45659;
 }
 
 /* 구매확정 */
 .popup__cnt .safe-process ul li.purchase-confirm.red .img__box {
-  background: url(/assets/image/purchase-confirm_red.svg) no-repeat center center #e45659;
+  background: url(../image/purchase-confirm_red.svg) no-repeat center center #e45659;
 }
 
 /* 3. 완료 */
@@ -12810,43 +12810,43 @@ img.ani-bounce {
 
 /* 결제방법 */
 .popup__cnt .safe-process ul li.pay.done .img__box {
-  background: url(/assets/image/credit-card-plus-done.svg) no-repeat center center #fff;
+  background: url(../image/credit-card-plus-done.svg) no-repeat center center #fff;
 }
 
 /* 주문확인 */
 .popup__cnt .safe-process ul li.order-check.done .img__box {
-  background: url(/assets/image/file-download-02-done.svg) no-repeat center center #fff;
+  background: url(../image/file-download-02-done.svg) no-repeat center center #fff;
 }
 
 /* 주문완료 */
 .popup__cnt .safe-process ul li.order-compl.done .img__box {
-  background: url(/assets/image/file-check-02-done.svg) no-repeat center center #fff;
+  background: url(../image/file-check-02-done.svg) no-repeat center center #fff;
 }
 
 /* 취소완료 */
 .popup__cnt .safe-process ul li.cancel-compl.done .img__box {
-  background: url(/assets/image/cancel-compl_done.svg) no-repeat center center #fff;
+  background: url(../image/cancel-compl_done.svg) no-repeat center center #fff;
 }
 
 /* 결제완료 */
 .popup__cnt .safe-process ul li.pay-compl.done .img__box,
 .popup__cnt .safe-process ul li.pay-complt.done .img__box {
-  background: url(/assets/image/credit-card-red.svg) no-repeat center center #fff;
+  background: url(../image/credit-card-red.svg) no-repeat center center #fff;
 }
 
 /*소유주 변경 완료 */
 .popup__cnt .safe-process ul li.owner-change.done .img__box {
-  background: url(/assets/image/owner-change_done.svg) no-repeat center center #fff;
+  background: url(../image/owner-change_done.svg) no-repeat center center #fff;
 }
 
 /* 출고 완료 */
 .popup__cnt .safe-process ul li.release.done .img__box {
-  background: url(/assets/image/release_done.svg) no-repeat center center #fff;
+  background: url(../image/release_done.svg) no-repeat center center #fff;
 }
 
 /* 구매 확정 */
 .popup__cnt .safe-process ul li.purchase-confirm.done .img__box {
-  background: url(/assets/image/purchase-confirm_done.svg) no-repeat center center #fff;
+  background: url(../image/purchase-confirm_done.svg) no-repeat center center #fff;
 }
 
 /* done클래스 추가 시 점선 컬러 변경 */
@@ -13362,7 +13362,7 @@ img.ani-bounce {
 .btn.red-line .btn-default.line span,
 .popup__btn.addr .btn-default.line span {
   padding-left: 18px;
-  background: url(/assets/image/plus_red.svg) no-repeat left center / 16px;
+  background: url(../image/plus_red.svg) no-repeat left center / 16px;
 }
 
 
@@ -13520,7 +13520,7 @@ img.ani-bounce {
 
 .pop__detail .popup__btn .btn.line-gray span {
   padding-left: 22px;
-  background: url(/assets/image/plus-dark.svg) no-repeat left center / 16px;
+  background: url(../image/plus-dark.svg) no-repeat left center / 16px;
 }
 
 .popup__btn.padding {
@@ -13959,136 +13959,136 @@ img.ani-bounce {
 /* 1. 기본 : 회색바탕 */
 /* 거래 취소*/
 .main.detail .detail__process ul li.transact_cancel.yet .icon {
-  background: url(/assets/image/transact_cancel_yet.svg) no-repeat center center #f5f5f5;
+  background: url(../image/transact_cancel_yet.svg) no-repeat center center #f5f5f5;
 }
 
 /* 물품 준비 중*/
 .main.detail .detail__process ul li.prod-ready.yet .icon {
-  background: url(/assets/image/prod-ready_yet.svg) no-repeat center center #f5f5f5;
+  background: url(../image/prod-ready_yet.svg) no-repeat center center #f5f5f5;
 }
 
 /* 판매취소 - 취소완료*/
 .main.detail .detail__process ul li.cancel-complt.yet .icon {
-  background: url(/assets/image/cancel-complt_yet.svg) no-repeat center center #f5f5f5;
+  background: url(../image/cancel-complt_yet.svg) no-repeat center center #f5f5f5;
 }
 
 /* 출고 완료 */
 .main.detail .detail__process ul li.release.yet .icon {
-  background: url(/assets/image/delivery-gray.svg) no-repeat center center #f5f5f5;
+  background: url(../image/delivery-gray.svg) no-repeat center center #f5f5f5;
 }
 
 /* 소유주 변경 완료 */
 .main.detail .detail__process ul li.owner-change.yet .icon {
-  background: url(/assets/image/owner-change_yet.svg) no-repeat center center #f5f5f5;
+  background: url(../image/owner-change_yet.svg) no-repeat center center #f5f5f5;
 }
 
 /* 추가 납부 요청 */
 .main.detail .detail__process ul li.add-request.yet .icon {
-  background: url(/assets/image/add-request_yet.svg) no-repeat center center #f5f5f5;
+  background: url(../image/add-request_yet.svg) no-repeat center center #f5f5f5;
 }
 
 /* 추가 납부 승인 & 추가 납부 승인 - 입금 대기*/
 .main.detail .detail__process ul li.add-wait.yet .icon {
-  background: url(/assets/image/add-wait_yet.svg) no-repeat center center #f5f5f5;
+  background: url(../image/add-wait_yet.svg) no-repeat center center #f5f5f5;
 }
 
 /* 추가 납부 거절 & 추가 납부 취소*/
 .main.detail .detail__process ul li.add-fail.yet .icon {
-  background: url(/assets/image/add-fail_yet.svg) no-repeat center center #f5f5f5;
+  background: url(../image/add-fail_yet.svg) no-repeat center center #f5f5f5;
 }
 
 /* 환불 요청 */
 .main.detail .detail__process ul li.refund-request.yet .icon {
-  background: url(/assets/image/refund-request_yet.svg) no-repeat center center #f5f5f5;
+  background: url(../image/refund-request_yet.svg) no-repeat center center #f5f5f5;
 }
 
 /* 환불 거절 */
 .main.detail .detail__process ul li.refund-reject.yet .icon {
-  background: url(/assets/image/refund-reject_yet.svg) no-repeat center center #f5f5f5;
+  background: url(../image/refund-reject_yet.svg) no-repeat center center #f5f5f5;
 }
 
 /* 환불 승인 */
 .main.detail .detail__process ul li.refund-apprv.yet .icon {
-  background: url(/assets/image/refund-apprv_yet.svg) no-repeat center center #f5f5f5;
+  background: url(../image/refund-apprv_yet.svg) no-repeat center center #f5f5f5;
 }
 
 /* 구매 확정 */
 .main.detail .detail__process ul li.purchase-confirm.yet .icon {
-  background: url(/assets/image/purchase-confirm-gray.svg) no-repeat center center #f5f5f5;
+  background: url(../image/purchase-confirm-gray.svg) no-repeat center center #f5f5f5;
 }
 
 /* 2. 진행중  :빨간색 바탕*/
 
 /* 거래 취소 - 취소 완료*/
 .main.detail .detail__process ul li.transact_cancel.ing .icon {
-  background: url(/assets/image/transact_cancel_ing.svg) no-repeat center center #e45659;
+  background: url(../image/transact_cancel_ing.svg) no-repeat center center #e45659;
 }
 
 /* 물품준비중 */
 .main.detail .detail__process ul li.prod-ready.ing .icon {
-  background: url(/assets/image/shopping-bag-01.svg) no-repeat center center #e45659;
+  background: url(../image/shopping-bag-01.svg) no-repeat center center #e45659;
 }
 
 /* 판매취소 -취소완료  */
 .main.detail .detail__process ul li.cancel-complt.ing .icon,
 .main.detail .detail__process ul li.sell-cancel.ing .icon {
-  background: url(/assets/image/sell-cancel_ing.svg) no-repeat center center #e45659;
+  background: url(../image/sell-cancel_ing.svg) no-repeat center center #e45659;
 }
 
 /* 출고완료 */
 .main.detail .detail__process ul li.release.ing .icon {
-  background: url(/assets/image/release_ing.svg) no-repeat center center #e45659;
+  background: url(../image/release_ing.svg) no-repeat center center #e45659;
 }
 
 /* 소유주 변경 완료*/
 .main.detail .detail__process ul li.owner-change.ing .icon {
-  background: url(/assets/image/owner-change_ing.svg) no-repeat center center #e45659;
+  background: url(../image/owner-change_ing.svg) no-repeat center center #e45659;
 }
 
 /* 추가 납부 승인*/
 .main.detail .detail__process ul li.add-wait.ing .icon {
-  background: url(/assets/image/add-request_ing.svg) no-repeat center center #e45659;
+  background: url(../image/add-request_ing.svg) no-repeat center center #e45659;
 }
 
 /* 추가납부요청(re)*/
 .main.detail .detail__process ul li.add-request2.ing .icon {
-  background: url(/assets/image/add-request2_ing.svg) no-repeat center center #e45659;
+  background: url(../image/add-request2_ing.svg) no-repeat center center #e45659;
 }
 
 /* 추가납부요청*/
 .main.detail .detail__process ul li.add-request.ing .icon {
-  background: url(/assets/image/add-request2_ing.svg) no-repeat center center #e45659;
+  background: url(../image/add-request2_ing.svg) no-repeat center center #e45659;
 }
 
 /* 추가납부거절 & 추가 납부 취소*/
 .main.detail .detail__process ul li.add-fail.ing .icon {
-  background: url(/assets/image/add-fail_ing.svg) no-repeat center center #e45659;
+  background: url(../image/add-fail_ing.svg) no-repeat center center #e45659;
 }
 
 /* 추가납부완료 */
 .main.detail .detail__process ul li.add-complt.ing .icon {
-  background: url(/assets/image/add-complt_ing.svg) no-repeat center center #e45659;
+  background: url(../image/add-complt_ing.svg) no-repeat center center #e45659;
 }
 
 /* 환불요청*/
 .main.detail .detail__process ul li.refund-request.ing .icon {
-  background: url(/assets/image/refund-request_ing.svg) no-repeat center center #e45659;
+  background: url(../image/refund-request_ing.svg) no-repeat center center #e45659;
 }
 
 /* 환불거절*/
 .main.detail .detail__process ul li.refund-reject.ing .icon {
-  background: url(/assets/image/refund-reject_ing.svg) no-repeat center center #e45659;
+  background: url(../image/refund-reject_ing.svg) no-repeat center center #e45659;
 }
 
 /* 결제완료 & 환불 승인*/
 .main.detail .detail__process ul li.pay-complt.ing .icon,
 .main.detail .detail__process ul li.refund-apprv.ing .icon {
-  background: url(/assets/image/credit-card-check.svg) no-repeat center center #e45659;
+  background: url(../image/credit-card-check.svg) no-repeat center center #e45659;
 }
 
 /* 구매확정*/
 .main.detail .detail__process ul li.purchase-confirm.ing .icon {
-  background: url(/assets/image/purchase-confirm_ing.svg) no-repeat center center #e45659;
+  background: url(../image/purchase-confirm_ing.svg) no-repeat center center #e45659;
 }
 
 .main.detail .detail__process ul li.ing.no-line .icon:before {
@@ -14104,67 +14104,67 @@ img.ani-bounce {
 /* 결제완료 */
 .main.detail .detail__process ul li.pay-complt.done .icon,
 .main.detail .detail__process ul li.refund-apprv.done .icon {
-  background: url(/assets/image/credit-card-red.svg) no-repeat center center #fff;
+  background: url(../image/credit-card-red.svg) no-repeat center center #fff;
 }
 
 /* 거래취소 - 취소 완료 */
 .main.detail .detail__process ul li.transact_cancel.done .icon {
-  background: url(/assets/image/transact_cancel_done.svg) no-repeat center center #fff;
+  background: url(../image/transact_cancel_done.svg) no-repeat center center #fff;
 }
 
 /* 물품준비중 */
 .main.detail .detail__process ul li.prod-ready.done .icon {
-  background: url(/assets/image/shopping-bag-01-done.svg) no-repeat center center #fff;
+  background: url(../image/shopping-bag-01-done.svg) no-repeat center center #fff;
 }
 
 /* 판매 취소 - 취소 완료 */
 .main.detail .detail__process ul li.cancel-complt.done .icon {
-  background: url(/assets/image/cancel-complt_done.svg) no-repeat center center #fff;
+  background: url(../image/cancel-complt_done.svg) no-repeat center center #fff;
 }
 
 /* 출고완료 */
 .main.detail .detail__process ul li.release.done .icon {
-  background: url(/assets/image/release_done.svg) no-repeat center center #fff;
+  background: url(../image/release_done.svg) no-repeat center center #fff;
 }
 
 /* 소유주 변경 완료 */
 .main.detail .detail__process ul li.owner-change.done .icon {
-  background: url(/assets/image/owner-change_done.svg) no-repeat center center #fff;
+  background: url(../image/owner-change_done.svg) no-repeat center center #fff;
 }
 
 /* 추가납부요청*/
 .main.detail .detail__process ul li.add-request.done .icon {
-  background: url(/assets/image/add-request_done.svg) no-repeat center center #fff;
+  background: url(../image/add-request_done.svg) no-repeat center center #fff;
 }
 
 /* 추가납부승인*/
 .main.detail .detail__process ul li.add-wait.done .icon {
-  background: url(/assets/image/add-wait_done.svg) no-repeat center center #fff;
+  background: url(../image/add-wait_done.svg) no-repeat center center #fff;
 }
 
 /* 추가납부거절*/
 .main.detail .detail__process ul li.add-fail.done .icon {
-  background: url(/assets/image/add-fail_done.svg) no-repeat center center #fff;
+  background: url(../image/add-fail_done.svg) no-repeat center center #fff;
 }
 
 /* 추가납부완료*/
 .main.detail .detail__process ul li.add-complt.done .icon {
-  background: url(/assets/image/add-complt_done.svg) no-repeat center center #fff;
+  background: url(../image/add-complt_done.svg) no-repeat center center #fff;
 }
 
 /* 환불 요청*/
 .main.detail .detail__process ul li.refund-request.done .icon {
-  background: url(/assets/image/refund-request_done.svg) no-repeat center center #fff;
+  background: url(../image/refund-request_done.svg) no-repeat center center #fff;
 }
 
 /* 환불 거절*/
 .main.detail .detail__process ul li.refund-reject.done .icon {
-  background: url(/assets/image/refund-reject_done.svg) no-repeat center center #fff;
+  background: url(../image/refund-reject_done.svg) no-repeat center center #fff;
 }
 
 /* 구매 확정*/
 .main.detail .detail__process ul li.purchase-confirm.done .icon {
-  background: url(/assets/image/purchase-confirm_done.svg) no-repeat center center #fff;
+  background: url(../image/purchase-confirm_done.svg) no-repeat center center #fff;
 }
 
 .main.detail .detail__process ul li.yet .process-info p.process-name,
@@ -14242,7 +14242,7 @@ img.ani-bounce {
   font-weight: 500;
   font-size: 14px;
   padding: 3px 0 3.5px 20px;
-  background: url(/assets/image/ico-plus.svg) no-repeat left center / 18px;
+  background: url(../image/ico-plus.svg) no-repeat left center / 18px;
 }
 
 .input-wrap.refund .item__input.ta,
@@ -14583,7 +14583,7 @@ img.ani-bounce {
   content: "";
   width: 24px;
   height: 24px;
-  background: url("/assets/image/check_gray.svg") no-repeat center center;
+  background: url("../image/check_gray.svg") no-repeat center center;
   background-size: cover;
   display: inline-block;
   position: absolute;
@@ -14593,7 +14593,7 @@ img.ani-bounce {
 }
 
 .main.detail.refund .payment-list li.gray.red:after {
-  background: url("/assets/image/check_red.svg") no-repeat center center;
+  background: url("../image/check_red.svg") no-repeat center center;
 }
 
 .main.detail.refund .payment-list.request li:after {
@@ -14759,7 +14759,7 @@ img.ani-bounce {
   font-size: 14px;
   padding: 0 0 0 20px;
   border: none;
-  background: url(/assets/image/ico-plus.svg) no-repeat left center / 18px;
+  background: url(../image/ico-plus.svg) no-repeat left center / 18px;
 }
 
 .safe-input-area .input-wrap.file .item__input a:before {
@@ -15184,7 +15184,7 @@ img.ani-bounce {
   width: 12px;
   height: 12px;
   margin: 0 0 -2px 4px;
-  background: url(/assets/image/ico-new.svg) center center no-repeat;
+  background: url(../image/ico-new.svg) center center no-repeat;
   background-size: 100%;
 }
 
@@ -15244,7 +15244,7 @@ img.ani-bounce {
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
-  background: url(/assets/image/chevron-right-888.svg) center center;
+  background: url(../image/chevron-right-888.svg) center center;
   background-size: cover;
   content: "";
 }
@@ -15339,7 +15339,7 @@ img.ani-bounce {
   height: 20px;
   padding: 0;
   margin: -3px 0 0 2px;
-  background: url(/assets/image/ico-msg-dots-c-scd500.svg) center center no-repeat;
+  background: url(../image/ico-msg-dots-c-scd500.svg) center center no-repeat;
   background-size: 15px;
 }
 
@@ -15558,7 +15558,7 @@ img.ani-bounce {
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
-  background: url(/assets/image/chevron-right-5757.svg) center center;
+  background: url(../image/chevron-right-5757.svg) center center;
   background-size: cover;
   content: "";
 }
@@ -15734,7 +15734,7 @@ img.ani-bounce {
   right: 2px;
   width: 16px;
   height: 16px;
-  background: url(/assets/image/chevron-right-888.svg) center center;
+  background: url(../image/chevron-right-888.svg) center center;
   background-size: cover;
   transform: translateY(-50%) rotate(90deg);
   content: "";
@@ -15749,7 +15749,7 @@ img.ani-bounce {
 }
 
 .calculate-account-list .select.active::after {
-  background: url(/assets/image/chevron-right-888.svg) center center;
+  background: url(../image/chevron-right-888.svg) center center;
   background-size: cover;
   transform: translateY(-50%) rotate(-90deg);
 }
@@ -15849,7 +15849,7 @@ img.ani-bounce {
   padding: 5px 25px 5px 9px;
   color: #575757;
   background-color: #fff;
-  background-image: url(/assets/image/ico-x-5757.svg);
+  background-image: url(../image/ico-x-5757.svg);
   background-size: 7px;
   background-repeat: no-repeat;
   background-position: right 10px center;
@@ -15867,7 +15867,7 @@ img.ani-bounce {
   width: fit-content;
   padding: 10px 12px 10px 27px;
   color: #888;
-  background-image: url(/assets/image/ico-filter.svg);
+  background-image: url(../image/ico-filter.svg);
   background-size: 11px;
   background-repeat: no-repeat;
   background-position: left 10px center;
@@ -15879,7 +15879,7 @@ img.ani-bounce {
   width: fit-content;
   padding: 0 0 0 27px;
   color: #575757;
-  background-image: url(/assets/image/ico-filter.svg);
+  background-image: url(../image/ico-filter.svg);
   background-size: 11px;
   background-repeat: no-repeat;
   background-position: left 10px center;
@@ -16491,12 +16491,12 @@ img.ani-bounce {
   padding: 1.75px 1.17px;
   width: 14px;
   height: 14px;
-  background: url('/assets/image/alarm-defult.svg') center no-repeat;
+  background: url('../image/alarm-defult.svg') center no-repeat;
 }
 
 /* 입찰 공고 상세 페이지 */
 .safe-top.detail .tag-box .tag.time::before {
-  background: url('/assets/image/alarm-defult-bold.svg') center no-repeat;
+  background: url('../image/alarm-defult-bold.svg') center no-repeat;
 }
 
 /* 마감임박 */
@@ -16505,11 +16505,11 @@ img.ani-bounce {
 }
 
 .tag-box .tag.time.soon:before {
-  background-image: url('/assets/image/alarm-clock.svg');
+  background-image: url('../image/alarm-clock.svg');
 }
 
 .result-list .alert-box p:before {
-  background-image: url('/assets/image/alarm-clock.svg');
+  background-image: url('../image/alarm-clock.svg');
 }
 
 /* 입찰 공고 상세 페이지 */
@@ -16534,11 +16534,11 @@ img.ani-bounce {
 
 /* 입찰 공고 상세 페이지 */
 .safe-top.detail .tag-box .tag.time.end::before {
-  background-image: url('/assets/image/alarm-clock-off-bold.svg');
+  background-image: url('../image/alarm-clock-off-bold.svg');
 }
 
 .tag-box .tag.time.end::before {
-  background-image: url('/assets/image/alarm-clock-off.svg');
+  background-image: url('../image/alarm-clock-off.svg');
 }
 
 /* 업체 선정 완료 */
@@ -16547,12 +16547,12 @@ img.ani-bounce {
 }
 
 .tag-box .tag.time.complete::before {
-  background-image: url('/assets/image/choice-complete.svg');
+  background-image: url('../image/choice-complete.svg');
 }
 
 /* 입찰 공고 상세 페이지 */
 .safe-top.detail .tag-box .tag.time.complete::before {
-  background-image: url('/assets/image/choice-complete-bold.svg');
+  background-image: url('../image/choice-complete-bold.svg');
 }
 
 /* 지역 모달 창 스타일 */
@@ -16663,7 +16663,7 @@ img.ani-bounce {
   width: 16px;
   height: 16px;
   display: inline-block;
-  background: url('/assets/image/announcement.png') center no-repeat;
+  background: url('../image/announcement.png') center no-repeat;
 }
 
 
@@ -16742,64 +16742,64 @@ img.ani-bounce {
 
 .menu__swiper .swiper-slide:nth-child(1) a .img-box {
 
-  background: url('/assets/image/spec/species/list_0.png');
+  background: url('../image/spec/species/list_0.png');
 }
 
 .menu__swiper .swiper-slide:nth-child(2) a .img-box {
   background-size: 36px;
-  background-image: url('/assets/image/spec/species/cow.png');
+  background-image: url('../image/spec/species/cow.png');
 }
 
 .menu__swiper .swiper-slide:nth-child(3) a .img-box {
   background-size: 36px;
-  background-image: url('/assets/image/spec/species/pork.png');
+  background-image: url('../image/spec/species/pork.png');
 }
 
 .menu__swiper .swiper-slide:nth-child(4) a .img-box {
   background-size: 36px;
-  background-image: url('/assets/image/spec/species/chicken.png');
+  background-image: url('../image/spec/species/chicken.png');
 }
 
 .menu__swiper .swiper-slide:nth-child(5) a .img-box {
   background-size: 36px;
-  background-image: url('/assets/image/spec/species/sheep.png');
+  background-image: url('../image/spec/species/sheep.png');
 }
 
 .menu__swiper .swiper-slide:nth-child(6) a .img-box {
   background-size: 36px;
-  background-image: url('/assets/image/spec/species/etc.png');
+  background-image: url('../image/spec/species/etc.png');
 }
 
 /* 클래스 on 추가시 */
 .menu__swiper .swiper-slide.on:nth-child(1) a .img-box {
   background-size: 36px !important;
   background-position: center;
-  background: url('/assets/image/spec/species/list_0_on.png');
+  background: url('../image/spec/species/list_0_on.png');
 }
 
 .menu__swiper .swiper-slide.on:nth-child(2) a .img-box {
   background-size: 36px;
-  background-image: url('/assets/image/spec/species/cow_on.png');
+  background-image: url('../image/spec/species/cow_on.png');
 }
 
 .menu__swiper .swiper-slide.on:nth-child(3) a .img-box {
   background-size: 36px;
-  background-image: url('/assets/image/spec/species/pork_on.png');
+  background-image: url('../image/spec/species/pork_on.png');
 }
 
 .menu__swiper .swiper-slide.on:nth-child(4) a .img-box {
   background-size: 36px;
-  background-image: url('/assets/image/spec/species/chicken_on.png');
+  background-image: url('../image/spec/species/chicken_on.png');
 }
 
 .menu__swiper .swiper-slide.on:nth-child(5) a .img-box {
   background-size: 36px;
-  background-image: url('/assets/image/spec/species/sheep_on.png');
+  background-image: url('../image/spec/species/sheep_on.png');
 }
 
 .menu__swiper .swiper-slide.on:nth-child(6) a .img-box {
   background-size: 36px;
-  background-image: url('/assets/image/spec/species/etc_on.png');
+  background-image: url('../image/spec/species/etc_on.png');
 }
 
 
@@ -17121,7 +17121,7 @@ img.ani-bounce {
   right: -12px;
   width: 12px;
   height: 12px;
-  background: url('/assets/image/chevron-right-bidding.svg') no-repeat;
+  background: url('../image/chevron-right-bidding.svg') no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -17326,7 +17326,7 @@ img.ani-bounce {
   position: absolute;
   top: 2px;
   left: 0;
-  background: url(/assets/image/ico-plus.svg);
+  background: url(../image/ico-plus.svg);
   background-size: cover;
 }
 
@@ -17683,13 +17683,13 @@ img.ani-bounce {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background: url('/assets/image/chevron-right-888.svg') no-repeat;
+  background: url('../image/chevron-right-888.svg') no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .main.bidding .district-list .district-option.warehouse .search-content li label .dist-1::after {
-  background: url('/assets/image/chevron-right-bidding.svg') no-repeat;
+  background: url('../image/chevron-right-bidding.svg') no-repeat;
 }
 
 /* 비딩 등록 시 옵션 바텀 스타일 */
@@ -18001,7 +18001,7 @@ img.ani-bounce {
 }
 
 .main.bidding .safe-top.detail.default {
-  background: url('/assets/image/brand-default.png') center no-repeat;
+  background: url('../image/brand-default.png') center no-repeat;
   background-size: cover;
 }
 
@@ -18578,7 +18578,7 @@ img.ani-bounce {
   margin-left: 4px;
   width: 12px;
   height: 12px;
-  background: url('/assets/image/chevron-right-bidding.svg') no-repeat;
+  background: url('../image/chevron-right-bidding.svg') no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -19184,7 +19184,7 @@ img.ani-bounce {
   width: 20px;
   height: 20px;
   padding: 0;
-  background: url(/assets/image/ico-msg-dots-c-scd500.svg) center center no-repeat;
+  background: url(../image/ico-msg-dots-c-scd500.svg) center center no-repeat;
   background-size: 15px;
 }
 
@@ -19193,7 +19193,7 @@ img.ani-bounce {
   display: block;
   width: 100%;
   height: 42px;
-  background: url(/assets/image/baloon.png) center center no-repeat;
+  background: url(../image/baloon.png) center center no-repeat;
   background-size: 100% 42px;
   margin-top: 4px;
   padding: 16px 0 8px;
@@ -19700,7 +19700,7 @@ img.ani-bounce {
 .main.dictionary .result-list li .cont-box .tag.meat.beef::before {
   width: 12px;
   height: 14.52px;
-  background: url('/assets/image/meat_1.png');
+  background: url('../image/meat_1.png');
   background-size: cover;
 }
 
@@ -19708,28 +19708,28 @@ img.ani-bounce {
   width: 12px;
   height: 12.5px;
   top: 3px;
-  background: url('/assets/image/meat_2.png');
+  background: url('../image/meat_2.png');
   background-size: cover;
 }
 
 .main.dictionary .result-list li .cont-box .tag.meat.chicken::before {
   width: 12px;
   height: 13.33px;
-  background: url('/assets/image/meat_3.png');
+  background: url('../image/meat_3.png');
   background-size: cover;
 }
 
 .main.dictionary .result-list li .cont-box .tag.meat.sheep::before {
   width: 14px;
   height: 13.93px;
-  background: url('/assets/image/meat_4.png');
+  background: url('../image/meat_4.png');
   background-size: cover;
 }
 
 .main.dictionary .result-list li .cont-box .tag.meat.other::before {
   width: 10.4px;
   height: 14px;
-  background: url('/assets/image/meat_5.png');
+  background: url('../image/meat_5.png');
   background-size: cover;
 }
 
@@ -19765,14 +19765,14 @@ img.ani-bounce {
 
 .main.dictionary .result-list li .cont-box .tag.storage.frozen::before {
   background-size: cover;
-  background-image: url('/assets/image/storage_1.png');
+  background-image: url('../image/storage_1.png');
 }
 
 .main.dictionary .result-list li .cont-box .tag.storage.cold::before {
   width: 9.82px;
   height: 14.5px;
   top: 3.5px;
-  background-image: url('/assets/image/storage_2.png');
+  background-image: url('../image/storage_2.png');
   background-size: cover;
 }
 
@@ -20460,7 +20460,7 @@ img.ani-bounce {
   width: 18px;
   height: 18px;
   display: inline-block;
-  background: url('/assets/image/speech-bubble.svg') center no-repeat;
+  background: url('../image/speech-bubble.svg') center no-repeat;
 }
 
 
@@ -22496,11 +22496,11 @@ img.ani-bounce {
 }
 
 .content--ps.view-detail .main.detail .detail__process ul li.add-request.only.done .icon {
-  background: url(/assets/image/new-add-request_done.svg) no-repeat center center #fff;
+  background: url(../image/new-add-request_done.svg) no-repeat center center #fff;
 }
 
 .content--ps.view-detail .main.detail .detail__process ul li.add-request.only.ing .icon {
-  background: url(/assets/image/new-add-request2_ing.svg) no-repeat center center #e45659;
+  background: url(../image/new-add-request2_ing.svg) no-repeat center center #e45659;
 }
 
 .content--pd.bizProfile-view {
@@ -22760,7 +22760,7 @@ img.ani-bounce {
 
 /* 입찰 공고 상세 페이지 */
 .content--adv.content--boardList .safe-top.detail .tag-box .tag.time::before {
-  background: url('/assets/image/alarm-defult-bold.svg') center no-repeat;
+  background: url('../image/alarm-defult-bold.svg') center no-repeat;
 }
 
 /* 마감임박 */
@@ -22775,11 +22775,11 @@ img.ani-bounce {
 }
 
 .content--adv.content--boardList .tag-box .tag.time.soon:before {
-  background-image: url('/assets/image/alarm-clock.svg');
+  background-image: url('../image/alarm-clock.svg');
 }
 
 .content--adv.content--boardList .tag-box .tag.time.end::before {
-  background-image: url('/assets/image/alarm-clock-off.svg');
+  background-image: url('../image/alarm-clock-off.svg');
 }
 
 .content--adv.content--boardList .tag-box .tag.time.end span,
@@ -22788,7 +22788,7 @@ img.ani-bounce {
 }
 
 .content--adv.content--boardList .result-list .alert-box p:before {
-  background-image: url('/assets/image/alarm-clock.svg');
+  background-image: url('../image/alarm-clock.svg');
 }
 
 .content--adv .top-area.p-16-20 {
@@ -23583,78 +23583,78 @@ img.ani-bounce {
 
 /* 주문 확인 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.order-check .img__box {
-  background: url(/assets/image/file-download-02.svg) no-repeat center center #f5f5f5;
+  background: url(../image/file-download-02.svg) no-repeat center center #f5f5f5;
 }
 
 /* 주문완료 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.order-compl .img__box {
-  background: url(/assets/image/file-check-02.svg) no-repeat center center #f5f5f5;
+  background: url(../image/file-check-02.svg) no-repeat center center #f5f5f5;
 }
 
 /* 결제완료 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.pay-compl .img__box {
-  background: url(/assets/image/pay-compl.svg) no-repeat center center #f5f5f5;
+  background: url(../image/pay-compl.svg) no-repeat center center #f5f5f5;
 }
 
 /* 취소완료 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.cancel-compl .img__box {
-  background: url(/assets/image/cancel-compl.svg) no-repeat center center #f5f5f5;
+  background: url(../image/cancel-compl.svg) no-repeat center center #f5f5f5;
 }
 
 /* 출고 완료 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.release .img__box {
-  background: url(/assets/image/release.svg) no-repeat center center #f5f5f5;
+  background: url(../image/release.svg) no-repeat center center #f5f5f5;
 }
 
 /* 소유주 변경 완료 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.owner-change .img__box {
-  background: url(/assets/image/owner-change.svg) no-repeat center center #f5f5f5;
+  background: url(../image/owner-change.svg) no-repeat center center #f5f5f5;
 }
 
 /* 구매 확정*/
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.purchase-confirm .img__box {
-  background: url(/assets/image/purchase-confirm.svg) no-repeat center center #f5f5f5;
+  background: url(../image/purchase-confirm.svg) no-repeat center center #f5f5f5;
 }
 
 /* 2. 진행중 */
 /* 결제방법 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.pay.red .img__box {
-  background: url(/assets/image/credit-card-plus-process.svg) no-repeat center center #e45659;
+  background: url(../image/credit-card-plus-process.svg) no-repeat center center #e45659;
 }
 
 /* 주문확인 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.order-check.red .img__box {
-  background: url(/assets/image/file-download-02-process.svg) no-repeat center center #e45659;
+  background: url(../image/file-download-02-process.svg) no-repeat center center #e45659;
 }
 
 /* 주문완료 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.order-compl.red .img__box {
-  background: url(/assets/image/file-check-02-process.svg) no-repeat center center #e45659;
+  background: url(../image/file-check-02-process.svg) no-repeat center center #e45659;
 }
 
 /* 결제완료 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.pay-compl.red .img__box {
-  background: url(/assets/image/credit-card-check.svg) no-repeat center center #e45659;
+  background: url(../image/credit-card-check.svg) no-repeat center center #e45659;
 }
 
 /* 취소완료 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.cancel-compl.red .img__box {
-  background: url(/assets/image/credit-card-refresh.svg) no-repeat center center #e45659;
+  background: url(../image/credit-card-refresh.svg) no-repeat center center #e45659;
 }
 
 /* 출고 완료 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.release.red .img__box {
-  background: url(/assets/image/release_ing.svg) no-repeat center center #e45659;
+  background: url(../image/release_ing.svg) no-repeat center center #e45659;
 }
 
 /* 소유주 변경 완료 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.owner-change.red .img__box {
-  background: url(/assets/image/owner-change_red.svg) no-repeat center center #e45659;
+  background: url(../image/owner-change_red.svg) no-repeat center center #e45659;
 }
 
 /* 구매확정 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.purchase-confirm.red .img__box {
-  background: url(/assets/image/purchase-confirm_red.svg) no-repeat center center #e45659;
+  background: url(../image/purchase-confirm_red.svg) no-repeat center center #e45659;
 }
 
 /* 3. 완료 */
@@ -23665,43 +23665,43 @@ img.ani-bounce {
 
 /* 결제방법 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.pay.done .img__box {
-  background: url(/assets/image/credit-card-plus-done.svg) no-repeat center center #fff;
+  background: url(../image/credit-card-plus-done.svg) no-repeat center center #fff;
 }
 
 /* 주문확인 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.order-check.done .img__box {
-  background: url(/assets/image/file-download-02-done.svg) no-repeat center center #fff;
+  background: url(../image/file-download-02-done.svg) no-repeat center center #fff;
 }
 
 /* 주문완료 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.order-compl.done .img__box {
-  background: url(/assets/image/file-check-02-done.svg) no-repeat center center #fff;
+  background: url(../image/file-check-02-done.svg) no-repeat center center #fff;
 }
 
 /* 취소완료 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.cancel-compl.done .img__box {
-  background: url(/assets/image/cancel-compl_done.svg) no-repeat center center #fff;
+  background: url(../image/cancel-compl_done.svg) no-repeat center center #fff;
 }
 
 /* 결제완료 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.pay-compl.done .img__box,
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.pay-complt.done .img__box {
-  background: url(/assets/image/credit-card-red.svg) no-repeat center center #fff;
+  background: url(../image/credit-card-red.svg) no-repeat center center #fff;
 }
 
 /*소유주 변경 완료 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.owner-change.done .img__box {
-  background: url(/assets/image/owner-change_done.svg) no-repeat center center #fff;
+  background: url(../image/owner-change_done.svg) no-repeat center center #fff;
 }
 
 /* 출고 완료 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.release.done .img__box {
-  background: url(/assets/image/release_done.svg) no-repeat center center #fff;
+  background: url(../image/release_done.svg) no-repeat center center #fff;
 }
 
 /* 구매 확정 */
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.purchase-confirm.done .img__box {
-  background: url(/assets/image/purchase-confirm_done.svg) no-repeat center center #fff;
+  background: url(../image/purchase-confirm_done.svg) no-repeat center center #fff;
 }
 
 .content--ps.content-safetrans.estmate.order .safe-input-area.with-frame-100 .safe-process ul li.done:before {
@@ -26061,7 +26061,7 @@ img.ani-bounce {
 }
 
 .content--pp .main .my__contact ul li.private::before {
-  background-image: url('/assets/image/private-icon.svg');
+  background-image: url('../image/private-icon.svg');
 }
 
 .content--pp .main .my__contact ul li.private button {
@@ -26089,7 +26089,7 @@ img.ani-bounce {
   width: 17px;
   height: 16px;
   transform: translateY(-50%);
-  background: url('/assets/image/contact-button-move.svg');
+  background: url('../image/contact-button-move.svg');
 }
 
 .content--pp .main .my__contact.icon-center ul li.file:before {
@@ -26191,7 +26191,7 @@ img.ani-bounce {
   width: 20px;
   height: 20px;
   transform: translateY(-50%);
-  background: url('/assets/image/password-set-move.svg');
+  background: url('../image/password-set-move.svg');
 }
 
 .content--adv .main .my__contact.password-set ul li input[type="submit"] {
@@ -26305,15 +26305,15 @@ img.ani-bounce {
 }
 
 .side-menu.properly .top div a::after {
-  background: url('/assets/image/chevron-right-set.svg') no-repeat center center;
+  background: url('../image/chevron-right-set.svg') no-repeat center center;
 }
 
 .side-menu.properly .top div:nth-child(2) a::before {
-  background: url('/assets/image/ico-folder-set.svg') no-repeat center center;
+  background: url('../image/ico-folder-set.svg') no-repeat center center;
 }
 
 .side-menu.properly .top div:nth-child(3) a::before {
-  background: url('/assets/image/ico-paperclip-set.svg') no-repeat center center;
+  background: url('../image/ico-paperclip-set.svg') no-repeat center center;
 }
 
 .user-list.report-add ul li:not(.user) p {
@@ -27978,7 +27978,7 @@ h2.ft-16 {
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
-  background: url(/assets/image/chevron-right-5757.svg) center center;
+  background: url(../image/chevron-right-5757.svg) center center;
   background-size: cover;
   content: "";
 }
@@ -28271,7 +28271,7 @@ h2.ft-16 {
   /* transform: translateY(-50%); */
   width: 14px;
   height: 20px;
-  background: url(/assets/image/ico-light-bell.png) no-repeat center/contain;
+  background: url(../image/ico-light-bell.png) no-repeat center/contain;
 }
 
 .notice-box ul.title {
@@ -28497,7 +28497,7 @@ h2.ft-16 {
 .main .detail__item .item__profile .item__box .item__follow .btn-following::before {
   width: 14px;
   height: 14px;
-  background: url('/assets/image/following-btn.png') center center;
+  background: url('../image/following-btn.png') center center;
   background-size: cover;
   margin-right: 4px;
 }
@@ -28505,7 +28505,7 @@ h2.ft-16 {
 .main .detail__item .item__profile .item__box .item__follow .btn-follow::before {
   width: 14px;
   height: 14px;
-  background: url('/assets/image/follow-btn.svg') center center;
+  background: url('../image/follow-btn.svg') center center;
   background-size: cover;
   margin-right: 4px;
 }
@@ -28961,7 +28961,7 @@ main .detail__item .item__status.custom-status .item__deal span {
   content: '';
   width: 14px;
   height: 14px;
-  background: url('/assets/image/following-btn.png') center center;
+  background: url('../image/following-btn.png') center center;
   background-size: cover;
   margin-right: 2px;
 }
@@ -28970,7 +28970,7 @@ main .detail__item .item__status.custom-status .item__deal span {
   content: '';
   width: 14px;
   height: 14px;
-  background: url('/assets/image/follow-btn.svg') center center;
+  background: url('../image/follow-btn.svg') center center;
   background-size: cover;
   margin-right: 2px;
 }
@@ -29118,7 +29118,7 @@ main .detail__item .item__status.custom-status .item__deal span {
     display: inline-block;
     width: 112px;
     height: 100%;
-    background-image: url("/assets/image/ltv_bg.png");
+    background-image: url("../image/ltv_bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

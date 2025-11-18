@@ -117,7 +117,7 @@
         position: absolute;
         left: 0;
         top: 2px;
-        background: url("/assets/image/info-red.svg");
+        background: url("../image/info-red.svg");
         width: 13px;
         height: 14px;
       }
@@ -214,7 +214,7 @@
         /* // 워드앤코드 250312 css 충돌 작업 */
         .btn-search {
           img {
-            content: url(/assets/image/close-bidding.svg);
+            content: url(../image/close-bidding.svg);
           }
         }
         .expand-box {
@@ -298,7 +298,7 @@
               width: 16px;
               height: 16px;
               transform: translateY(-50%);
-              background: url(/assets/image/select-answer-b-check-login.svg)
+              background: url(../image/select-answer-b-check-login.svg)
                 no-repeat center;
               background-size: 16px;
             }
@@ -348,7 +348,7 @@
               width: 16px;
               height: 16px;
               transform: translateY(-50%);
-              background: url(/assets/image/ico-plus-gray.svg) no-repeat center;
+              background: url(../image/ico-plus-gray.svg) no-repeat center;
               background-size: 16px;
             }
           }
@@ -511,7 +511,7 @@
           position: absolute;
           left: 0;
           top: 2px;
-          background: url("/assets/image/info-red.svg");
+          background: url("../image/info-red.svg");
           background-position: center;
           background-size: cover;
           width: 13px;
@@ -585,7 +585,7 @@
             top: 50%;
             -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-            background: url(/assets/image/check-gray.svg) no-repeat 90% 50%;
+            background: url(../image/check-gray.svg) no-repeat 90% 50%;
           }
         }
         &.active {
@@ -595,14 +595,14 @@
           /* pub 250224 :: border-color 추가 */
           border-color: $secondary500;
           &::before {
-            background: url(/assets/image/select-answer-b-check-login.svg)
+            background: url(../image/select-answer-b-check-login.svg)
               no-repeat 90% 50%;
             background-size: 16px 16px;
           }
         }
         &::after {
           content: "";
-          background: url(/assets/image/chevron-right.svg) no-repeat 90% 50%;
+          background: url(../image/chevron-right.svg) no-repeat 90% 50%;
           background-size: 20px 20px;
           width: 20px;
           height: 20px;
@@ -847,12 +847,12 @@
       text-align: right;
       &.active {
         &::after {
-          background: url(/assets/image/chevron-gray-up.svg) no-repeat center;
+          background: url(../image/chevron-gray-up.svg) no-repeat center;
         }
       }
       &::after {
         margin-right: -7px;
-        background: url(/assets/image/chevron-gray-down.svg) no-repeat center;
+        background: url(../image/chevron-gray-down.svg) no-repeat center;
       }
     }
     .accordion-content {
@@ -899,7 +899,7 @@
     line-height: 140%;
     &:after {
       content: "";
-      background: #fff url(/assets/image/chevron-down.svg) no-repeat 90% 50%;
+      background: #fff url(../image/chevron-down.svg) no-repeat 90% 50%;
       background-size: 20px 20px;
       width: 24px;
       height: 24px;
@@ -912,7 +912,7 @@
     &.active {
       border-radius: 8px 8px 0 0;
       &:after {
-        background: #fff url(/assets/image/chevron-up.svg) no-repeat 90% 50%;
+        background: #fff url(../image/chevron-up.svg) no-repeat 90% 50%;
         background-size: 20px 20px;
       }
     }
@@ -992,7 +992,7 @@
   }
   input[type="checkbox"]:checked,
   input[type="radio"]:checked {
-    background: url(/assets/image/check_on.png) no-repeat center;
+    background: url(../image/check_on.png) no-repeat center;
     background-size: 20px;
     border: 1px solid $primary500;
     + label {

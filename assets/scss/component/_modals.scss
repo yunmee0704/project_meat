@@ -590,7 +590,7 @@
       @include fontStyle(13px, 140%, 700);
       &:after {
         content: "";
-        background: #fff url(/assets/image/chevron-right-888.svg) no-repeat 90%
+        background: #fff url(../image/chevron-right-888.svg) no-repeat 90%
           50%;
         background-size: cover;
         width: 12px;

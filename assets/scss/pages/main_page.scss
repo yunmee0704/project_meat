@@ -172,7 +172,7 @@
           &.up {
             color: #dd2c2f;
             &::before {
-              background-image: url("/assets/image/polygon_red.svg");
+              background-image: url("../image/polygon_red.svg");
             }
 
             .point {
@@ -183,7 +183,7 @@
           &.down {
             color: #4263eb;
             &::before {
-              background-image: url("/assets/image/polygon_blue.svg");
+              background-image: url("../image/polygon_blue.svg");
             }
 
             .point {

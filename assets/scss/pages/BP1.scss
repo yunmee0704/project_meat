@@ -572,14 +572,14 @@
         left: 6px;
         width: 14px;
         height: 14px;
-        background: url("/assets/image/alarm-defult.svg") center no-repeat;
+        background: url("../image/alarm-defult.svg") center no-repeat;
       }
 
       &.soon {
         color: $danger;
 
         &:before {
-          background-image: url("/assets/image/alarm-clock.svg");
+          background-image: url("../image/alarm-clock.svg");
         }
       }
 
@@ -587,7 +587,7 @@
         color: $Neutral300;
 
         &::before {
-          background-image: url("/assets/image/alarm-clock-off.svg");
+          background-image: url("../image/alarm-clock-off.svg");
         }
       }
 
@@ -595,7 +595,7 @@
         color: $Neutral300;
 
         &::before {
-          background-image: url("/assets/image/choice-complete.svg");
+          background-image: url("../image/choice-complete.svg");
         }
       }
     }
@@ -649,7 +649,7 @@
         width: 18px;
         height: 18px;
         display: inline-block;
-        background: url("/assets/image/speech-bubble.svg") center no-repeat;
+        background: url("../image/speech-bubble.svg") center no-repeat;
       }
 
       p {
@@ -736,32 +736,32 @@
     }
 
     &:nth-child(1) a .img-box {
-      background: url("/assets/image/spec/species/list_0.png");
+      background: url("../image/spec/species/list_0.png");
     }
 
     &:nth-child(2) a .img-box {
       background-size: 36px;
-      background-image: url("/assets/image/spec/species/cow.png");
+      background-image: url("../image/spec/species/cow.png");
     }
 
     &:nth-child(3) a .img-box {
       background-size: 36px;
-      background-image: url("/assets/image/spec/species/pork.png");
+      background-image: url("../image/spec/species/pork.png");
     }
 
     &:nth-child(4) a .img-box {
       background-size: 36px;
-      background-image: url("/assets/image/spec/species/chicken.png");
+      background-image: url("../image/spec/species/chicken.png");
     }
 
     &:nth-child(5) a .img-box {
       background-size: 36px;
-      background-image: url("/assets/image/spec/species/sheep.png");
+      background-image: url("../image/spec/species/sheep.png");
     }
 
     &:nth-child(6) a .img-box {
       background-size: 36px;
-      background-image: url("/assets/image/spec/species/etc.png");
+      background-image: url("../image/spec/species/etc.png");
     }
 
     &.on {
@@ -775,32 +775,32 @@
       &:nth-child(1) a .img-box {
         background-size: 36px !important;
         background-position: center;
-        background: url("/assets/image/spec/species/list_0_on.png");
+        background: url("../image/spec/species/list_0_on.png");
       }
 
       &:nth-child(2) a .img-box {
         background-size: 36px;
-        background-image: url("/assets/image/spec/species/cow_on.png");
+        background-image: url("../image/spec/species/cow_on.png");
       }
 
       &:nth-child(3) a .img-box {
         background-size: 36px;
-        background-image: url("/assets/image/spec/species/pork_on.png");
+        background-image: url("../image/spec/species/pork_on.png");
       }
 
       &:nth-child(4) a .img-box {
         background-size: 36px;
-        background-image: url("/assets/image/spec/species/chicken_on.png");
+        background-image: url("../image/spec/species/chicken_on.png");
       }
 
       &:nth-child(5) a .img-box {
         background-size: 36px;
-        background-image: url("/assets/image/spec/species/sheep_on.png");
+        background-image: url("../image/spec/species/sheep_on.png");
       }
 
       &:nth-child(6) a .img-box {
         background-size: 36px;
-        background-image: url("/assets/image/spec/species/etc_on.png");
+        background-image: url("../image/spec/species/etc_on.png");
       }
     }
   }
@@ -838,7 +838,7 @@
         right: -12px;
         width: 12px;
         height: 12px;
-        background: url("/assets/image/chevron-right-bidding.svg") no-repeat;
+        background: url("../image/chevron-right-bidding.svg") no-repeat;
         background-size: cover;
         background-position: center;
       }
