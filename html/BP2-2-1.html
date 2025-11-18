@@ -47,6 +47,7 @@
                 <p class="step"><span class="present">2</span>/6</p>
                 <div class="choice_title">원산지를 선택해 주세요!</div>
                 <div class="sticky-wrap">
+                    
                     <div class="input-wrap state-action">
                         <div class="item__input search expand-btn">
                             <input type="text" class="text" placeholder="원하시는 원산지를 검색해 주세요." value="">
@@ -122,6 +123,11 @@
                 $(this).parent().parent().addClass('is-on').css('borderColor', '#E8E8E8');
                 $('.brand-list').css('display', 'none');
                 $('.btn-area').css('display', 'none');
+            });
+            $('.expand-box a').on('click', function (e) {
+                e.preventDefault();
+                var selectedText = $(this).find('.search-list').text().trim();
+                $(this).closest('.input-wrap').find('input.text').val(selectedText);
             });
         };
 
