@@ -682,7 +682,10 @@ button {
   content: "";
   width: 16px;
   height: 16px;
-  background: url(/assets/image/chevron-down.svg) no-repeat center;
+  background-image: url("../image/chevron-down.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-size: 16px;
   display: block;
   position: absolute;
@@ -698,7 +701,10 @@ button {
   content: "";
   width: 16px;
   height: 16px;
-  background: url(/assets/image/chevron-up.svg) no-repeat center;
+  background-image: url("../image/chevron-up.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-size: 16px;
 }
 .accordion-button.active + .accordion-content {

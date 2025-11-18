@@ -25,10 +25,7 @@
     border-bottom: 1px solid $Neutral100;
     &::after {
       content: "";
-      width: 16px;
-      height: 16px;
-      // 2025 QA 수정 - 지라카드 번호 RRMH-1830 -이윤미
-      background: url(/assets/image/chevron-down.svg) no-repeat center;
+      @include backgroundImage(16px,16px,'chevron-down.svg');
       background-size: 16px;
       display: block;
       position: absolute;
@@ -41,10 +38,7 @@
       border-bottom: none;
       &::after {
         content: "";
-        width: 16px;
-        height: 16px;
-        // 2025 QA 수정 - 지라카드 번호 RRMH-1830 -이윤미
-        background: url(/assets/image/chevron-up.svg) no-repeat center;
+        @include backgroundImage(16px,16px,'chevron-up.svg');
         background-size: 16px;
       }
       + .accordion-content {
