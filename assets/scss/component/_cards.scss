@@ -600,3 +600,162 @@
   
 }
 
+// 커뮤니티 글 목록
+.board-section {
+  &.new {
+    background-color: #fff;
+
+    .board-top {
+      display: flex;
+      justify-content: space-between;
+      background: transparent;
+      margin-top: 0;
+      padding: 24px 0 8px;
+
+      img {
+        width: 18px;
+        height: 22px;
+        object-fit: contain;
+        margin-right: 4px;
+      }
+
+      .tit {
+        line-height: 22px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #000;
+      }
+
+      .btn-wrap {
+        .more-btn {
+          display: inline-block;
+          line-height: 22px;
+          font-size: 14px;
+          font-weight: 700;
+          color: #dd2c2f;
+        }
+      }
+    }
+
+    .board__item {
+      border-bottom: 1px solid #eee;
+      padding: 12px 0 10px;
+
+      &:last-of-type {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .board__info {
+        display: flex;
+        align-items: center;
+        border-bottom: none;
+        padding: 0;
+
+        .board__cate {
+          @include fontStyle(12px, 140%, 700);
+          margin-bottom: 4px;
+
+          &.org {
+            color: #fa7c21;
+          }
+
+          &.red {
+            color: #e45659;
+          }
+        }
+
+        span {
+          font-size: 12px;
+          margin-bottom: 4px;
+        }
+
+        .level,
+        .name {
+          position: relative;
+          color: #888;
+
+          &:before {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 12px;
+            background-color: #cacaca;
+            margin: 0 3.5px;
+            vertical-align: text-bottom;
+          }
+        }
+      }
+
+      .board__tit_cont_wrap {
+        .board__title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          @include fontStyle(16px, 140%, 500);
+          color: #333;
+
+          span {
+            overflow: hidden;
+            width: calc(100% - 20px);
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+
+        img {
+          min-width: 20px;
+        }
+
+        .board__cont {
+          width: calc(100% - 2px);
+          @include fontStyle(12px, 140%, 400);
+          color: #888;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          margin-top: 1px;
+        }
+      }
+
+      &.read {
+        .board__tit_cont_wrap {
+          .board__title {
+            color: #888;
+          }
+        }
+      }
+
+      .icon {
+        margin-left: 4px;
+        margin-top: -1px;
+      }
+    }
+    .board-bot {
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      margin-top: 6px;
+      @include fontStyle(12px, 140%, c 400);
+      color: #888;
+
+      .board__dashboard {
+        display: flex;
+        align-items: center;
+        gap: 0 8px;
+
+        span {
+          position: relative;
+          display: flex;
+          align-items: center;
+
+          vertical-align: middle;
+
+          img {
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+  }
+}
