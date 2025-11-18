@@ -1,129 +1,6 @@
 @use "../utils/mixins" as *;
 @use "../variables/colors" as *;
-// 데이트피커 커스텀
-.datepicker-picker {
-  margin-bottom: 7px;
-  box-shadow: 0 2px 3px hsla(0, 0%, 4%, 0.1), 0 0 0 1px hsla(0, 0%, 4%, 0.1);
-}
-.datepicker-input-wrap {
-  &.custom {
-    position: initial;
-    .datepicker-header .close-btn {
-      border: none;
-    }
 
-    .item__input {
-      &.date {
-        input {
-          @include backgroundImage(100%, 44px, "calendar.svg", cover);
-          background-position: 97% 50%;
-          background-size: 20px 20px;
-        }
-      }
-    }
-  }
-}
-
-.datepicker-input-wrap {
-  position: relative;
-  /*  워드앤코드 250312 css 오류 작업 */
-  overflow: unset;
-  border: none;
-  height: 44px;
-  /* // 워드앤코드 250312 css 오류 작업 */
-  .item__input {
-    display: flex;
-    width: 100%;
-    flex-shrink: unset;
-  }
-  /*  워드앤코드 250312 css 오류 작업 */
-  .datepicker-input {
-    border: 1px solid $Neutral150;
-    border-radius: 8px;
-  }
-  /*  //워드앤코드 250312 css 오류 작업 */
-  .edit-btn {
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    z-index: 99;
-    transform: translateY(-50%);
-  }
-  &.with-txt {
-    .input--txt {
-      position: absolute;
-      right: 13px;
-      color: $Neutral300;
-      @include fontStyle(14px, 140%, 400);
-      background: #fff;
-      padding-left: 10px;
-      padding-right: 3px;
-      height: 82%;
-      display: flex;
-      align-items: center;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
-  }
-
-  &.error {
-    .input--title {
-      border-color: $primary500;
-    }
-
-    .select-box {
-      border-color: $primary500;
-
-      & + .select-options {
-        border-color: $primary500;
-       
-      }
-    }
-
-    .link-move {
-      border-color: $primary500;
-    }
-
-    .item__input {
-      .datepicker-input {
-        border-color: $primary500;
-      }
-    }
-
-    .expand-btn {
-      input {
-        border-color: $primary500;
-      }
-    }
-
-    ~ .input-desc {
-      display: flex;
-      align-items: center;
-      margin-top: 4px;
-      position: relative;
-      margin-left: 4px;
-      padding-left: 15.5px;
-      color: $primary500;
-      height: auto;
-      box-sizing: border-box;
-      font-size: 13px;
-      line-height: 140%;
-      /*  워드앤코드 250312 css 오류 작업 */
-      margin-left: 4px;
-      /* // 워드앤코드 250312 css 오류 작업 */
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 2px;
-        background: url("../image/info-red.svg");
-        width: 13px;
-        height: 14px;
-      }
-    }
-  }
-}
 .item__title {
   margin-left: 4px;
   display: flex;
@@ -992,7 +869,7 @@
   }
   input[type="checkbox"]:checked,
   input[type="radio"]:checked {
-    background: url(../image/check_on.png) no-repeat center;
+    background: url(/meat/assets/image/check_on.png) no-repeat center;
     background-size: 20px;
     border: 1px solid $primary500;
     + label {
