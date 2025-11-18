@@ -4842,6 +4842,7 @@ header .header-inner.new.title .product__top {
   height: calc(100vh - 124px);
   padding: 0;
   min-height: 100vh;
+  scrollbar-width: none;
   left: initial;
   top: initial;
   transform: translateY(0);
@@ -5186,7 +5187,7 @@ header .header-inner.new.title .product__top {
 }
 
 .content.new .main.scroll-zone.fix-menu {
-  padding: 0 0 36px;
+  padding: 0 0 90px;
 }
 .content.new .main.scroll-zone.fix-menu > div:not(.section-line) {
   padding-left: 20px;

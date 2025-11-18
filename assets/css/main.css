@@ -4842,6 +4842,7 @@ header .header-inner.new.title .product__top {
   height: calc(100vh - 124px);
   padding: 0;
   min-height: 100vh;
+  scrollbar-width: none;
   left: initial;
   top: initial;
   transform: translateY(0);
