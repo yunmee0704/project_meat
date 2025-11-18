@@ -28,7 +28,7 @@
       width: 16px;
       height: 16px;
       // 2025 QA 수정 - 지라카드 번호 RRMH-1830 -이윤미
-      background: url(../image/chevron-down.svg) no-repeat center;
+      background: url(/assets/image/chevron-down.svg) no-repeat center;
       background-size: 16px;
       display: block;
       position: absolute;
@@ -44,7 +44,7 @@
         width: 16px;
         height: 16px;
         // 2025 QA 수정 - 지라카드 번호 RRMH-1830 -이윤미
-        background: url(../image/chevron-up.svg) no-repeat center;
+        background: url(/assets/image/chevron-up.svg) no-repeat center;
         background-size: 16px;
       }
       + .accordion-content {
@@ -57,7 +57,76 @@
     margin-top: 2px;
   }
 }
-
+.lists {
+  li {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &.dot {
+    li {
+      padding-left: 12px;
+      &::before {
+        content: "";
+        width: 3px;
+        height: 3px;
+        border-radius: 999px;
+        background-color: $Neutral400;
+        left: 3px;
+      }
+    }
+  }
+  &.info {
+    li {
+      display: flex;
+      & + li {
+        margin-top: 8px;
+      }
+      p {
+        width: 80px;
+        @include fontStyle(14px, 140%, 400);
+        color: $Neutral400;
+        margin-right: 8px;
+      }
+      span {
+        word-break: keep-all;
+        width: calc(100% - 88px);
+        @include fontStyle(14px, 140%, 500);
+        color: $Neutral500;
+      }
+    }
+  }
+}
+.gray-box {
+  background: $Neutral50;
+  border-radius: 8px;
+  padding: 12px;
+  .tit {
+    @include fontStyle(14px, 140%, 700);
+    color: $Neutral500;
+    + .txt {
+      margin-top: 2px;
+    }
+    + .lists {
+      margin-top: 8px;
+    }
+  }
+  .txt {
+    @include fontStyle(13px, 140%, 400);
+    color: $Neutral400;
+  }
+  .lists {
+    li {
+      @include fontStyle(13px, 140%, 400);
+      color: $Neutral400;
+    }
+  }
+}
+/* 250417 손석호 추가 */
 .tag__item {
   &.agree {
     .item__title {
@@ -67,7 +136,7 @@
     }
   }
 }
-
+/* 250417 손석호 추가 */
 .agree-box {
   &.only-check {
     .agree-all {
@@ -196,7 +265,7 @@
 
       &:after {
         content: "";
-        background: #fff url(../image/chevron-right-12.svg) no-repeat 90%
+        background: #fff url(/assets/image/chevron-right-12.svg) no-repeat 90%
           50%;
         background-size: cover;
         width: 12px;
@@ -210,7 +279,1125 @@
     }
   }
 }
+.info {
+  &-item {
+    color: $Neutral500;
+    @include fontStyle(14px, 140%, 700);
+  }
+  &-tit {
+    margin-left: 4px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--Neutral-Neutral-500, #333);
+    color: $Neutral500;
+    @include fontStyle(14px, 140%, 700);
+    + .gray-box {
+      margin-top: 6px;
+    }
+  }
+}
+.tag {
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  &-small {
+    width: max-content;
+    height: 19px;
+    padding: 0 6px;
+    @include fontStyle(11px, 19px, 500);
+    letter-spacing: -0.22px;
+  }
+  &-large {
+    width: max-content;
+    padding: 0 6px;
+    height: 21px;
+    @include fontStyle(12px, 140%, 500);
+    letter-spacing: -0.24px;
+  }
+  &.blue {
+    border: 1px solid $info;
+    background: $info;
+    color: $white;
+  }
+  &.red {
+    border: 1px solid $primary400;
+    background: $primary400;
+    color: $white;
+  }
+  &.orange {
+    border: 1px solid $secondary500;
+    background: $secondary500;
+    color: $white;
+  }
+  &.deepgray {
+    border: 1px solid $Neutral300;
+    background: $Neutral300;
+    color: $white;
+  }
+  &.gray {
+    border: 1px solid $Neutral50;
+    background: $Neutral50;
+    color: $Neutral400;
+  }
+  &.danger {
+    border: 1px solid $danger;
+    background: $danger;
+    color: $white;
+  }
+  &.primary900 {
+    border: 1px solid $primary900;
+    background: $primary900;
+    color: $white;
+  }
 
+  &.white {
+    border: 1px solid $Neutral150;
+    background: $white;
+    color: $Neutral400;
+    &-red {
+      border: 1px solid $primary400;
+      background: $white;
+      color: $primary400;
+    }
+    &-orange {
+      border: 1px solid $secondary500;
+      background: $white;
+      color: $secondary500;
+    }
+    /* pub 250305 :: blue, gray 추가 */
+    &-blue {
+      border: 1px solid $info;
+      background: $white;
+      color: $info;
+    }
+    &-gray {
+      border: 1px solid $Neutral200;
+      background: $white;
+      color: $Neutral400;
+    }
+    &-danger {
+      border: 1px solid $danger;
+      background: $white;
+      color: $danger;
+    }
+  }
+  &.round-4 {
+    border-radius: 4px;
+  }
+  &.round-100 {
+    border-radius: 100px;
+  }
+}
+.card-block {
+  display: grid;
+  grid-gap: 8px;
+  gap: 8px;
+  &-item {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+    .cate {
+      @include fontStyle(12px, 140%, 400);
+      color: $Neutral400;
+      text-align: center;
+    }
+    &.main {
+      grid-column: 1/3;
+      grid-row: 1/2;
+      background: $secondary0;
+      padding: 15.5px 0;
+      .cate {
+        + .value {
+          margin-top: 4px;
+        }
+      }
+      .value {
+        @include fontStyle(20px, 120%, 700);
+        color: $secondary900;
+        text-align: center;
+      }
+    }
+    &.sub {
+      grid-column: auto;
+      grid-row: 2/3;
+      background: $Neutral0;
+      padding: 10.5px 0;
+      .cate {
+        /* 250219 pub :: fontStyle 추가 */
+        @include fontStyle(11px, 140%, 400);
+        + .value {
+          margin-top: 2px;
+        }
+      }
+      .value {
+        @include fontStyle(16px, 140%, 700);
+        color: $Neutral500;
+        text-align: center;
+      }
+    }
+
+    //이윤미추가 SL8
+    &.warehouse {
+      background: $secondary0;
+      padding: 12px;
+      grid-row: initial;
+      grid-column: initial;
+
+      .warehouse-title {
+        line-height: 19.6px;
+        color: $Neutral500;
+        margin-bottom: 2px;
+      }
+
+      .warehouse-addr {
+        @include fontStyle(12px, 16.8px, 400);
+        color: $Neutral400;
+      }
+    }
+  }
+}
+.calc-box {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  &-title {
+    padding-left: 24px;
+    padding-right: 0;
+    text-align: left;
+    color: $Neutral500;
+    @include fontStyle(14px, 140%, 700);
+  }
+  &-visual {
+    position: relative;
+    padding-top: 28px;
+    margin-top: 12px;
+  }
+  &-result {
+    border-radius: 8px;
+    opacity: 0.8;
+    background: $Neutral50;
+    padding: 12px 12px 12px 38px;
+    margin: 18px 20px 0 20px;
+    color: $Neutral400;
+    @include fontStyle(14px, 140%, 400);
+    p {
+      position: relative;
+      text-align: left;
+      &::before {
+        content: "";
+        position: absolute;
+        left: -25px;
+        // 250409 손석호 top 값 수정
+        top: -3px;
+        width: 14px;
+        height: 20px;
+        background: url(/assets/image/ico-light-bell.png) no-repeat center/
+          contain;
+      }
+      .result {
+        // 250409 손석호 수정 및 추가
+        &-1 {
+          color: $secondary900;
+          @include fontStyle(14px, 140%, 700);
+        }
+        &-2 {
+          color: $secondary900;
+          @include fontStyle(14px, 140%, 500);
+        }
+        &-3 {
+          color: $secondary500;
+          @include fontStyle(14px, 140%, 700);
+        }
+      }
+      b {
+        color: $Neutral400;
+        @include fontStyle(14px, 140%, 700);
+      }
+    }
+  }
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    font-size: 16px;
+    margin: 0 20px;
+    .price {
+      margin-left: 8px;
+      color: $secondary900;
+      @include fontStyle(20px, 120%, 700);
+      display: flex;
+      input[type="text"] {
+        display: none;
+      }
+      &.is-error {
+        #calc-box-amount {
+          color: $danger;
+        }
+      }
+      &.is-active {
+        color: $secondary100;
+        @include fontStyle(20px, 120%, 700);
+        input[type="text"] {
+          display: block;
+          border: none;
+          background: none;
+          padding: 0;
+          color: $secondary900;
+          @include fontStyle(20px, 120%, 700);
+          border-radius: 0;
+          &::placeholder {
+            color: $secondary100 !important;
+            @include fontStyle(20px, 120%, 700);
+          }
+        }
+        #calc-box-amount {
+          display: none;
+        }
+      }
+
+      + .rate {
+        margin-top: 5px;
+      }
+    }
+    .rate {
+      margin-left: 8px;
+      color: $Neutral400;
+      @include fontStyle(12px, 140%, 400);
+      + .price-btn {
+        margin-top: 12px;
+      }
+    }
+    .price-btn {
+      margin-left: 4px;
+      border-radius: 50px;
+      border: 1px solid $Neutral200;
+      background: $white;
+      padding: 5px 12px;
+      color: $Neutral300;
+      @include fontStyle(13px, 140%, 700);
+    }
+  }
+  .bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: $secondary50;
+    opacity: 0.5;
+    transition: width 0s ease;
+  }
+  .slider-container {
+    margin: 0 20px;
+    position: relative;
+    padding: 22px 0 26px 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 6px;
+      background: $secondary400;
+      border-radius: 6px;
+      outline: none;
+      position: absolute;
+      padding: 0;
+      border: none;
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 40px;
+        height: 20px;
+        border-radius: 12px;
+        background-color: $white;
+        border: 1px solid $Neutral50;
+        box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+      }
+      &::-moz-range-thumb,
+      &::-ms-thumb {
+        width: 40px;
+        height: 20px;
+        border-radius: 12px;
+        background-color: $white;
+        border: 1px solid $Neutral50;
+        box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// 담보대출 그래프 추가
+.graph-item {
+  position: relative;
+  .state-point {
+    position: absolute;
+    width: 100px;
+    top: -49px;
+    left: 98.7px;
+    transform: translateX(-50%);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    span {
+      display: inline-block;
+      font-size: 12px;
+      line-height: 140%;
+
+      &.point-title {
+        font-weight: 500;
+        color: $Neutral500;
+      }
+
+      &.percentage {
+        font-size: 10px;
+        font-weight: 400;
+
+        &.safe {
+          color: #3ca954;
+        }
+      }
+    }
+
+    &:after {
+      content: "";
+      width: 0.8px;
+      height: 12px;
+      border-left: 0.8px dashed $Neutral200;
+      margin-top: 4px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 51px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 18px;
+      border-left: 2px solid $white;
+      border-radius: 4px;
+    }
+  }
+
+  .graph {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    border: 2px solid $Neutral150;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #3ba853 19%, #f6d355 56.5%, #e25457 91%);
+    margin-bottom: 20px;
+  }
+
+  .state-text {
+    text-align: center;
+    color: $Neutral500;
+  }
+  .danger {
+    color: #dd2c2f;
+  }
+  .normal {
+    color: #fb964d;
+  }
+  .safe {
+    color: #27ae60;
+  }
+}
+
+//접수신청 심사 현황
+.process-box {
+  .process-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    border-radius: 8px;
+    padding: 10px 16px 10px 48px;
+    background-color: $Neutral0;
+    border: 1px solid $Neutral50;
+    box-shadow: 0px 2px 4px 0px #00000014;
+    margin-bottom: 36px;
+    box-sizing: border-box;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 16px;
+      display: inline-block;
+      @include backgroundImage(24px, 16px, "loan-yet.svg");
+      margin-right: 8px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+      @include backgroundImage(20px, 20px, "chevron-down-cacaca.svg");
+      display: inline-block;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+
+    //미확인
+    &.yet {
+      @include fontStyle(14px, 19.6px, 500);
+      color: $Neutral300;
+
+      .process-time {
+        display: none;
+        @include fontStyle(11px, 15.4px, 400);
+        color: $Neutral300;
+      }
+
+      &:before {
+        @include backgroundImage(24px, 16px, "loan-yet.svg");
+      }
+    }
+    //확인중
+    &.ing {
+      @include fontStyle(14px, 19.6px, 500);
+      color: $Neutral400;
+
+      .process-time {
+        display: none;
+        @include fontStyle(11px, 15.4px, 400);
+        color: $Neutral300;
+      }
+
+      &:before {
+        @include backgroundImage(24px, 16px, "loan-ing.svg");
+      }
+    }
+
+    //확인완료
+    &.done {
+      @include fontStyle(14px, 19.6px, 700);
+      color: $success;
+
+      .process-time {
+        display: block;
+        @include fontStyle(11px, 15.4px, 400);
+        color: $Neutral300;
+      }
+
+      &:before {
+        @include backgroundImage(24px, 16px, "loan-done.svg");
+      }
+
+      &.orange {
+        &:before {
+          @include backgroundImage(24px, 16px, "loan-done-orange.svg");
+        }
+      }
+    }
+    &.orange {
+      background-color: $secondary0;
+      box-shadow: none;
+      @include fontStyle(14px, 19.6px, 700);
+      color: $secondary800;
+    }
+  }
+}
+.state-card {
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  margin: 0 20px;
+  margin-top: 28px;
+  + .state-card {
+    margin-top: 12px;
+  }
+  .tag-wrap {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -8px;
+    margin-top: -8px;
+    .tag {
+      margin-right: 8px;
+      margin-top: 8px;
+      &.status {
+      }
+    }
+    .sub-tit {
+      color: $Neutral300;
+      @include fontStyle(11px, 140%, 500);
+    }
+  }
+  .summary {
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 8px;
+    color: $Neutral400;
+    @include fontStyle(12px, 140%, 500);
+    display: flex;
+    align-items: center;
+    span {
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+      padding-left: 18px;
+      margin-right: 11px;
+      @include fontStyle(12px, 140%, 500);
+      &::before {
+        position: absolute;
+        left: 0;
+        content: "";
+        background: url(/assets/image/ico-user-02.svg) no-repeat center /
+          contain;
+        width: 16px;
+        height: 17px;
+        display: inline-block;
+      }
+      &:after {
+        position: absolute;
+        right: -6px;
+        top: 50%;
+        transform: translateY(-50%);
+        content: "";
+        width: 1px;
+        height: 10px;
+        display: block;
+      }
+    }
+  }
+  .content-wrap {
+    margin-top: 13px;
+    margin-left: 4px;
+    margin-right: 4px;
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      .tit {
+        color: $Neutral300;
+        @include fontStyle(13px, 140%, 400);
+      }
+      .txt-box {
+        display: flex;
+        flex-direction: column;
+        .txt {
+          display: inline-block;
+          text-align: right;
+        }
+      }
+      .txt {
+        color: $Neutral500;
+        @include fontStyle(14px, 140%, 400);
+        &.f_bold {
+          color: $black;
+          @include fontStyle(16px, 140%, 700);
+        }
+        //250409 손석호 추가
+        &.ft-14 {
+          font-size: 14px;
+        }
+      }
+      + li {
+        margin-top: 10px;
+      }
+    }
+    + .btn-wrap {
+      margin-top: 18px;
+      display: flex;
+      gap: 8px;
+    }
+  }
+  .txt-wrap {
+    margin-top: 17px;
+    margin-left: 4px;
+    > .tit {
+      color: $Neutral500;
+      @include fontStyle(14px, 140%, 700);
+    }
+    .date {
+      color: $Neutral400;
+      @include fontStyle(12px, 140%, 400);
+    }
+    .warning {
+      margin-top: 8px;
+      color: $danger;
+      @include fontStyle(11px, 140%, 500);
+    }
+    .number {
+      color: $Neutral500;
+      @include fontStyle(13px, 140%, 700);
+    }
+    .price-wrap {
+      margin-top: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .tit {
+        color: $Neutral300;
+        @include fontStyle(12px, 140%, 500);
+      }
+      .price {
+        display: flex;
+        align-items: center;
+        color: $Neutral400;
+        @include fontStyle(12px, 140%, 400);
+        span {
+          color: $black;
+          @include fontStyle(18px, 140%, 700);
+        }
+      }
+    }
+  }
+  .btn-wrap {
+    margin-top: 12px;
+    width: 100%;
+
+    .btn {
+      width: 100%;
+      padding: 8px 0;
+      border-radius: 8px;
+      background: $white;
+      // 250410 손석호 font-weight 추가
+      font-weight: 500;
+      &-orange {
+        border: 1px solid $secondary500;
+        color: $secondary500;
+        @include fontStyle(13px, 140%, 500);
+      }
+      &-gray {
+        border: 1px solid $Neutral200;
+        color: $Neutral400;
+        @include fontStyle(13px, 140%, 500);
+      }
+    }
+  }
+  &.orange {
+    background: $secondary0;
+    border: 1px solid $secondary0;
+    .summary {
+      span {
+        &:after {
+          background: $secondary100;
+        }
+      }
+    }
+  }
+  &.gray {
+    background: $Neutral0;
+    border: 1px solid $Neutral0;
+    .summary {
+      span {
+        &:after {
+          background: $Neutral150;
+        }
+      }
+    }
+  }
+  &.blue {
+    background: #f6f7fe;
+    border: 1px solid #f6f7fe;
+    .summary {
+      span {
+        &:after {
+          background: $Neutral200;
+        }
+      }
+    }
+  }
+  &.danger {
+    background: $primary0;
+    .summary {
+      span {
+        &:after {
+          // 0410수정 -이윤미
+          background: $primary100;
+        }
+      }
+    }
+    .btn-danger {
+      border: 1px solid $primary400;
+      color: $primary500;
+      font-size: 13px;
+      // font-weight 수정 0410 이윤미
+      font-weight: 500;
+    }
+  }
+
+  .btn-blue {
+    border: 1px solid $info;
+    color: $info;
+    font-size: 13px;
+  }
+}
+
+//info notice 추가(회색아이콘)
+.notice {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 16px;
+  a {
+    display: inline-block;
+    border-bottom: 1px solid $Neutral400;
+    @include fontStyle(13px, 110%, 700);
+    color: $Neutral400;
+  }
+
+  &:before {
+    content: "";
+    display: inline-block;
+    // 250409 손석호 margin-top: -1.5px 추가
+    margin-top: -1.5px;
+    margin-right: 4px;
+    @include backgroundImage(16px, 16px, "info-circle-gray.svg");
+  }
+}
+
+.notice-box {
+  background-color: $secondary0;
+  border-radius: 8px;
+  padding: 12px;
+
+  .title {
+    margin-bottom: 8px;
+    color: $Neutral500;
+    line-height: 19.6px;
+  }
+
+  ul {
+    li {
+      @include fontStyle(13px, 18.2px, 400);
+      position: relative;
+      padding: 0 0 6px 19px;
+      color: $Neutral400;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        //250410 손석호 top 8px -> 7.5px;
+        top: 7.5px;
+        left: 8px;
+        width: 4px;
+        height: 4px;
+        background-color: $Neutral400;
+        border-radius: 50%;
+      }
+
+      &.emphasis {
+        color: $Neutral500;
+
+        span {
+          color: $secondary900;
+          line-height: 18.2px;
+
+          &.storage-name {
+            color: $Neutral500;
+          }
+
+          &.strorage-addr {
+            a {
+              position: relative;
+              display: inline-block;
+              height: 100%;
+              line-height: 1;
+              border-bottom: 1px solid $secondary900;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.detail-info-list {
+  .title {
+    p {
+      @include fontStyle(14px, 140%, 700);
+      color: $Neutral500;
+      padding-left: 4px;
+      margin-bottom: 12px;
+    }
+  }
+  &-ul {
+    li {
+      display: flex;
+      justify-content: space-between;
+      //250410 손석호 수정 padding:0 8px 7px 8px; -> padding:1px 8px 7px 8px;
+      padding: 1px 8px 7px 8px;
+      border-bottom: 1px solid $Neutral100;
+      & + li {
+        //250410 손석호 수정 padding:8px 8px 7px 8px; -> padding:8px 8px 6px 8px;
+        padding: 8px 8px 6px 8px;
+      }
+      .name {
+        @include fontStyle(13px, 140%, 400);
+        color: $Neutral300;
+      }
+      .desc {
+        @include fontStyle(14px, 140%, 400);
+        color: $Neutral400;
+        &.red {
+          @include fontStyle(14px, 140%, 700);
+          color: $danger;
+        }
+        span {
+          text-align: right;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          @include fontStyle(14px, 140%, 400);
+          color: $Neutral400;
+          a {
+            display: flex;
+            img {
+              margin-left: 4px;
+            }
+          }
+        }
+      }
+      &:has(.accordion-button) {
+        display: grid;
+        align-items: center;
+        .name {
+          grid-column: 1/2;
+        }
+        .accordion-button {
+          grid-column: 2/3;
+          padding: 0 15px 0 0;
+          border: none;
+          color: $Neutral400;
+          &::after {
+            // 0410 수정- 이윤미
+            margin-right: -3.5px;
+            width: 12px;
+            height: 12px;
+            background-size: 12px 12px;
+          }
+        }
+        .accordion-content {
+          grid-column: 1/3;
+          margin-top: 7px;
+          .desc {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 6px;
+            &:last-child {
+              padding-bottom: 0;
+            }
+            .txt {
+              &:nth-of-type(1) {
+                @include fontStyle(11px, 140%, 400);
+                color: $Neutral300;
+              }
+              &:nth-of-type(2) {
+                @include fontStyle(11px, 140%, 500);
+                color: $Neutral300;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.accordion {
+    .detail-info-list-ul {
+      position: relative;
+      max-height: 162px;
+      overflow: hidden;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 68px;
+        bottom: 0;
+        background: linear-gradient(
+          to top,
+          rgba(255, 255, 255, 1),
+          rgba(255, 255, 255, 0)
+        );
+      }
+    }
+    .expand {
+      a {
+        margin-top: 8px;
+        display: flex;
+        justify-content: center;
+        span {
+          display: flex;
+          align-items: center;
+          @include fontStyle(13px, 140%, 700);
+          color: $Neutral300;
+        }
+        &::after {
+          content: "";
+          margin-left: 4px;
+          background: url(/assets/image/chevron-gray-down-888.svg) no-repeat 90%
+            50%;
+          background-size: 12px 12px;
+          width: 12px;
+          height: 12px;
+          display: block;
+          margin-top: 2px;
+        }
+      }
+    }
+    &:has(.expand.is-on) {
+      .detail-info-list-ul {
+        position: relative;
+        height: max-content;
+        max-height: max-content;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 0;
+          bottom: 0;
+          background: none;
+        }
+      }
+      .expand {
+        a {
+          display: flex;
+          &::after {
+            content: "";
+            background: url(/assets/image/chevron-gray-up-888.svg) no-repeat 90%
+              50%;
+            background-size: 12px 12px;
+            width: 12px;
+            height: 12px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+.info-message {
+  padding: 12.5px 12px;
+  border-radius: 8px;
+  &.warning {
+    background: $primary0;
+    p {
+      display: flex;
+      align-items: center;
+      @include fontStyle(12px, 140%, 500);
+      color: $primary900;
+      justify-content: center;
+      img {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+.alert-box {
+  display: flex;
+  position: relative;
+  border-radius: 8px;
+  padding: 12px 18px 12px 12px !important;
+  margin: 0 20px 8px;
+  box-sizing: border-box;
+
+  .alert-cont {
+    strong {
+      display: inline-block;
+      @include fontStyle(14px, 140%, 700);
+      margin-bottom: 1px;
+    }
+
+    span {
+      display: block;
+      @include fontStyle(11px, 140%, 500);
+      color: $Neutral400;
+    }
+  }
+
+  &:before {
+    content: "";
+    display: inline-block;
+    margin-right: 12px;
+  }
+
+  &:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 12px;
+    margin-left: 4px;
+  }
+
+  &.soon {
+    background: #f6f7fe;
+
+    &:before {
+      @include backgroundImage(20px, 20px, "bell-ringing-blue.svg");
+    }
+
+    &:after {
+      @include backgroundImage(24px, 24px, "chevron-right-blue.svg");
+    }
+  }
+  &.expiration {
+    background: $secondary0;
+
+    strong {
+      color: $secondary900;
+    }
+
+    &:before {
+      @include backgroundImage(20px, 20px, "bell-ringing-orange.svg");
+    }
+
+    &:after {
+      @include backgroundImage(24px, 24px, "chevron-right-orange.svg");
+    }
+  }
+  &.delay {
+    background: $primary0;
+
+    strong {
+      color: $primary900;
+    }
+
+    &:before {
+      @include backgroundImage(20px, 20px, "alert-triangle.svg");
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
+  &.done {
+    background: $Neutral50;
+    &:before {
+      @include backgroundImage(20px, 20px, "file-check-03.svg");
+    }
+    &:after {
+      display: none;
+    }
+  }
+}
 
 // 메인배너 슬라이드
 .main__swiper {
@@ -460,146 +1647,6 @@
   }
 }
 
-
-// RRMH-2679 ltv 롤링배너 컴포넌트 추가
-.ltv__swiper {
-  width: 100%;
-  margin-bottom: 8px;
-  overflow: hidden;
- 
-  .swiper-slide {
-    position: relative;
-    width: 100%;
-    height: 52px;
-    box-sizing: border-box;
-    padding: 11px 16px;
-    border-radius: 8px;
-    background-color: $Neutral100;
-    &:after {
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      content: "";
-      display: inline-block;
-      @include backgroundImage(112px, 100%, "ltv_bg.png");
-      background-position: 0 0;
-    }
-    .title {
-      @include fontStyle(16px, 100%, 700);
-      color: $black;
-      margin-bottom: 2px;
-      strong {
-        color: $primary500;
-      }
-    }
-
-    .date {
-      @include fontStyle(10px, 100%, 500);
-      color: $Neutral300;
-    }
-  }
-}
-
-/* 20250514 미트박스지수 배너 추가 */
-.swiper.index__swiper {
-  margin: 12px 20px 0;
-  box-sizing: border-box;
-  overflow: hidden;
-
-  .index-box {
-    padding: 8px 16px 7px;
-    border-radius: 8px;
-    background: $Neutral50;
-    box-sizing: border-box;
-  
-    .index-sub {
-      @include fontStyle(11px, 140%, 500);
-      color: $Neutral400;
-    }
-  
-    .point-box {
-      display: flex;
-      justify-content: space-between;
-      line-height: 140%;
-  
-      .now {
-        @include fontStyle(16px, 140%, 700);
-        color: $black;
-      }
-  
-      .day-before {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        @include fontStyle(13px, 140%, 500);
-        color: $Neutral400;
-  
-        .day-before-sub {
-          color: $Neutral400;
-        }
-  
-        .point {
-          display: flex;
-          align-items: center;
-          color: $Neutral400;
-  
-          &:before {
-            content: '';
-            position: relative;
-            display: inline-block;
-            width: 9px;
-            height: 6px;
-            @include backgroundImage(9px, 6px, "polygon_gray.svg");
-            margin-right: 2px;
-          }
-  
-          .point-differ {
-            @include fontStyle(11px, 140%, 400);
-            color: $Neutral300;
-            margin-left: 2px;
-          }
-        }
-      }
-    }
-  
-    /* 지수 상승 */
-    &.up {
-      background: $primary0;
-  
-      .day-before .point {
-        color: $primary500;
-  
-        &:before {
-          @include backgroundImage(9px, 6px, "polygon_red.svg");
-        }
-        .point-differ {
-            color: $primary500;
-          }
-      }
-
-    
-    }
-  
-    /* 지수 하락 */
-    &.down {
-      background: $blue50;
-  
-      .day-before .point {
-        color: $info;
-  
-        &:before {
-          @include backgroundImage(9px, 6px, "polygon_blue.svg");
-        }
-
-        .point-differ {
-          color: $info;
-        }
-      }
-    }
-  }
-  
-}
-
 // 커뮤니티 글 목록
 .board-section {
   &.new {
@@ -759,3 +1806,142 @@
     }
   }
 }
+// RRMH-2679 ltv 롤링배너 컴포넌트 추가
+.ltv__swiper {
+  width: 100%;
+  margin-bottom: 8px;
+  overflow: hidden;
+ 
+  .swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 52px;
+    box-sizing: border-box;
+    padding: 11px 16px;
+    border-radius: 8px;
+    background-color: $Neutral100;
+    &:after {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      content: "";
+      display: inline-block;
+      @include backgroundImage(112px, 100%, "ltv_bg.png");
+      background-position: 0 0;
+    }
+    .title {
+      @include fontStyle(16px, 100%, 700);
+      color: $black;
+      margin-bottom: 2px;
+      strong {
+        color: $primary500;
+      }
+    }
+
+    .date {
+      @include fontStyle(10px, 100%, 500);
+      color: $Neutral300;
+    }
+  }
+}
+
+/* 20250514 미트박스지수 배너 추가 */
+.swiper.index__swiper {
+  margin: 12px 20px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .index-box {
+    padding: 8px 16px 7px;
+    border-radius: 8px;
+    background: $Neutral50;
+    box-sizing: border-box;
+  
+    .index-sub {
+      @include fontStyle(11px, 140%, 500);
+      color: $Neutral400;
+    }
+  
+    .point-box {
+      display: flex;
+      justify-content: space-between;
+      line-height: 140%;
+  
+      .now {
+        @include fontStyle(16px, 140%, 700);
+        color: $black;
+      }
+  
+      .day-before {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        @include fontStyle(13px, 140%, 500);
+        color: $Neutral400;
+  
+        .day-before-sub {
+          color: $Neutral400;
+        }
+  
+        .point {
+          display: flex;
+          align-items: center;
+          color: $Neutral400;
+  
+          &:before {
+            content: '';
+            position: relative;
+            display: inline-block;
+            width: 9px;
+            height: 6px;
+            @include backgroundImage(9px, 6px, "polygon_gray.svg");
+            margin-right: 2px;
+          }
+  
+          .point-differ {
+            @include fontStyle(11px, 140%, 400);
+            color: $Neutral300;
+            margin-left: 2px;
+          }
+        }
+      }
+    }
+  
+    /* 지수 상승 */
+    &.up {
+      background: $primary0;
+  
+      .day-before .point {
+        color: $primary500;
+  
+        &:before {
+          @include backgroundImage(9px, 6px, "polygon_red.svg");
+        }
+        .point-differ {
+            color: $primary500;
+          }
+      }
+
+    
+    }
+  
+    /* 지수 하락 */
+    &.down {
+      background: $blue50;
+  
+      .day-before .point {
+        color: $info;
+  
+        &:before {
+          @include backgroundImage(9px, 6px, "polygon_blue.svg");
+        }
+
+        .point-differ {
+          color: $info;
+        }
+      }
+    }
+  }
+  
+}
+
