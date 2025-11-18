@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- SEO : S -->
+    <meta name="description" content="" />
+    <meta name="keywords" content="미트매치" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- SEO : E -->
+    <!-- SNS 공유 : S -->
+    <meta property="og:url" data-role="url" content="미트매치" />
+    <meta property="og:title" data-role="title" content="미트매치" />
+    <meta property="og:image" data-role="image" content="/assets/image/sns.png" />
+    <meta property="og:description" data-role="description" content="미트매치" />
+    <!-- SNS 공유 : E -->
+    <title>미트매치</title>
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico">
+    <link rel="icon" href="../assets/favicon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../assets/css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/PS29-3_re.css">
+</head>
+<!-- PS7-4~PS7-7 -->
+
+<body class="main-type">
+    <div class="wrapper" id="wrapper">
+        <!-- scss 작업 : 미트뱅크 컴포넌트 추가 -->
+        <header class="header">
+            <div class="header-inner new sub">
+                <div class="product__top">
+
+                    <h2 class="bold-18">상세보기</h2>
+                    <div class="action-box">
+                        <a href="#none" class="btn btn-close js-modal-close"><img src="../assets/image/ico-x.svg"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //scss 작업 : 미트뱅크 컴포넌트 추가 -->
+        <section class="content new" id="content">
+            <div class="main scroll-zone">
+                <div class="profile">
+                    <div class="photo"><img src="" alt=""></div>
+                    <div class="profile-info">
+                        <span class="state-tag">판매중</span>
+                        <p class="prod-name">갈비살(미국 템코타 초이스)</p>
+                        <span class="user-id">사용자닉네임</span>
+                        <span class="user-phone">010-1234-5678</span>
+                    </div>
+                </div>
+                <div class="process-tag">
+                    <a href="">
+                        <span class="process-name">배송</span>
+                        <span class="prod ">갈비살</span>
+                        <span class="prod price"><em>3,000,000</em>원</span>
+                    </a>
+                </div>
+                <div class="detail__process">
+                    <ul class="process-state p15">
+                        <li class="pay-complt done">
+                            <span class="icon"></span>
+                            </span>
+                            <div class="process-info">
+                                <p class="process-name">
+                                    <span class="proecss1">결제 완료</span>
+                                </p>
+                                <p class="date-time">2024-07-25 16:00:00</p>
+                            </div>
+                            <!-- red 클래스 추가 시 빨간색 버튼 -->
+                            <a href="" class="btn-check red">확인</a>
+                        </li>
+                        <li class="prod-ready done">
+                            <span class="icon"></span>
+                            <div class="process-info">
+                                <p class="process-name">
+                                    <span class="proecss1">물품 준비 중</span>
+                                </p>
+                                <p class="date-time">2024-07-25 16:00:00</p>
+                            </div>
+                            <!-- red 클래스 추가 시 빨간색 버튼 -->
+                            <a href="" class="btn-check red">다음</a>
+                        </li>
+                        <li class="release done">
+                            <span class="icon"></span>
+                            <div class="process-info">
+                                <p class="process-name">
+                                    <span class="proecss1">출고완료</span>
+                                </p>
+                                <p class="date-time">2024-07-05 16:00:00</p>
+                            </div>
+                            <!-- red 클래스 추가 시 빨간색 버튼 -->
+                            <a href="" class="btn-check red">추가 납부 요청</a>
+                        </li>
+                        <li class="add-request done">
+                            <span class="icon"></span>
+                            <div class="process-info">
+                                <p class="process-name">
+                                    <span class="proecss1">추가 납부 요청</span>
+                                </p>
+                                <p class="date-time">2024-07-05 16:00:00</p>
+                            </div>
+                            <!-- red 클래스 추가 시 빨간색 버튼 -->
+                            <a href="" class="btn-check red">승인/거절</a>
+                        </li>
+                        <li class="add-fail done">
+                            <span class="icon"></span>
+                            <div class="process-info">
+                                <p class="process-name">
+                                    <span class="proecss1">추가 납부 거절</span>
+                                </p>
+                                <p class="date-time">2024-07-05 16:00:00</p>
+                            </div>
+                            <!-- red 클래스 추가 시 빨간색 버튼 -->
+                            <a href="" class="btn-check">사유 확인</a>
+
+                        </li>
+                        <li class="add-request done">
+                            <span class="icon"></span>
+                            <div class="process-info">
+                                <p class="process-name">
+                                    <span class="proecss1">추가 납부 승인</span> - <span class="process2">결제 대기</span>
+                                </p>
+                                <p class="date-time">2024-07-05 16:00:00</p>
+                            </div>
+                            <!-- <a href="" class="btn-check"></a> -->
+                        </li>
+                        <li class="add-complt done">
+                            <span class="icon"></span>
+                            <div class="process-info">
+                                <p class="process-name">
+                                    <span class="proecss1">추가 납부 완료</span> - <span class="process2">결제 완료</span>
+                                </p>
+                                <p class="date-time">2024-07-05 16:00:00</p>
+                            </div>
+                            <!-- red 클래스 추가 시 빨간색 버튼 -->
+                            <a href="" class="btn-check">상세 보기</a>
+                        </li>
+                        <li class="refund-request done">
+                            <span class="icon"></span>
+                            <div class="process-info">
+                                <p class="process-name">
+                                    <span class="proecss1">환불 요청</span> - <span class="process2">결제 완료</span>
+                                </p>
+                                <p class="date-time">2024-07-05 16:00:00</p>
+                            </div>
+                            <!-- red 클래스 추가 시 빨간색 버튼 -->
+                            <a href="" class="btn-check">요청 확인</a>
+                            <!-- <a href="" class="btn-check">내용 확인</a> -->
+                        </li>
+                        <li class="release ing">
+                            <span class="icon">
+                            </span>
+                            <div class="process-info">
+                                <p class="process-name">
+                                    <span class="proecss1">구매확정</span>
+                                </p>
+                                <!-- <p class="date-time">2024-07-05 16:00:00</p> -->
+                            </div>
+                            <!-- red 클래스 추가 시 빨간색 버튼 -->
+                            <!-- <a href="" class="btn-check red">구매 확정</a> -->
+                            <a href="" class="btn-check">상세 보기</a>
+                        </li>
+
+                    </ul>
+                    <div class="expand up">
+                        <a href=""><span>접기</span></a>
+                    </div>
+                </div>
+                <div class="detail-input-area">
+                    <div class="input-wrap">
+                        <div class="item__title">
+                            <span>거래 서류</span>
+                            <!-- <em class="essential">* 필수 입력</em> -->
+
+                        </div>
+                        <!-- error클래스 추가시 border 컬러 변경 -->
+                        <div class="item__input">
+                            <a href="">거래 서류 등록</a>
+                        </div>
+                        <!-- <p class="input-desc">에러메세지</p> -->
+                        <div class="item__input file">
+                            <div class="file-box">
+                                <a href="" class="btn-download"><span class="icon"><img
+                                            src="../assets/image/download-01.svg" alt=""></span></a>
+                                <div class="file-info">
+                                    <p class="file-name">미국 템코타_수입필증.xlsx</p>
+                                    <p class="file-date">등록일시 : <span>2024-03-05</span></p>
+                                    <p class="capa">용량 : <span>689.1KB</span></p>
+                                </div>
+                                <a href="" class="btn-delete">삭제</a>
+                            </div>
+                        </div>
+                        <div class="item__input file">
+                            <div class="file-box">
+                                <a href="" class="btn-download"><span class="icon"><img
+                                            src="../assets/image/download-01.svg" alt=""></span></a>
+                                <div class="file-info">
+                                    <p class="file-name">미국 템코타_수입필증.xlsx</p>
+                                    <p class="file-date">등록일시 : <span>2024-03-05</span></p>
+                                    <p class="capa">용량 : <span>689.1KB</span></p>
+                                </div>
+                                <a href="" class="btn-delete">삭제</a>
+                            </div>
+                        </div>
+                        <div class="item__input file">
+                            <div class="file-box">
+                                <a href="" class="btn-download"><span class="icon"><img
+                                            src="../assets/image/download-01.svg" alt=""></span></a>
+                                <div class="file-info">
+                                    <p class="file-name">미국 템코타_수입필증.xlsx</p>
+                                    <p class="file-date">등록일시 : <span>2024-03-05</span></p>
+                                    <p class="capa">용량 : <span>689.1KB</span></p>
+                                </div>
+                                <a href="" class="btn-delete">삭제</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-wrap">
+                        <div class="item__title">
+                            <span>거래 메모</span>
+                            <!-- <em class="essential">* 필수 입력</em> -->
+                        </div>
+                        <!-- error클래스 추가시 border 컬러 변경 -->
+                        <div class="item__input ta">
+                            <textarea name="" id="" placeholder="내용을 입력해주세요."></textarea>
+                        </div>
+                        <div class="count-box">
+                            <!-- textarea에 focus 잡히면 클래스 blue 추가 -->
+                            <span class="count">0</span>/1000
+                        </div>
+                        <!-- <p class="input-desc">에러메세지</p> -->
+                    </div>
+                    <div class="input-wrap last">
+                        <div class="item__title">
+                            <span>환불 관련 서류</span>
+                        </div>
+                        <div class="item__input file">
+                            <div class="file-box">
+                                <a href="" class="btn-download"><span class="icon"><img
+                                            src="../assets/image/download-01.svg" alt=""></span></a>
+                                <div class="file-info">
+                                    <p class="file-name">스크린샷 2024-07-04 오전 11.20.14</p>
+                                    <p class="file-date">등록일시 : <span>2024-03-05</span></p>
+                                    <p class="capa">용량 : <span>689.1KB</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 240806 버튼 추가 -->
+             <div class="fixed-button underline">
+              <a href="#none">환불 요청</a>
+                <!-- PS22-1 거래 취소 시 버튼 -->
+                <!-- <a href="#none">거래 취소</a> -->
+                <!-- PS23-2 판매 취소 시 버튼 -->
+                <!-- <a href="#none">판매 취소</a> -->
+                </div>
+            </div>
+            <!-- <div class="fixed-button">
+                <a class="btn btn-cancel js-modal-close">취소</a>
+                <a class="btn btn-default fat">다음</a>
+            </div> -->
+        </section>
+
+
+
+    </div>
+        <!-- 녹색 아이콘 토스트 메세지 팝업 -->
+        <div class="toast-msg">
+            <img src="/assets/image/check-circle-broken.svg">
+            <span>구매자가 결제를 완료 했어요.<br>확인 버튼을 눌러서 물품 준비 중 상태로 <br>변경해 주세요.</span>
+        </div>
+        <!-- 노란색 아이콘 토스트 메세지 팝업 -->
+        <!-- <div class="toast-msg">
+        <img src="/assets/image/alert-hexagon.svg">
+        <span>구매자가 환불을 요청했어요.</span>
+      </div> -->
+
+
+    <!-- scss 작업 : 미트뱅크 컴포넌트 추가 -->
+    <!--PS27-16 추가 납부를 재요청 팝업메세지 (PS27-11과 동일한 컴포넌트)-->
+    <!-- error 클래스 추가 시 인풋박스 border-color 빨간색 -->
+    <div class="pop__detail message new">
+        <div class="popup__cnt">
+            <div class="popup__title">
+                <strong>추가 납부를 재요청 하시겠어요?</strong>
+            </div>
+            <div class="popup__cont">
+                <span>추가 납부 재요청은 1회만 가능하며,<br>
+                    요청이 완료되면 금액 수정이 어려워요.<br>
+                    기존 거래 금액과는 별개로 정산될 수 있어요..</span>
+                <textarea name="" id="" placeholder="추가 납부 요청 금액을 입력해 주세요."></textarea>
+            </div>
+            <div class="popup__btn group">
+                <a href="#none" class="btn btn-cancel js-modal-close">취소</a>
+                <a class="btn btn-default js-modal-close">다음</a>
+            </div>
+        </div>
+    </div>
+    <!--/PS27-16 추가 납부를 재요청 팝업메세지 (PS27-11과 동일한 컴포넌트)-->
+    <!-- //추가 납부를 재요청 팝업메세지 -->
+    <!-- 추가납부 요청 팝업 -->
+    <div class="pop__detail message new">
+        <div class="popup__cnt">
+            <div class="popup__title">
+                <strong class="ft20">추가 납부를 요청 하시겠어요?</strong>
+            </div>
+            <div class="popup__cont">
+                요청이 완료되면 금액 수정이 어려워요.
+            </div>
+            <div class="popup__cont">
+                <textarea name="" id="" placeholder="580,000"></textarea>
+            </div>
+            <div class="popup__btn">
+                <a class="btn btn-cancel js-modal-close">취소</a>
+                <a class="btn btn-default js-modal-close">확인</a>
+            </div>
+        </div>
+    </div>
+    <!-- //추가납부 요청 팝업 -->
+
+    <!-- 판매취소 확인 팝업메세지 -->
+    <div class="pop__detail message new">
+        <div class="popup__cnt">
+            <div class="popup__title">
+                <strong>판매를 취소할까요?</strong>
+            </div>
+            <div class="popup__cont">
+                <span>구매자에게 환불 처리는<br>
+                    영업일 기준 최대 2일까지 소요될 수 있어요.</span>
+            </div>
+            <div class="popup__btn group">
+                <a class="btn btn-cancel js-modal-close">아니요</a>
+                <a class="btn btn-default js-modal-close">판매 취소</a>
+            </div>
+        </div>
+    </div>
+    <!-- //판매취소 확인 팝업메세지 -->
+
+    <!-- 판매취소 사유 입력 팝업메세지 -->
+    <!-- 취소사유 미 작성시 error클래스 추가 -->
+    <div class="pop__detail message new">
+        <div class="popup__cnt">
+            <div class="popup__title">
+                <strong>판매 취소 사유를 입력해 주세요.</strong>
+            </div>
+            <div class="popup__cont">
+                <textarea name="" id="" placeholder="내용을 입력해주세요."></textarea>
+            </div>
+            <div class="popup__btn">
+                <a class="btn btn-cancel js-modal-close">취소</a>
+                <a class="btn btn-default js-modal-close">확인</a>
+            </div>
+        </div>
+    </div>
+    <!-- //판매취소 사유 입력 팝업메세지 -->
+
+    <!-- 거절사유 입력 팝업메세지 -->
+    <div class="pop__detail message new ">
+        <div class="popup__cnt">
+            <div class="popup__title">
+                <strong>거절 사유를 확인해 주세요.</strong>
+            </div>
+            <div class="popup__cont">
+                <textarea name="" id="">이미 전화로 협의한 내용이에요.
+    거절합니다.
+            </textarea>
+            </div>
+            <div class="popup__btn">
+                <!-- <a class="btn btn-cancel js-modal-close">취소</a> -->
+                <a class="btn btn-default js-modal-close">확인</a>
+            </div>
+        </div>
+    </div>
+    <!-- //거절사유 입력 팝업메세지 -->
+
+
+    <!-- 물품준비중 변경 확인 팝업메세지 -->
+    <div class="pop__detail message new">
+        <div class="popup__cnt">
+            <div class="popup__title">
+                <strong>물품 준비 중으로 변경할까요?</strong>
+            </div>
+            <div class="popup__cont">
+                <span>물품 준비 중 상태에서<br>
+                    구매자는 취소 처리를 할 수 없어요.</span>
+            </div>
+            <div class="popup__btn group">
+                <a class="btn btn-cancel js-modal-close">아니요</a>
+                <a class="btn btn-default js-modal-close">변경</a>
+            </div>
+        </div>
+    </div>
+    <!-- //물품준비중 변경 팝업메세지 -->
+
+    <!-- 거래 취소 확인 메세지-->
+    <!-- 거래 취소 확인 메세지-->
+    <div class="pop__detail message new">
+        <div class="popup__cnt">
+            <div class="popup__title">
+                <strong>거래를 취소할까요?</strong>
+            </div>
+            <div class="popup__cont">
+                <span>환불은 영업일 기준 최대 5일까지 소요되며,<br>
+                    환불이 완료될 때까지 상대방과<br>
+                    다시 거래를 할 수 없어요.</span>
+                <br>
+                <span class="bold">환불계좌 : 신한은행 129485728939<br>
+                    예금주 : 백경민</span>
+            </div>
+
+            <div class="popup__btn group">
+                <a class="btn btn-cancel js-modal-close">아니요</a>
+                <a class="btn btn-default js-modal-close">거래 취소</a>
+            </div>
+        </div>
+    </div>
+    <!-- //거래 취소 확인 메세지 -->
+    <!-- //거래 취소 확인 메세지 -->
+
+    <!-- 거래 후기 작성 팝업 -->
+    <div class="pop__detail message new" id="pop_review">
+        <div class="popup__head">
+            <h3>거래 후기 작성</h3>
+            <a href="#none" class="btn btn-close js-modal-close"><img src="../assets/image/ico-x.svg" alt=""></a>
+        </div>
+        <div class="popup__cnt">
+            <div class="popup__action">
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                    type="module"></script>
+                <dotlottie-player src="https://lottie.host/ab6b58b5-0783-4271-9c45-87f3ef00d51f/M4MU0ebVPQ.json"
+                    background="transparent" speed="1" style="width: 90vw; max-width: 252px; margin: 0 auto;" loop
+                    autoplay></dotlottie-player>
+            </div>
+            <div class="popup__review">
+                <strong>‘가을은어텀’님과의<br>
+                    거래는 어떠셨나요?</strong>
+                <div class="rating">
+                    <a href="#none" class="is-on "><!--is-on / is-msg-->
+                        <div class="star"><img src="../assets/image/ico-star-line.svg" alt=""></div>
+                        <div class="msg"><span>실망스러워요</span></div>
+                    </a>
+                    <a href="#none" class="is-on "><!--is-on / is-msg-->
+                        <div class="star"><img src="../assets/image/ico-star-line.svg" alt=""></div>
+                        <div class="msg"><span>아쉬워요</span></div>
+                    </a>
+                    <a href="#none" class="is-on is-msg"><!--is-on / is-msg-->
+                        <div class="star"><img src="../assets/image/ico-star-line.svg" alt=""></div>
+                        <div class="msg"><span>보통이에요</span></div>
+                    </a>
+                    <a href="#none" class=" "><!--is-on / is-msg-->
+                        <div class="star"><img src="../assets/image/ico-star-line.svg" alt=""></div>
+                        <div class="msg"><span>만족해요</span></div>
+                    </a>
+                    <a href="#none" class=" "><!--is-on / is-msg-->
+                        <div class="star"><img src="../assets/image/ico-star-line.svg" alt=""></div>
+                        <div class="msg"><span>훌륭해요</span></div>
+                    </a>
+                </div>
+            </div>
+            <div class="popup__write" contenteditable="true">
+                <strong>솔직한 거래 후기를 들려주세요!</strong><br>
+                <span>* 작성해주신 리뷰 내용은 상대방에게 노출되지 않습니다.</span>
+            </div>
+            <div class="popup__btn">
+                <button class="btn btn-conform js-modal-close" disabled>작성 완료</button>
+            </div>
+        </div>
+    </div>
+    <!-- //거래 후기 작성 팝업 -->
+
+    <script src="../assets/js/lib/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="../assets/js/lib/jquery-ui.js" type="text/javascript"></script>
+    <script src="../assets/js/lib/swiper.min.js" type="text/javascript"></script>
+
+    <script src="../assets/js/ui.common.js" type="text/javascript"></script>
+
+
+
+</body>
+
+</html>

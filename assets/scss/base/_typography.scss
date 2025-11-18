@@ -1,0 +1,104 @@
+@use "../utils/mixins" as *;
+@use "../variables/colors" as *;
+
+//weight-fontsize
+
+//weight700 : bold
+
+.bold-48 {
+  @include fontStyle(48px, 67.2px, 700);
+  color: $black;
+}
+
+.bold-40 {
+  @include fontStyle(40px, 56px, 700);
+  color: $black;
+}
+
+.bold-32 {
+  @include fontStyle(32px, 44.8px, 700);
+  color: $black;
+}
+
+.bold-24 {
+  @include fontStyle(24px, 33.6px, 700);
+  color: $black;
+}
+
+.bold-20 {
+  @include fontStyle(20px, 28px, 700);
+  color: $black;
+}
+
+.bold-18 {
+  @include fontStyle(18px, 25.2px, 700);
+  color: $black;
+}
+
+.bold-16 {
+  @include fontStyle(16px, 22.4px, 700);
+  color: $black;
+}
+
+.bold-14 {
+  @include fontStyle(14px, 19.6px, 700);
+  color: $black;
+}
+
+.bold-13 {
+  @include fontStyle(13px, 18.2px, 700);
+  color: $black;
+}
+
+//weight500 : medium
+
+.medium-18 {
+  @include fontStyle(18px, 25.2px, 500);
+  color: $black;
+}
+
+.medium-16 {
+  @include fontStyle(16px, 22.4px, 500);
+  color: $black;
+}
+
+.medium-14 {
+  @include fontStyle(14px, 19.6px, 500);
+  color: $black;
+}
+
+.medium-13 {
+  @include fontStyle(13px, 18.2px, 500);
+  color: $black;
+}
+
+//weight400 : regular
+
+.regular-18 {
+  @include fontStyle(18px, 25.2px, 400);
+  color: $black;
+}
+
+.regular-16 {
+  @include fontStyle(16px, 22.4px, 400);
+  color: $black;
+}
+
+.regular-14 {
+  @include fontStyle(14px, 19.6px, 400);
+  color: $black;
+}
+
+.regular-13 {
+  @include fontStyle(13px, 18.2px, 400);
+  color: $black;
+}
+
+.title {
+  line-height: 25.2px;
+  color: #575757;
+}
+
+.title strong {
+  color: #420d0e;
+}

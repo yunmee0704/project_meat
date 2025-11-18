@@ -1,0 +1,88 @@
+@use "../utils/mixins" as *;
+@use "../variables/colors" as *;
+
+:root {
+  --graph-pos: 0; /* 기본값 설정 */
+}
+
+// @font-face를 전역 스코프로 이동
+@include fontFace("Pretendard", 700, "normal", "Pretendard-Bold");
+@include fontFace("Pretendard", 600, "normal", "Pretendard-SemiBold");
+@include fontFace("Pretendard", 500, "normal", "Pretendard-Medium");
+@include fontFace("Pretendard", 400, "normal", "Pretendard-Regular");
+
+html {
+      /* RRMH-3004 기본스크롤 넓이 고정 설정 */
+    scrollbar-gutter: stable;
+}
+body {
+  max-width: 500px;
+  position: relative;
+  margin: 0 auto;
+  overflow-x: hidden;
+//   overflow-y: hidden; 20250903 삭제
+  
+  /* RRMH-2004 body scroll bar 숨김 0702 */
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+
+  /* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
+  &:-webkit-scrollbar {
+    display: none;
+  }
+   /* RRMH-2004 body scroll bar 숨김 0702 */
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background-color: $white;
+  border-color: $info;
+}
+
+/* RRMH-2886 전화영역 포함 */
+// input 타입 number일때
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox  */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+/* RRMH-2886 전화영역 포함 */
+
+
+// style.css 충돌 작업
+.main {
+  &.scroll-zone {
+    .tag__item {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 20px;
+
+      .item__title {
+        margin-bottom: 0;
+        font-size: 14px;
+      }
+      /* 250417 손석호 추가 */
+      &.agree {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+input[type="text"]:focus {
+  border-color: $info;
+}
+
+button {
+    width: 100%;
+}

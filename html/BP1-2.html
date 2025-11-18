@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- SEO : S -->
+    <meta name="description" content="" />
+    <meta name="keywords" content="미트매치" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- SEO : E -->
+    <!-- SNS 공유 : S -->
+    <meta property="og:url" data-role="url" content="미트매치" />
+    <meta property="og:title" data-role="title" content="미트매치" />
+    <meta property="og:image" data-role="image" content="/assets/image/sns.png" />
+    <meta property="og:description" data-role="description" content="미트매치" />
+    <!-- SNS 공유 : E -->
+    <title>미트매치</title>
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico">
+    <link rel="icon" href="../assets/favicon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="../assets/css/swiper.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../assets/css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/BP1.css">
+</head>
+
+<body class="main-type">
+    <div class="wrapper" id="wrapper">
+        <!-- scss 작업 : 미트뱅크 컴포넌트 추가 -->
+        <header class="header">
+            <div class="header-inner new main__header">
+                <div class="product__top">
+                    <div class="head-logo">
+                        <a href="#none"><img src="/assets/image/logo/meatmatch01.svg" alt=""></a>
+                    </div>
+                    <div class="action-box">
+                        <a href="#none"><img src="/assets/image/ico-search.svg" alt=""></a>
+                        <a href="#none"><img src="/assets/image/ico-my-alert.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- scss 작업 : 미트뱅크 컴포넌트 추가 -->
+        <!-- scss 작업: 기존 하위클래스 삭제, new 클래스 추가 -->
+        <section class="content new" id="content">
+            <!-- scss 작업: 기존 하위클래스 삭제, scroll-zone wide 클래스 추가 -->
+            <div class="main scroll-zone wide">
+                 <!-- scss 작업 : 미트뱅크 컴포넌트 추가 (new 클래스만 추가)-->
+                <div class="tab__menu new">
+                    <a href="#" class="is-active">사고팔기</a>
+                    <a href="#">품목표</a>
+                    <a href="#">미트옥션</a>
+                </div>
+                 <!-- scss 작업 : 미트뱅크 컴포넌트 추가 (new 클래스만 추가)-->
+                <div class="top-area">
+                    <div class="swiper alert__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <p><strong class="company-name">(주)길이가긴회사명을가진회사사사</strong>의 입찰 공고가 시작되었어요!</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <p><strong class="company-name">일이삼사오육칠팔구십십일</strong>의 입찰 공고가 시작되었어요!</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <p><strong class="company-name">(주)미트매치글로벌</strong>의 입찰 공고가 시작되었어요!</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <p><strong class="company-name">(주)미트매치글로벌</strong>의 입찰 공고가 시작되었어요!</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <p><strong class="company-name">(주)미트매치글로벌</strong>의 입찰 공고가 시작되었어요!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper menu__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide on">
+                                <a href="#none">
+                                    <div class="img-box"></div>
+                                    <p class="list-name">All</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#none">
+                                    <div class="img-box"></div>
+                                    <p class="list-name">소</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#none">
+                                    <div class="img-box"></div>
+                                    <p class="list-name">돼지</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#none">
+                                    <div class="img-box"></div>
+                                    <p class="list-name">닭</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#none">
+                                    <div class="img-box"></div>
+                                    <p class="list-name">양</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#none">
+                                    <div class="img-box"></div>
+                                    <p class="list-name">기타</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="product__bar">
+                    <div>
+                        <div class="checkbox horizontal">
+                            <input type="checkbox" id="sorting-check"><label for="sorting-check">마감된 공고 보기</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="sorting-action">
+                            <div class="select-btn">
+                                <a href="#none" class="default-btn">임박순</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 필터 결과 내용 있을 때 -->
+                <ul class="result-list" style="display: block;">
+                    <li>
+                        <div class="tag-box">
+                            <p class="left">
+                                <!-- 입찰마감시 class end 추가 -->
+                                <span class="tag state">입찰 진행 중</span>
+                                <span class="tag parti">
+                                    <img src="/assets/image/user.png" alt="">
+                                    <span class="count">1,294</span>명
+                                </span>
+                            </p>
+                            <!-- 마감임박 : soon class추가 / 시간종료 : end 클래스 추가 -->
+                            <span class="tag time">
+                                <span>96:59:59</span>
+                            </span>
+                        </div>
+                        <div class="item-profile">
+                            <div class="img-box">
+                                <img src="/assets/image/bidding_default.png" alt="">
+                            </div>
+                            <div class="cont-box">
+                                <div class="item-title">
+                                    <span class="tag meat">돼지</span>
+                                    <strong>등갈비/백립</strong>
+                                </div>
+                                <div class="item-info">
+                                    <p class="brand"><span>브랜드</span><span>스위프트(쉐프’S/블랙앵거스)</span></p>
+                                    <p class="grade"><span>등급</span><span>초이스(앵거스)</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper district__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <p class="dist-name">
+                                        <span class="dist-1">서울</span>
+                                        <span class="dist-2">강동구</span>
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <p class="dist-name">
+                                        <span class="dist-1">서울</span>
+                                        <span class="dist-2">강동구</span>
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <p class="dist-name">
+                                        <span class="dist-1">경기</span>
+                                        <span class="dist-2">고양시 일산서구</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tag-box">
+                            <p class="left">
+                                <!-- 입찰마감시 class end 추가 -->
+                                <span class="tag state">입찰 진행 중</span>
+                                <span class="tag parti">
+                                    <img src="/assets/image/user.png" alt="">
+                                    <span class="count">1,294</span>명
+                                </span>
+                            </p>
+                            <!-- 마감임박 : soon class추가 / 시간종료 : end 클래스 추가 -->
+                            <span class="tag time soon">
+                                <span>00:59:59</span>
+                            </span>
+                        </div>
+                        <div class="item-profile">
+                            <div class="img-box">
+                                <img src="https://picsum.photos/100/100" alt="">
+                            </div>
+                            <div class="cont-box">
+                                <div class="item-title">
+                                    <span class="tag meat">소</span>
+                                    <strong>등갈비/백립</strong>
+                                </div>
+                                <div class="item-info">
+                                    <p class="brand"><span>브랜드</span><span>스위프트(쉐프’S/블랙앵거스)</span></p>
+                                    <p class="grade"><span>등급</span><span>초이스(앵거스)</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper district__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <p class="dist-name">
+                                        <span class="dist-1">서울</span>
+                                        <span class="dist-2">강동구</span>
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <p class="dist-name">
+                                        <span class="dist-1">서울</span>
+                                        <span class="dist-2"></span>
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <p class="dist-name">
+                                        <span class="dist-1">경기</span>
+                                        <span class="dist-2">고양시 일산서구</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tag-box">
+                            <p class="left">
+                                <!-- 입찰마감시 class end 추가 -->
+                                <span class="tag state end">입찰 마감</span>
+                                <span class="tag parti">
+                                    <img src="/assets/image/user.png" alt="">
+                                    <span class="count">1,294</span>명
+                                </span>
+                            </p>
+                            <!-- 마감임박 : soon class추가 / 시간종료 : end 클래스 추가 -->
+                            <span class="tag time end">
+                                <span>시간 종료</span>
+                            </span>
+                        </div>
+                        <div class="item-profile">
+                            <div class="img-box">
+                                <img src="/assets/image/bidding_default.png" alt="">
+                            </div>
+                            <div class="cont-box">
+                                <div class="item-title">
+                                    <span class="tag meat">양</span>
+                                    <strong>등갈비/백립</strong>
+                                </div>
+                                <div class="item-info">
+                                    <p class="brand"><span>브랜드</span><span>스위프트(쉐프’S/블랙앵거스)</span></p>
+                                    <p class="grade"><span>등급</span><span>초이스(앵거스)</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper district__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <p class="dist-name">
+                                        <span class="dist-1">서울</span>
+                                        <span class="dist-2">강동구</span>
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <p class="dist-name">
+                                        <span class="dist-1">서울</span>
+                                        <span class="dist-2">강동구</span>
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <p class="dist-name">
+                                        <span class="dist-1">경기</span>
+                                        <span class="dist-2">고양시 일산서구</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 업체 선정 완료 케이스 추가 -->
+                    <li>
+                        <div class="tag-box">
+                            <p class="left">
+                                <!-- 입찰마감시 class end 추가 -->
+                                <span class="tag state end">입찰 마감</span>
+                                <span class="tag parti">
+                                    <img src="/assets/image/user.png" alt="">
+                                    <span class="count">1,294</span>명
+                                </span>
+                            </p>
+                            <!-- 마감임박 : soon class추가 / 시간종료 : end 클래스 추가 / 업체선정완료: complete-->
+                            <span class="tag time complete">
+                                <span>업체 선정 완료</span>
+                            </span>
+                        </div>
+                        <div class="item-profile">
+                            <div class="img-box">
+                                <img src="/assets/image/bidding_default.png" alt="">
+                            </div>
+                            <div class="cont-box">
+                                <div class="item-title">
+                                    <span class="tag meat">닭</span>
+                                    <strong>등갈비/백립</strong>
+                                </div>
+                                <div class="item-info">
+                                    <p class="brand"><span>브랜드</span><span>스위프트(쉐프’S/블랙앵거스)</span></p>
+                                    <p class="grade"><span>등급</span><span>초이스(앵거스)</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper district__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <p class="dist-name">
+                                        <span class="dist-1">서울</span>
+                                        <span class="dist-2">강동구</span>
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <p class="dist-name">
+                                        <span class="dist-1">서울</span>
+                                        <span class="dist-2">강동구</span>
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <p class="dist-name">
+                                        <span class="dist-1">경기</span>
+                                        <span class="dist-2">고양시 일산서구</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- //업체 선정 완료 케이스 추가 -->
+                    <li>
+                        <div class="tag-box">
+                            <p class="left">
+                                <!-- 입찰마감시 class end 추가 -->
+                                <span class="tag state">입찰 진행 중</span>
+                                <span class="tag parti">
+                                    <img src="/assets/image/user.png" alt="">
+                                    <span class="count">1,294</span>명
+                                </span>
+                            </p>
+                            <!-- 마감임박 : soon class추가 / 시간종료 : end 클래스 추가 -->
+                            <span class="tag time soon">
+                                <span>00:59:59</span>
+                            </span>
+                        </div>
+                        <div class="item-profile">
+                            <div class="img-box">
+                                <img src="/assets/image/bidding_default.png" alt="">
+                            </div>
+                            <div class="cont-box">
+                                <div class="item-title">
+                                    <span class="tag meat">기타</span>
+                                    <strong>등갈비/백립</strong>
+                                </div>
+                                <div class="item-info">
+                                    <p class="brand"><span>브랜드</span><span>스위프트(쉐프’S/블랙앵거스)</span></p>
+                                    <p class="grade"><span>등급</span><span>초이스(앵거스)</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper district__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <p class="dist-name">
+                                        <span class="dist-1">서울</span>
+                                        <span class="dist-2">강동구</span>
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <p class="dist-name">
+                                        <span class="dist-1">경산</span>
+                                        <span class="dist-2">창원시 마산합포구</span>
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <p class="dist-name">
+                                        <span class="dist-1">경기</span>
+                                        <span class="dist-2">고양시 일산서구</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 참여중 태그 추가 버전 작업		 -->
+                    <li>
+                        <div class="tag-box">
+                            <p class="left">
+                                <!-- 입찰마감시 class end 추가 -->
+                                <span class="tag state">입찰 진행 중</span>
+                                <span class="tag parti">
+                                    <img src="/assets/image/user.png" alt="">
+                                    <span class="count">1,294</span>명
+                                </span>
+                            </p>
+                            <!-- 마감임박 : soon class추가 / 시간종료 : end 클래스 추가 -->
+                            <span class="tag time soon">
+                                <span>00:59:59</span>
+                            </span>
+                        </div>
+                        <div class="item-profile">
+                            <div class="img-box">
+                                <img src="/assets/image/bidding_default.png" alt="">
+                                <span class="flag">참여중</span>
+                            </div>
+                            <div class="cont-box">
+                                <div class="item-title">
+                                    <span class="tag meat">기타</span>
+                                    <strong>등갈비/백립</strong>
+                                </div>
+                                <div class="item-info">
+                                    <p class="brand"><span>브랜드</span><span>스위프트(쉐프’S/블랙앵거스)</span></p>
+                                    <p class="grade"><span>등급</span><span>초이스(앵거스)</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper district__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <p class="dist-name">
+                                        <span class="dist-1">서울</span>
+                                        <span class="dist-2">강동구</span>
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <p class="dist-name">
+                                        <span class="dist-1">경산</span>
+                                        <span class="dist-2">창원시 마산합포구</span>
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <p class="dist-name">
+                                        <span class="dist-1">경기</span>
+                                        <span class="dist-2">고양시 일산서구</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- //참여중 태그 추가 버전 작업		 -->
+                </ul>
+                <!-- //필터 결과 내용 있을 때 -->
+               
+                <!-- 필터 결과 내용 없을 때  style값 삭제해주세용 -->
+                <div class="result-list no-data" style="display: none;">
+                    <div class="no-result">
+                        <div class="lottie-box">
+                            <lottie-player class="cancel"
+                                src="https://lottie.host/b718e50f-594d-484c-9a37-ff82c45915a7/BxVysHruCP.json" speed="1"
+                                loop autoplay preserveAspectRatio="none"
+                                style="width: 240px; height: 240px;"></lottie-player>
+                        </div>
+                        <p>진행중인 공고가 없어요.<br>
+                            가장 먼저 공고를 등록해보세요!</p>
+                        <!-- scss 작업 : 미트뱅크 컴포넌트 작업  -->
+                        <button class="btn btn-large btn-white color-red">공고 등록하러 가기</button>
+                        <!-- scss 작업 : 미트뱅크 컴포넌트 작업  -->
+                    </div>
+                </div>
+                
+                <!-- 필터 결과 내용 없을 때  style값 삭제해주세용 -->
+            </div>
+        </section>
+
+        <div class="btn-write">
+            <a href="#none" class="is-default"><img src="../assets/image/ico-write.svg" alt=""></a>
+            <a href="#none" class="is-active"><img src="../assets/image/ico-x.svg" alt=""></a>
+            <div class="select__write">
+                <a href="#pop_none_bizprofile" class="js-modal-detail"><img src="../assets/image/ico-catalog.svg"
+                        alt="">품목표
+                    글쓰기</a>
+                <a href="#pop_none_member" class="js-modal-detail"><img src="../assets/image/ico-sell.svg" alt="">팝니다
+                    글쓰기</a>
+                <a href="#none"><img src="../assets/image/ico-buy.svg" alt="">삽니다 글쓰기</a>
+                <a href="#none"><img src="../assets/image/shopping-bag-gray.svg" alt="">판매 입찰 글쓰기</a>
+            </div>
+        </div>
+
+        <!-- scss 작업: 미트뱅크 컴포넌트 작업  -->
+        <div class="pop__detail message new" id="pop_none_member">
+            <div class="popup__cnt">
+                <div class="popup__title">
+                    <strong>비회원은 글 쓰기를<br>이용할 수 없습니다.</strong>
+                   
+                </div>
+                <div class="popup__cont">
+                    <p>회원가입을 하러가시겠습니까?</p>
+                </div>
+                <div class="popup__btn group">
+                    <a href="#none" class="btn btn-cancel js-modal-close">취소</a>
+                    <a href="#none" class="btn btn-default">확인</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop__detail message new" id="pop_none_bizprofile">
+            <div class="popup__cnt">
+                <div class="popup__title">
+                    <strong>비즈프로필 등록이 되어있지 않아<br>품목표 등록을 할 수 없습니다.</strong>
+                   
+                </div>
+                <div class="popup__cont">
+                    <em>비즈프로필을 등록하러 가시겠습니까?</em>
+                </div>
+                <div class="popup__btn group">
+                    <a href="#none" class="btn btn-cancel js-modal-close">취소</a>
+                    <a href="#none" class="btn btn-default">확인</a>
+                </div>
+            </div>
+        </div>
+        <!-- scss 작업: 미트뱅크 컴포넌트 작업  -->
+
+
+        <!-- scss 작업 : 미트뱅크 컴포넌트 추가 -->
+        <div class="fixed-menu cate">
+            <div class="menu-inner">
+                <ul>
+                    <li class="is-active">
+                        <a href="my_book.html">
+                            <span class="icon-img"></span>
+                            <span>사고팔기</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="my_type.html">
+                            <span class="icon-img"></span>
+                            <span>커뮤니티</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="book_search.html">
+                            <span class="icon-img"></span>
+                            <span>메시지</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#none">
+                            <span class="icon-img"></span>
+                            <span>데이터</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="my_info.html">
+                            <span class="icon-img"></span>
+                            <span>내정보</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--//scss 작업 : 미트뱅크 컴포넌트 추가 -->
+
+        <div class="modal-toast modal-sorting">
+            <!-- scss작업 : ai 클래스 추가 -->
+            <div class="modal-content ai">
+                <div class="sorting-list">
+                    <ul>
+                        <li>
+                            <b class="tit">정렬</b>
+                            <div class="btn">
+                                <button type="button">임박순</button>
+                                <button type="button" class="active">최근순</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-toast-btn">
+                    <button type="button" class="btn btn-full js-modal-close">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/lib/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="../assets/js/lib/jquery-ui.js" type="text/javascript"></script>
+    <script src="../assets/js/lib/swiper.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="../assets/js/ui.common.js" type="text/javascript"></script>
+    <script>
+        var swiper = new Swiper(".alert__swiper", {
+            direction: "vertical",
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            autoplay: {
+                delay: 2300,
+                disableOnInteraction: false,
+            }
+
+        });
+
+        var swiper = new Swiper(".menu__swiper", {
+            slidesPerView: "auto",
+            spaceBetween: 4,
+            grabCursor: true,
+        });
+
+        $('.menu__swiper .swiper-slide').on('click', function () {
+            $('.menu__swiper .swiper-slide').removeClass('on');
+            $(this).addClass('on');
+        })
+
+        $(function () {
+
+
+            // 마감된 공고
+            $('.main.bidding .checkbox label').on('click', function () {
+                if ($('.main.bidding .product__bar').hasClass('end')) {
+                    $('.main.bidding .product__bar').removeClass('end');
+                } else {
+                    $('.main.bidding .product__bar').addClass('end');
+                }
+            })
+
+            //모달 필터창 on,off
+
+            $('.sorting-action').on('click', function () {
+                $('.dimed').css('display', 'block');
+                $('.modal-toast.modal-sorting').addClass('is-on');
+            });
+
+            $('.modal-toast-btn').on('click', function () {
+                $('.dimed').css('display', 'none');
+                $('.modal-toast.modal-sorting').removeClass('is-on');
+            })
+
+            // 241025 QA반영
+            function initializeSwipers() {
+                const deviceWidth = $(window).width();
+                const thresholdWidth = deviceWidth - 40;
+
+                $('.district__swiper').each(function () {
+                    let totalSlidesWidth = 0;
+
+                    $(this).find('.swiper-slide').each(function () {
+                        const slideWidth = $(this).outerWidth(true); // margin 포함한 넓이
+                        totalSlidesWidth += slideWidth;
+                    });
+
+                    // 기존 스와이퍼가 있다면 파괴
+                    if ($(this).data('swiper')) {
+                        $(this).data('swiper').destroy(true, true);
+                    }
+
+                    // 조건을 만족할 경우에만 스와이퍼 초기화
+                    if (totalSlidesWidth > thresholdWidth) {
+                        const swiper = new Swiper(this, {
+                            slidesPerView: "auto",
+                            paceBetween: 8,
+                            grabCursor: true,
+                        });
+
+                        // 스와이퍼 인스턴스를 데이터 속성에 저장
+                        $(this).data('swiper', swiper);
+                    }
+                });
+            }
+
+            // 초기화 함수 호출
+            initializeSwipers();
+
+            // 윈도우 리사이즈 이벤트에 핸들러 추가
+            $(window).on('resize', function () {
+                initializeSwipers();
+            });
+
+        }); 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+@use "../utils/mixins" as *;
+@use "../variables/colors" as *;
+
+.datepicker {
+  width: calc(100% - 29px) !important;
+  top: 12px !important;
+  bottom: 0 !important;
+
+  .datepicker-grid > span.day,
+  .days-of-week > span.dow {
+    width: calc(100% / 7) !important;
+  }
+}
+
+.modal-toast-btn {
+  margin-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.checkbox input[type="checkbox"]:checked+label:after {
+  left:0;
+}
+
+.sorting-list {
+  ul {
+    li {
+
+      &:first-child {
+        .tit {
+          padding-bottom: 2px;
+          display: block !important;
+          text-align: center;
+          font-weight: 500;
+          font-size: 12px;
+          color: #575757 ;
+          margin-bottom: 2px !important;
+        }
+        .sub-text {
+          display: inline-block !important;
+          width: 100%;
+          @include fontStyle(11px, 140%, 400);
+          margin-bottom: 8px;
+          color: $Neutral300 !important;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+.modal-toast {
+  max-height: 100%;
+  .modal-content {
+    height: auto !important;
+    &.date {
+      height:427px !important;
+    }
+    &.modal-sorting {
+      &.only-data {
+        &.is-on {
+          .modal-content {
+            display: block !important;
+          }
+        }
+        .modal-content.ai {
+
+          .datepicker-input-wrap {
+            display: flex;
+            border-radius: 8px;
+            border: 1px solid #e8e8e8;
+            background: #fff;
+            height: 40px;
+            input {
+              width: calc(50% - 22px);
+              height: 100%;
+              padding: 0;
+              color: #575757;
+              border: none;
+              line-height: 38px;
+              font-weight: 500;
+            }
+            .slash {
+              width: 44px;
+              line-height: 38px;
+            }
+> * {
+              flex-shrink: 0;
+              text-align: center;
+            }
+          }
+
+
+        }
+        .datepicker {
+          &.datepicker-dropdown {
+            top: -122px !important;
+            bottom: 0 !important;
+            width: calc(100% + 29px) !important;
+            opacity: 1 !important;
+            z-index: 9999 !important;
+            display: block !important;
+            &:before {
+              content: "";
+              display: inline-block;
+              position: absolute;
+              left: -19px;
+              bottom: -258px;
+              width: calc(100% + 38px);
+              height: 427px !important;
+              padding: 12px 19px 0;
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+              border-top-left-radius: 24px;
+              border-top-right-radius: 24px;
+              background-color: #fff;
+              z-index: -1;
+              opacity: 1 !important;
+            }
+          }
+        }
+
+        .datepicker-grid > span.day,
+        .days-of-week > span.dow {
+          width: calc(100% / 7) !important;
+        }
+        .datepicker-header .datepicker-controls .button,
+        .datepicker-title {
+          font-size: 14px;
+        }
+
+
+      }
+    }
+  }
+}

@@ -1,0 +1,455 @@
+@use "../main.scss" as *;
+@use "../variables/colors" as *;
+@use "../utils/mixins" as *;
+
+// Info 아이콘 관련
+.i-info {
+  margin: 0 5px;
+  z-index: 10;
+
+  img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+// Count payment
+.count-payment {
+  @include fontStyle(14px, 140%, 700);
+  color: $Neutral500;
+  margin-bottom: 6px;
+  margin-left: 4px;
+
+  .tooltip.i-info {
+    margin: 0 4px;
+
+    img {
+      width: 14px;
+      height: 14px;
+      vertical-align: -2px;
+    }
+  }
+}
+
+// Main detail
+.content.new {
+  .main.scroll-zone {
+    padding: 30px 20px 20px;
+    box-sizing: border-box;
+
+    // Title
+    .title {
+      display: block;
+      @include fontStyle(18px, 140%, 700);
+      margin-bottom: 20px;
+      .title_cont {
+        color: $black;
+      }
+
+      .price {
+        color: $danger;
+
+        em {
+          font-style: normal;
+        }
+      }
+    }
+
+    // Tag
+    .tag {
+      span {
+        display: inline-block;
+        padding: 4px 8px;
+        border-radius: 4px;
+        @include fontStyle(13px, 140%, 400);
+        margin-bottom: 12px;
+        background-color: $Neutral50;
+        color: $Neutral300;
+      }
+    }
+
+    // Title content
+    .title_cont {
+      @include fontStyle(18px, 140%, 700);
+      color: $primary700;
+
+      span {
+        display: block;
+        color: $primary700;
+        width: 210px;
+        @include ellipsis(1);
+      }
+    }
+
+    // Payment list - 통합된 스타일
+    .payment-list {
+      margin-bottom: 20px;
+
+      li {
+        border: 1px solid $Neutral150;
+        padding: 12px 20px 12px 12px;
+        border-radius: 8px;
+        margin-bottom: 6px;
+        position: relative;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          position: relative;
+          width: 100%;
+          height: 100%;
+
+          &.i-info {
+            img {
+              width: 14px;
+              height: 14px;
+              vertical-align: -2px;
+            }
+          }
+
+          &:before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            position: absolute;
+            right: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url(../image/chevron-right.svg) no-repeat center center;
+            opacity: 0.7;
+          }
+        }
+
+        .tag {
+          margin-bottom: 8px;
+
+          span {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            @include fontStyle(12px, 140%, 400);
+            margin-bottom: 0;
+
+            &:first-child {
+              background-color: $Neutral300;
+              @include fontStyle(12px, 140%, 500);
+              color: $white;
+              margin-right: 4px;
+            }
+
+            &:last-child {
+              background-color: $Neutral50;
+              @include fontStyle(12px, 140%, 400);
+              color: $Neutral300;
+            }
+          }
+        }
+
+        .title {
+          @include fontStyle(16px, 140%, 700);
+          
+          margin: 0 0 2px 4px;
+
+          strong {
+            color: $Neutral500;
+            font-weight: 700;
+            font-size: 14px;
+          }
+        }
+
+        .price {
+          margin-left: 4px;
+          @include fontStyle(14px, 140%, 400);
+          color: $Neutral400;
+          font-weight: 500;
+          margin-bottom: 0;
+        }
+
+        // Gray 상태 스타일
+        &.gray {
+          .title {
+            strong,
+            .price {
+              color: $Neutral300;
+            }
+          }
+
+          &:after {
+            content: "";
+            width: 24px;
+            height: 24px;
+            background: url("/assets/image/check_gray.svg") no-repeat center center;
+            background-size: cover;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 32px;
+          }
+
+          &.red {
+            border: 1px solid $danger !important;
+
+            .title {
+              strong {
+                color: $Neutral500;
+              }
+
+              .price {
+                color: $Neutral400;
+              }
+            }
+
+            &:after {
+              background: url("/assets/image/check_red.svg") no-repeat center center;
+            }
+          }
+        }
+
+        // 기본 after 스타일
+        &:after {
+          content: "";
+          width: 24px;
+          height: 24px;
+          background: url("/assets/image/check_gray.svg") no-repeat center center;
+          background-size: cover;
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 32px;
+        }
+      }
+    }
+
+    // Detail input area
+    .detail-input-area {
+      margin-top: 4px;
+
+      .input-wrap {
+        height: auto;
+        margin-bottom: 24px;
+
+        .item__title {
+          margin-left: 4px;
+          margin-bottom: 6px;
+          @include fontStyle(14px, 140%, 700);
+          color: $Neutral500;
+        }
+
+        .item__input {
+          display: flex;
+          align-items: center;
+          padding: 9px 10px;
+          background-color: $white;
+          border: 1px solid $Neutral150;
+          border-radius: 8px;
+          position: relative;
+
+          a {
+            @include fontStyle(14px, 140%, 500);
+            padding: 3px 0 3.5px 20px;
+            color: $Neutral300;
+            background: url(/assets/image/ico-plus.svg) no-repeat left center / 18px;
+          }
+
+          // File input
+          &.file {
+            padding: 8px 20px;
+            margin-top: 8px;
+            background-color: $white;
+            border: 1px solid $Neutral150;
+
+            .file-box {
+              padding: 0;
+              display: flex;
+              align-items: center;
+              gap: 20px;
+
+              .icon {
+                width: 36px;
+                height: 36px;
+                box-sizing: border-box;
+                text-align: center;
+                background-color: $Neutral50;
+                border-radius: 50%;
+                padding: 8px 0;
+                display: inline-block;
+              }
+
+              .btn-delete {
+                padding: 5px 0;
+                @include fontStyle(13px, 140%, 700);
+                text-align: center;
+                width: 47px;
+                height: 28px;
+                box-sizing: border-box;
+                border: 1px solid $Neutral200;
+                position: absolute;
+                top: 23px;
+                right: 20px;
+                border-radius: 50px;
+                background: none;
+              }
+
+              p {
+                @include fontStyle(12px, 140%, 400);
+                color: $Neutral300;
+
+                &:first-child {
+                  @include fontStyle(14px, 140%, 500);
+                  color: $Neutral500;
+                }
+
+                &.file-name {
+                  width: 163px;
+                  @include ellipsis(1);
+                }
+              }
+            }
+
+            a.btn-download {
+              padding: 0;
+              background: none;
+              display: inline-block;
+              width: 36px;
+              height: 36px;
+            }
+          }
+
+          // Textarea input
+          &.ta {
+            padding: 0;
+            border: none;
+
+            textarea {
+              border-bottom: none;
+              padding: 12px;
+              height: 84px;
+              border: 1px solid $Neutral150;
+              border-radius: 8px;
+              width: 100%;
+              box-sizing: border-box;
+              background-color: $white;
+              color: $Neutral500;
+
+              &::placeholder {
+                color: $Neutral300;
+              }
+
+              &:focus {
+                border-color: $info;
+              }
+
+              // Webkit scrollbar
+              &::-webkit-scrollbar {
+                width: 4px;
+              }
+
+              &::-webkit-scrollbar-thumb {
+                background-color: #ccc;
+                background-clip: padding-box;
+                border-top: 4px solid transparent;
+                border-bottom: 4px solid transparent;
+                border-radius: 20%;
+              }
+            }
+
+            &.error {
+              textarea {
+                border-color: $danger;
+              }
+            }
+
+            &.done {
+              textarea {
+                border: none;
+                background-color: $Neutral50;
+              }
+            }
+          }
+
+          // Insert price
+          &.insert-price {
+            display: flex;
+            justify-content: flex-end;
+            border: none;
+            background-color: $Neutral50;
+            padding: 11px 12px;
+            height: 44px;
+            box-sizing: border-box;
+            text-align: right;
+            @include fontStyle(14px, 140%, 700);
+            color: $danger;
+          }
+        }
+      }
+    }
+  }
+  
+  // Input wrap refund
+  .input-wrap.refund {
+    .item__input.ta {
+      padding: 0;
+      border: none;
+
+      textarea {
+        border-bottom: none;
+        padding: 12px;
+        height: 84px;
+        border: 1px solid $Neutral150;
+        border-radius: 8px;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: $white;
+        color: $Neutral500;
+
+        &:focus {
+          border-color: $info;
+        }
+      }
+    }
+  }
+}
+
+.fixed-button{
+  position: relative;
+  padding: 0 20px 20px 20px;
+}
+// Popup detail
+.pop__detail.is-on {
+  .popup__cont {
+    .bold {
+      color: $Neutral500;
+      font-weight: 500;
+    }
+
+    textarea {
+      border: 1px solid $danger;
+
+      &::placeholder {
+        color: $danger;
+      }
+    }
+  }
+
+  &.input.error {
+    .popup__cont {
+      textarea {
+        border: 1px solid $danger;
+
+        &::placeholder {
+          color: $danger;
+        }
+      }
+    }
+  }
+}

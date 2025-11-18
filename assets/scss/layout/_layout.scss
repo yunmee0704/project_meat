@@ -1,0 +1,140 @@
+@use "../utils/mixins" as *;
+@use "../variables/colors" as *;
+
+.content.new {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+    height: calc(100vh - 124px); 
+  padding: 0;
+  //   overflow: hidden; 20250903 삭제
+  min-height: 100vh;
+
+  //style.css충돌 작업
+  left: initial;
+  top: initial;
+  transform: translateY(0);
+  padding-top: 56px;
+
+  .main.scroll-zone {
+    flex: 1;
+    // overflow-y: auto;
+    padding: 20px;
+    padding-bottom: 70px;
+    //style.css 충돌 작업 padding-top 삭제
+    // padding-top: 56px;
+    background-color: transparent;
+    &.ele-padding {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    //  class footer -> fix-menu 로 변경
+    &.fix-menu {
+      margin-bottom: 56px;
+      background-color: $white;
+    }
+
+    &.wide {
+      //style.css 충돌 작업 padding-top 삭제
+      padding: 0 0 96px;
+      > *:not(.section-line) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      > *.no-padding-ele {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      // 250307 추가 SL11 lottie
+      > *.lottie {
+        padding: 0;
+      }
+
+      .section-line {
+        height: 8px;
+        background: $Neutral50;
+        border: none;
+      }
+    }
+
+    // 약관동의 페이지
+    .qna__wrap {
+      &.terms {
+        padding-top: 38px;
+
+        &:first-child {
+          padding-top: 11px;
+        }
+        .qna__list {
+          margin-bottom: 12px;
+
+          .qna__min_tit {
+            @include fontStyle(16px, 140%, 700);
+            color: $Neutral500;
+            padding: 9px 0;
+          }
+
+          .qna__answer {
+            @include fontStyle(14px, 140%, 400);
+            color: $Neutral500;
+            padding: 0;
+            strong {
+              &.underline {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+
+      &.terms2 {
+        padding-top: 0px;
+        > div {
+          > div,
+          > p {
+            padding: 5px 9px;
+          }
+        }
+      }
+    }
+  }
+
+  // footer가 있는 경우
+  &.has-footer {
+    height: 100vh;
+    overflow-y: auto;
+    min-height: auto;
+    .main.scroll-zone {
+      overflow-y: initial;
+      height: auto;
+    }
+    .footer {
+      margin-bottom: 60px;
+    }
+  }
+}
+//하단 버튼 고정
+.fixed-button {
+  display: flex;
+  position: fixed;
+ margin: 0 auto;
+  padding: 20px;
+  color: white;
+  z-index: 800;
+  bottom: 0;
+  flex: 1;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  .btn {
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+    + .btn {
+      margin-left: 8px;
+    }
+  }
+}

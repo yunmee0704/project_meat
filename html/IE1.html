@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- SEO : S -->
+  <meta name="description" content="" />
+  <meta name="keywords" content="미트매치" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- SEO : E -->
+  <!-- SNS 공유 : S -->
+  <meta property="og:url" data-role="url" content="미트매치" />
+  <meta property="og:title" data-role="title" content="미트매치" />
+  <meta property="og:image" data-role="image" content="/assets/image/sns.png" />
+  <meta property="og:description" data-role="description" content="미트매치" />
+  <!-- SNS 공유 : E -->
+  <title>미트매치</title>
+  <link rel="shortcut icon" href="../assets/favicon/favicon.ico">
+  <link rel="icon" href="../assets/favicon/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../assets/css/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/IE1.css">
+</head>
+
+<body class="main-type">
+  <div class="wrapper" id="wrapper">
+    <!-- scss작업 : 미트뱅크 컴포넌트 헤더 0715 -->
+    <header class="header">
+        <div class="header-inner new sub">
+            <div class="product__top">
+                <div class="anchor-btn">
+                    <a><img src="/assets/image/ico-prev.svg" alt="뒤로가기"></a>
+                </div>
+                <h2 class="bold-18">이미지 백과사전</h2>
+
+            </div>
+        </div>
+    </header>
+    <!-- //scss작업 : 미트뱅크 컴포넌트 헤더 0715 -->
+    <section class="content new" id="content">
+      <div class="main scroll-zone wide">
+        <div class="banner-list">
+          <a href="#none">
+            <img src="/assets/image/banner.png" alt="">
+         </a>
+        </div>
+   
+        <!-- <div class="img-notice-txt">
+          <p>이미지를 선택해주세요!</p>
+        </div> -->
+        
+        <!-- //이미지 없을 때 -->
+        <div class="search-area">
+          <div class="input-wrap">
+            <div class="item__input search">
+                <input type="text" class="text"  value="" placeholder="검색어를 입력해주세요.">
+                <a href="" class="btn-search"><img src="/assets/image/ico-search.svg" alt="검색"></a>
+                <!--<a href="" class="btn-close"><img src="/assets/image/x-close.svg" alt="닫기"></a>-->
+            </div>           
+          </div>
+          <div class="filter">
+            <a href="#none">
+              <img src="/assets/image/filter.svg" alt="" class="filter-img">
+              <span>필터</span>
+            </a>
+          </div>
+        </div>          
+             <div class="filter-keywords">             
+              <div class="swiper keyword__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#none">소<img src="/assets/image/ico-x-5757.svg" alt="" class="close"></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#none">갈비늑간<img src="/assets/image/ico-x-5757.svg" alt="" class="close"></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#none">IBP<img src="/assets/image/ico-x-5757.svg" alt="" class="close"></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#none">미국<img src="/assets/image/ico-x-5757.svg" alt="" class="close"></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#none">2등급<img src="/assets/image/ico-x-5757.svg" alt="" class="close"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <hr class="section-line">
+        <!-- 검색결과 없을 때 -->
+        <!-- <ul class="result-list no-result" style="display: none;">
+          <span>검색 결과가 없어요.</span>
+        </ul> -->
+        <!-- //검색결과 없을 때 -->
+        <!-- 검색결과 있을 때 -->
+        <ul class="result-list" >
+          <li>
+            <div class="img-box">
+              <img src="/assets/image/dict_img.png" alt="">
+            </div>
+            <div class="cont-box">
+              <div class="tag-box">
+                <span class="tag meat beef">소</span>
+                <span class="tag storage frozen"><span>냉동</span></span>
+                <!-- <span class="tag storage cold">냉장</span> -->
+              </div>
+              <div class="item-title">등갈비/백립</div>
+              <div class="item-info">
+                <p class="origin"><span>원산지</span><span>미국</span></p>
+                <p class="brand"><span>브랜드</span><span>스위프트(쉐프’S/블랙앵거스)</span></p>
+                <p class="grade"><span>등급</span><span>초이스(앵거스)</span></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <img src="/assets/image/dict_img.png" alt="">
+            </div>
+            <div class="cont-box">
+              <div class="tag-box">
+                <span class="tag meat pork">돼지</span>
+                <!-- <span class="tag storage frozen">냉동</span> -->
+                <span class="tag storage cold">냉장</span>
+              </div>
+              <div class="item-title">등갈비/백립</div>
+              <div class="item-info">
+                <p class="origin"><span>원산지</span><span>미국</span></p>
+                <p class="brand"><span>브랜드</span><span>스위프트(쉐프’S/블랙앵거스)</span></p>
+                <p class="grade"><span>등급</span><span>초이스(앵거스)</span></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <img src="/assets/image/dict_img.png" alt="">
+            </div>
+            <div class="cont-box">
+              <div class="tag-box">
+                <span class="tag meat chicken">닭</span>
+                <span class="tag storage frozen">냉동</span>
+                <!-- <span class="tag storage cold">냉장</span> -->
+              </div>
+              <div class="item-title">등갈비/백립</div>
+              <div class="item-info">
+                <p class="origin"><span>원산지</span><span>미국</span></p>
+                <p class="brand"><span>브랜드</span><span>스위프트(쉐프’S/블랙앵거스)</span></p>
+                <p class="grade"><span>등급</span><span>초이스(앵거스)</span></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <img src="/assets/image/dict_img.png" alt="">
+            </div>
+            <div class="cont-box">
+              <div class="tag-box">
+                <span class="tag meat sheep">양</span>
+                <span class="tag storage frozen">냉동</span>
+                <!-- <span class="tag storage cold">냉장</span> -->
+              </div>
+              <div class="item-title">등갈비/백립</div>
+              <div class="item-info">
+                <p class="origin"><span>원산지</span><span>미국</span></p>
+                <p class="brand"><span>브랜드</span><span>스위프트(쉐프’S/블랙앵거스)</span></p>
+                <p class="grade"><span>등급</span><span>초이스(앵거스)</span></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <img src="/assets/image/dict_img.png" alt="">
+            </div>
+            <div class="cont-box">
+              <div class="tag-box">
+                <span class="tag meat other">기타</span>
+                <span class="tag storage frozen">냉동</span>
+                <!-- <span class="tag storage cold">냉장</span> -->
+              </div>
+              <div class="item-title">등갈비/백립</div>
+              <div class="item-info">
+                <p class="origin"><span>원산지</span><span>미국</span></p>
+                <p class="brand"><span>브랜드</span><span>스위프트(쉐프’S/블랙앵거스)</span></p>
+                <p class="grade"><span>등급</span><span>초이스(앵거스)</span></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <img src="/assets/image/dict_img.png" alt="">
+            </div>
+            <div class="cont-box">
+              <div class="tag-box">
+                <span class="tag meat other">기타</span>
+                <span class="tag storage frozen">냉동</span>
+                <!-- <span class="tag storage cold">냉장</span> -->
+              </div>
+              <div class="item-title">등갈비/백립</div>
+              <div class="item-info">
+                <p class="origin"><span>원산지</span><span>미국</span></p>
+                <p class="brand"><span>브랜드</span><span>스위프트(쉐프’S/블랙앵거스)</span></p>
+                <p class="grade"><span>등급</span><span>초이스(앵거스)</span></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <img src="/assets/image/dict_img.png" alt="">
+            </div>
+            <div class="cont-box">
+              <div class="tag-box">
+                <span class="tag meat other">기타</span>
+                <span class="tag storage frozen">냉동</span>
+                <!-- <span class="tag storage cold">냉장</span> -->
+              </div>
+              <div class="item-title">등갈비/백립</div>
+              <div class="item-info">
+                <p class="origin"><span>원산지</span><span>미국</span></p>
+                <p class="brand"><span>브랜드</span><span>스위프트(쉐프’S/블랙앵거스)</span></p>
+                <p class="grade"><span>등급</span><span>초이스(앵거스)</span></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <img src="/assets/image/dict_img.png" alt="">
+            </div>
+            <div class="cont-box">
+              <div class="tag-box">
+                <span class="tag meat other">기타</span>
+                <span class="tag storage frozen">냉동</span>
+                <!-- <span class="tag storage cold">냉장</span> -->
+              </div>
+              <div class="item-title">등갈비/백립</div>
+              <div class="item-info">
+                <p class="origin"><span>원산지</span><span>미국</span></p>
+                <p class="brand"><span>브랜드</span><span>스위프트(쉐프’S/블랙앵거스)</span></p>
+                <p class="grade"><span>등급</span><span>초이스(앵거스)</span></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <img src="/assets/image/dict_img.png" alt="">
+            </div>
+            <div class="cont-box">
+              <div class="tag-box">
+                <span class="tag meat other">기타</span>
+                <span class="tag storage frozen">냉동</span>
+                <!-- <span class="tag storage cold">냉장</span> -->
+              </div>
+              <div class="item-title">등갈비/백립</div>
+              <div class="item-info">
+                <p class="origin"><span>원산지</span><span>미국</span></p>
+                <p class="brand"><span>브랜드</span><span>스위프트(쉐프’S/블랙앵거스)</span></p>
+                <p class="grade"><span>등급</span><span>초이스(앵거스)</span></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <img src="/assets/image/dict_img.png" alt="">
+            </div>
+            <div class="cont-box">
+              <div class="tag-box">
+                <span class="tag meat other">기타</span>
+                <span class="tag storage frozen">냉동</span>
+                <!-- <span class="tag storage cold">냉장</span> -->
+              </div>
+              <div class="item-title">등갈비/백립</div>
+              <div class="item-info">
+                <p class="origin"><span>원산지</span><span>미국</span></p>
+                <p class="brand"><span>브랜드</span><span>스위프트(쉐프’S/블랙앵거스)</span></p>
+                <p class="grade"><span>등급</span><span>초이스(앵거스)</span></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- //검색결과 있을 때 -->
+      </div>
+    </section>
+    <div class="dimed" style="display:none;"></div>
+    <div class="modal-toast modal-sorting">
+        <div class="modal-content meat dictionary">
+            <div class="sorting-list">
+                <ul>
+                  <!-- 공란일 경우 li에 error클래스 추가 -->
+                    <li class="error">
+                        <b class="tit">축종</b>
+                        <div class="input-wrap">
+                          <div class="item__dashboard">
+                            <div class="state-action">
+                                <div class="select-btn">
+                                    <a href="#none" class="expand-btn arrow">축종을 선택해주세요.</a>
+                                </div>
+                                <!-- 발급된 은행에는 a태그에 done클래스 추가 PS8-7-->
+                                <div class="expand-box">
+                                  <a href="#none"><span class="meat">소</span></a>
+                                  <a href="#none"><span class="meat">돼지</span></a>
+                                  <a href="#none"><span class="meat">닭</span></a>
+                                  <a href="#none"><span class="meat">양</span></a>
+                                  <a href="#none"><span class="meat">기타</span></a>                        
+                              </div>
+                            </div>
+                          </div>          
+                        </div>   
+                        <p class="input-desc">축종을 선택해주세요.</p>                     
+                    </li>
+                    <li>
+                        <b class="tit">품목</b>
+                        <div class="input-wrap state-action">
+                          <div class="item__input search expand-btn">
+                              <input type="text" class="text"  value="" placeholder="품목을 선택해주세요.">
+                              <a href="" class="btn-search"><img src="/assets/image/ico-search.svg" alt="검색"></a>
+                          </div> 
+                          <div class="expand-box">
+                            <a href="#none"><span class="search-list">소</span></a>
+                            <!-- <a href="#none"><span class="search-list">돼지</span></a>
+                            <a href="#none"><span class="search-list">닭</span></a>
+                            <a href="#none"><span class="search-list">양</span></a>
+                            <a href="#none"><span class="search-list">기타</span></a>                         -->
+                          </div>          
+                        </div>       
+                        <!-- <p class="input-desc">품목을 선택해주세요.</p>                  -->
+                    </li>
+                    <li>
+                        <b class="tit">브랜드</b>
+                        <div class="input-wrap state-action">
+                          <div class="item__input search expand-btn">
+                              <input type="text" class="text"  value="" placeholder="브랜드를 선택해주세요.">
+                              <a href="" class="btn-search"><img src="/assets/image/ico-search.svg" alt="검색"></a>
+                          </div>
+                          <div class="expand-box">
+                            <a href="#none"><span class="search-list">소</span></a>
+                            <a href="#none"><span class="search-list">돼지</span></a>
+                            <a href="#none"><span class="search-list">닭</span></a>
+                            <a href="#none"><span class="search-list">양</span></a>
+                            <a href="#none"><span class="search-list">기타</span></a>                        
+                          </div>            
+                        </div>
+                        <!-- <p class="input-desc">브랜드를 선택해주세요.</p> -->
+                    </li>
+                    <li>
+                        <b class="tit">원산지</b>
+                        <div class="input-wrap state-action">
+                          <div class="item__input search expand-btn">
+                              <input type="text" class="text"  value="" placeholder="원산지를 선택해주세요.">
+                              <a href="" class="btn-search"><img src="/assets/image/ico-search.svg" alt="검색"></a>
+                          </div>
+                          <div class="expand-box">
+                            <a href="#none"><span class="search-list">소</span></a>
+                            <a href="#none"><span class="search-list">돼지</span></a>
+                            <a href="#none"><span class="search-list">닭</span></a>
+                            <a href="#none"><span class="search-list">양</span></a>
+                            <a href="#none"><span class="search-list">기타</span></a>                        
+                          </div>                                      
+                        </div>
+                        <!-- <p class="input-desc">원산지를 선택해주세요.</p> -->
+                    </li>
+                    <li>
+                        <b class="tit">등급</b>
+                        <div class="input-wrap state-action">
+                          <div class="item__input search expand-btn">
+                              <input type="text" class="text"  value="" placeholder="등급을 선택해주세요.">
+                              <a href="" class="btn-search"><img src="/assets/image/ico-search.svg" alt="검색"></a>
+                          </div>
+                          <div class="expand-box">
+                            <a href="#none"><span class="search-list">소</span></a>
+                            <a href="#none"><span class="search-list">돼지</span></a>
+                            <a href="#none"><span class="search-list">닭</span></a>
+                            <a href="#none"><span class="search-list">양</span></a>
+                            <a href="#none"><span class="search-list">기타</span></a>                        
+                          </div>       
+                        </div>
+                        <!-- <p class="input-desc">등급을 선택해주세요.</p> -->
+                    </li>
+                    <li>
+                        <b class="tit">보관방법</b>
+                        <div class="btn">
+                            <button type="button" class="active">냉동</button>
+                            <button type="button">냉장</button>
+                        </div>
+                        <!-- <p class="input-desc">보관방법을 입력해 주세요.</p> -->
+                    </li>
+                    <li>
+                        <b class="tit">일자 정렬</b>
+                        <div class="btn">
+                          <button type="button" class="active">최근순</button>                          
+                          <button type="button">조회순</button>
+                        </div>
+                        <!-- <p class="input-desc">일자 정렬 방법을 선택해 주세요.</p> -->
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-toast-btn">
+                <button type="button" class="btn btn-full js-modal-close">확인</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  <script src="../assets/js/lib/jquery-2.2.4.min.js" type="text/javascript"></script>
+  <script src="../assets/js/lib/jquery-ui.js" type="text/javascript"></script>
+  <script src="../assets/js/lib/swiper.min.js" type="text/javascript"></script>
+  <script src="../assets/js/ui.common.js" type="text/javascript"></script>
+  <script>
+    $(function(){
+      	// 필터 클릭 시 빨간색으로 변경 및 필더모달팝업창 보임
+      $('.filter a').on('click', function (e) {
+
+        e.preventDefault();
+        if($(this).parents('.filter').hasClass('on')){
+          $(this).parents('.filter').removeClass('on');
+          $('.modal-toast.modal-sorting').removeClass('is-on');
+          $('.filter-img').attr('src','/assets/image/filter.svg');
+          $('body').css('overflow','scrollY');
+          $('.dimed').css('display','none');
+        }else{
+          $(this).parents('.filter').addClass('on');
+          $('.modal-toast.modal-sorting').addClass('is-on');
+          $(this).children('img').attr('src','/assets/image/filter-red.svg')
+          $('.dimed').css('display','block');
+          $('body').css('overflow','hidden');
+        }
+      });
+
+      // 필터 스와이퍼
+      var swiper = new Swiper(".keyword__swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 6,
+        grabCursor: true,
+        });
+
+      var $search = $('.search-area');
+      $(window).scroll(function () {
+        console.log($(document).scrollTop())
+			//$bottom.addClass('is-sticky');
+			if ($(document).scrollTop() > 180) {
+				$search.addClass('is-sticky');
+			} else {
+				$search.removeClass('is-sticky'); //$bottom.addClass('is-sticky');
+			}
+		});
+    });
+  </script>
+
+</body>
+
+</html>

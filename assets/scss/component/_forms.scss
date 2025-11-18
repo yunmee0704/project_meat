@@ -1,0 +1,1126 @@
+@use "../utils/mixins" as *;
+@use "../variables/colors" as *;
+// 데이트피커 커스텀
+.datepicker-picker {
+  margin-bottom: 7px;
+  box-shadow: 0 2px 3px hsla(0, 0%, 4%, 0.1), 0 0 0 1px hsla(0, 0%, 4%, 0.1);
+}
+.datepicker-input-wrap {
+  &.custom {
+    position: initial;
+    .datepicker-header .close-btn {
+      border: none;
+    }
+
+    .item__input {
+      &.date {
+        input {
+          @include backgroundImage(100%, 44px, "calendar.svg", cover);
+          background-position: 97% 50%;
+          background-size: 20px 20px;
+        }
+      }
+    }
+  }
+}
+
+.datepicker-input-wrap {
+  position: relative;
+  /*  워드앤코드 250312 css 오류 작업 */
+  overflow: unset;
+  border: none;
+  height: 44px;
+  /* // 워드앤코드 250312 css 오류 작업 */
+  .item__input {
+    display: flex;
+    width: 100%;
+    flex-shrink: unset;
+  }
+  /*  워드앤코드 250312 css 오류 작업 */
+  .datepicker-input {
+    border: 1px solid $Neutral150;
+    border-radius: 8px;
+  }
+  /*  //워드앤코드 250312 css 오류 작업 */
+  .edit-btn {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    z-index: 99;
+    transform: translateY(-50%);
+  }
+  &.with-txt {
+    .input--txt {
+      position: absolute;
+      right: 13px;
+      color: $Neutral300;
+      @include fontStyle(14px, 140%, 400);
+      background: #fff;
+      padding-left: 10px;
+      padding-right: 3px;
+      height: 82%;
+      display: flex;
+      align-items: center;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+
+  &.error {
+    .input--title {
+      border-color: $primary500;
+    }
+
+    .select-box {
+      border-color: $primary500;
+
+      & + .select-options {
+        border-color: $primary500;
+       
+      }
+    }
+
+    .link-move {
+      border-color: $primary500;
+    }
+
+    .item__input {
+      .datepicker-input {
+        border-color: $primary500;
+      }
+    }
+
+    .expand-btn {
+      input {
+        border-color: $primary500;
+      }
+    }
+
+    ~ .input-desc {
+      display: flex;
+      align-items: center;
+      margin-top: 4px;
+      position: relative;
+      margin-left: 4px;
+      padding-left: 15.5px;
+      color: $primary500;
+      height: auto;
+      box-sizing: border-box;
+      font-size: 13px;
+      line-height: 140%;
+      /*  워드앤코드 250312 css 오류 작업 */
+      margin-left: 4px;
+      /* // 워드앤코드 250312 css 오류 작업 */
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 2px;
+        background: url("/assets/image/info-red.svg");
+        width: 13px;
+        height: 14px;
+      }
+    }
+  }
+}
+.item__title {
+  margin-left: 4px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--Neutral-Neutral-500, #333);
+  color: $Neutral500;
+  @include fontStyle(14px, 140%, 700);
+
+  + .input-wrap {
+    margin-top: 6px;
+  }
+}
+.input {
+  &-box {
+    &.bank {
+      .input-wrap {
+        height: auto;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &-wrap {
+    position: relative;
+    // 이윤미 수정 0313
+    height: 44px;
+    box-sizing: border-box;
+    // overflow: hidden;
+
+    input[type="text"] {
+      // 0326 스타일수정
+      font-weight: 500;
+      // style.css 충돌 작업
+      border-bottom: none;
+      border: 1px solid $Neutral150;
+      // style.css 충돌 작업
+      &:focus {
+        border: 1px solid $info;
+      }
+      // 0326 스타일수정
+      &::placeholder {
+        font-weight: 400;
+      }
+    }
+    // 250409 손석호 추가
+    & + .input-accordion {
+      margin-top: 6px;
+    }
+    & + .total-price {
+      margin-top: 6px;
+      text-align: right;
+      @include fontStyle(12px, 140%, 700);
+      &.orange {
+        color: $secondary500;
+      }
+    }
+    &.state-action {
+      border: none;
+      width: 100%;
+      // 이윤미 수정 0313
+      z-index: 10;
+      .expand-box {
+        display: none;
+      }
+      .expand-btn {
+        border: 1px solid $Neutral150;
+        border-radius: 8px;
+        input {
+          border: none;
+          width: 85%;
+          &:focus {
+            border: none;
+          }
+        }
+      }
+      // style.css 충돌 작업
+      .btn.btn-search {
+        right: 12px !important;
+      }
+
+      &.is-on {
+        /* 워드앤코드 250312 css 충돌 작업 */
+        z-index: 99;
+        .expand-btn {
+          border-radius: 8px 8px 0 0;
+          border: 1px solid $Neutral150;
+          background-color: #fff;
+        }
+        /* // 워드앤코드 250312 css 충돌 작업 */
+        .btn-search {
+          img {
+            content: url(/assets/image/close-bidding.svg);
+          }
+        }
+        .expand-box {
+          display: block;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          border: 1px solid $Neutral150;
+          border-radius: 0 0 8px 8px;
+          z-index: 3;
+          // 이윤미 수정 0313
+          // border-top: none;
+          overflow: hidden;
+          a {
+            display: block;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            background-color: #fff;
+            display: block;
+            line-height: 1.5;
+            font-size: 14px;
+            font-weight: 400;
+            color: #575757;
+            padding: 12px;
+            word-break: keep-all;
+            &:hover {
+              color: $primary500;
+              font-weight: 500;
+              background: $Neutral50;
+            }
+          }
+        }
+      }
+      .item__input {
+        position: relative;
+      }
+      .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-search {
+          position: absolute;
+          top: 50% !important;
+          transform: translateY(-50%) !important;
+          right: 16px !important;
+          width: 20px;
+          height: 20px;
+          border: none;
+          padding: 0 !important;
+        }
+      }
+    }
+    &.file {
+      //style.css 충돌작업
+      height: auto;
+      + .input-wrap.file {
+        //style.css 충돌작업
+        height: auto;
+        margin-top: 8px;
+      }
+      .item__input {
+        &.check {
+          p {
+            padding-left: 24px;
+          }
+          .file-box {
+            .file-info {
+              width: 80%;
+            }
+          }
+          .file-name {
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 50%;
+              width: 16px;
+              height: 16px;
+              transform: translateY(-50%);
+              background: url(/assets/image/select-answer-b-check-login.svg)
+                no-repeat center;
+              background-size: 16px;
+            }
+          }
+        }
+        &.document {
+          .file-name {
+            font-weight: 500;
+          }
+        }
+        .filebox {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 19.6px;
+          display: flex;
+          align-items: center;
+          padding: 0 0 0 20px;
+        }
+      }
+      p {
+        @include fontStyle(12px, 140%, 400);
+        color: $Neutral300;
+      }
+      .file-name {
+        @include fontStyle(14px, 140%, 700);
+        color: $Neutral500;
+        + .file-date {
+          margin-top: 2px;
+        }
+      }
+      .item__input.add {
+        padding: 0;
+        .filebox {
+          padding-left: 12px;
+          label {
+            padding: 12px 16px;
+            width: 100%;
+            position: relative;
+            padding-left: 24px;
+            @include fontStyle(14px, 140%, 400);
+            color: $Neutral300;
+            &::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 50%;
+              width: 16px;
+              height: 16px;
+              transform: translateY(-50%);
+              background: url(/assets/image/ico-plus-gray.svg) no-repeat center;
+              background-size: 16px;
+            }
+          }
+        }
+      }
+      .item__input {
+        background-color: #fff;
+        border-radius: 8px;
+        border: 1px solid $Neutral150;
+        position: relative;
+        .file-box {
+          padding: 12px 16px;
+          display: flex;
+          align-items: center;
+          .icon {
+            width: 36px;
+            height: 36px;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: #f5f5f5;
+            border-radius: 50%;
+            padding: 8px 0;
+            display: inline-block;
+          }
+          .file-info {
+            width: 75%;
+          }
+          .file-date {
+            max-width: 100%;
+            @include ellipsis(1);
+            display: flex;
+            span {
+              @include ellipsis(1);
+            }
+          }
+          .btn {
+            padding: 5px 12px;
+            @include fontStyle(13px, 140%, 700);
+            color: $Neutral300;
+            text-align: center;
+            width: max-content;
+            height: 28px;
+            border: 1px solid #cacaca;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 20px;
+            border-radius: 50px;
+            background: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+
+      // bank card 이윤미추가
+      &.bank {
+        margin-bottom: 0;
+        height: auto;
+        .file-box {
+          padding: 12px;
+          cursor: pointer;
+
+          .bank-info {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 2px;
+            /*  워드앤코드 250312 css 오류 작업 */
+            border: none;
+            padding: 0;
+            justify-content: flex-start;
+            /* // 워드앤코드 250312 css 오류 작업 */
+            .bank-logo {
+              width: 24px;
+              height: 24px;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            .bank-name {
+              @include fontStyle(14px, 19.6px, 500);
+              color: $Neutral500;
+            }
+          }
+
+          .account-num,
+          .name {
+            @include fontStyle(14px, 19.6px, 400);
+            color: $Neutral400;
+          }
+        }
+        .btn {
+          right: 12px;
+        }
+      }
+    }
+    &.with-txt {
+      .input--txt {
+        position: absolute;
+        right: 13px;
+        color: $Neutral300;
+        @include fontStyle(14px, 140%, 400);
+        background: #fff;
+        padding-left: 10px;
+        padding-right: 3px;
+        height: 82%;
+        display: flex;
+        align-items: center;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index: 99;
+      }
+    }
+    &.error {
+      .input--title {
+        border-color: $primary500;
+      }
+      .select-box {
+        border-color: $primary500;
+        & + .select-options {
+          border-color: $primary500;
+        }
+      }
+      .link-move {
+        border-color: $primary500;
+      }
+      .item__input {
+        .datepicker-input {
+          border-color: $primary500;
+        }
+      }
+      .expand-btn {
+        input {
+          border-color: $primary500;
+        }
+      }
+      ~ .input-desc {
+        display: flex;
+        align-items: center;
+        margin-top: 4px;
+        position: relative;
+        margin-left: 4px;
+        padding-left: 15.5px;
+        color: $primary500;
+        height: auto;
+        box-sizing: border-box;
+        font-size: 13px;
+        line-height: 140%;
+        /*  워드앤코드 250312 css 오류 작업 */
+        background: none;
+        /* // 워드앤코드 250312 css 오류 작업 */
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 2px;
+          background: url("/assets/image/info-red.svg");
+          background-position: center;
+          background-size: cover;
+          width: 13px;
+          height: 14px;
+          box-sizing: border-box;
+        }
+      }
+    }
+    &.movement {
+      .link-move {
+        width: 100%;
+        padding: 12px;
+        display: block;
+        border: 1px solid $Neutral150;
+        border-radius: 8px;
+        position: relative;
+        height: 44px;
+        line-height: 140%;
+        &::after {
+          content: "";
+          @include backgroundImage(20px, 20px, "chevron-right.svg");
+          display: block;
+          position: absolute;
+          right: 16px;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+
+        &.no-border {
+          border: none;
+          padding: 4px 0 8px 4px;
+          @include fontStyle(14px, 140%, 500);
+          color: $Neutral400;
+          &::after {
+            content: "";
+            @include backgroundImage(16px, 16px, "chevron-right-caca.svg");
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 6px;
+            transform: none;
+          }
+        }
+      }
+    }
+    &.click {
+      height: auto;
+      .click-btn {
+        width: 100%;
+        padding: 12px;
+        display: block;
+        border: 1px solid $Neutral150;
+        border-radius: 8px;
+        position: relative;
+        text-align: left;
+        background: $white;
+        color: $Neutral400;
+        @include fontStyle(16px, 140%, 400);
+        &.check {
+          padding-left: 40px;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 12px;
+            display: block;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            right: 18px;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            background: url(/assets/image/check-gray.svg) no-repeat 90% 50%;
+          }
+        }
+        &.active {
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+          color: $Neutral500;
+          @include fontStyle(16px, 140%, 700);
+          /* pub 250224 :: border-color 추가 */
+          border-color: $secondary500;
+          &::before {
+            background: url(/assets/image/select-answer-b-check-login.svg)
+              no-repeat 90% 50%;
+            background-size: 16px 16px;
+          }
+        }
+        &::after {
+          content: "";
+          background: url(/assets/image/chevron-right.svg) no-repeat 90% 50%;
+          background-size: 20px 20px;
+          width: 20px;
+          height: 20px;
+          display: block;
+          position: absolute;
+          right: 16px;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+      }
+    }
+    .item__input.date {
+      position: relative;
+      .edit-btn {
+        position: absolute;
+        border: none;
+        padding: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 20px;
+        width: 20px;
+        right: 12px;
+      }
+    }
+    .option-list {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 200px;
+      background: #fff;
+      width: 100%;
+
+      // 세로정렬 스타일 추가
+      &.option-list2 {
+        gap: 0;
+        display: block;
+        li {
+          text-align: left;
+          margin-left: 0;
+          margin-bottom: 4px;
+        }
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        cursor: pointer;
+        flex: 1;
+        border: 1px solid $Neutral150;
+        border-radius: 8px;
+        text-align: center;
+        @include fontStyle(14px, 140%, 400);
+        color: $Neutral300;
+
+        &.active {
+          border-color: $primary400;
+          color: $primary500;
+          @include fontStyle(14px, 140%, 700);
+        }
+        & + li {
+          margin-left: 4px;
+        }
+      }
+    }
+
+    // 은행 드롭다운
+    .state-action.bank {
+      width: 100%;
+      height: 44px;
+      box-sizing: border-box;
+      position: relative;
+      display: inline-block;
+      border: 1px solid $Neutral150;
+      border-radius: 8px;
+
+      &.is-on {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        .expand-box {
+          display: block;
+        }
+
+        .default-btn {
+          &:after {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .select-btn {
+        display: flex;
+        align-items: center;
+        height: 44px;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 0;
+
+        .default-btn {
+          @include fontStyle(14px, 19.6px, 400);
+          color: $Neutral300;
+          position: relative;
+          width: 100%;
+          display: inline-block;
+          height: 44px;
+          padding: 12px;
+          box-sizing: border-box;
+
+          .arrow {
+            height: 44px;
+            box-sizing: border-box;
+            font-weight: 500;
+          }
+
+          &:after {
+            content: "";
+            position: absolute;
+            right: 12px;
+            top: 10px;
+            display: block;
+            width: 24px;
+            height: 24px;
+            @include backgroundImage(24px, 24px, "chevron-down.svg");
+          }
+
+          &.in {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: $Neutral500;
+          }
+        }
+      }
+
+      .expand-box {
+        display: none;
+        position: absolute;
+        z-index: 999;
+        width: calc(100% + 2px);
+        max-height: 468px;
+        box-sizing: border-box;
+        border: 1px solid $Neutral150;
+        border-top: none;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background: #fff;
+        text-align: left;
+        overflow-y: scroll;
+        margin-left: -1px;
+        margin-top: 3px;
+        padding: 12px;
+
+        a {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          height: 24px;
+          box-sizing: border-box;
+          @include fontStyle(14px, 19.6px, 400);
+          color: $Neutral500;
+          margin-bottom: 10px;
+          word-break: keep-all;
+          /* 워드앤코드 250312 css 충돌 작업 */
+          &:hover {
+            background: unset;
+          }
+          /* // 워드앤코드 250312 css 충돌 작업 */
+          .bank-logo {
+            width: 24px;
+            height: 24px;
+            display: inline-flex;
+            align-items: center;
+            img {
+              display: inline-block;
+              width: 24px;
+              height: 24px;
+            }
+          }
+
+          .bank-name {
+            @include fontStyle(14px, 19.6px, 400);
+            color: $Neutral500;
+          }
+
+          .issued {
+            display: none;
+            height: 23px;
+            padding: 3px 8px;
+            box-sizing: border-box;
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            background-color: #ffebed;
+            border-radius: 30px;
+            color: #e45659;
+            line-height: 17px;
+            font-size: 12px;
+            font-weight: 500;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  &--title {
+    &.textarea {
+      width: 100%;
+      min-height: 40px;
+      max-height: 80px;
+      overflow: auto;
+      resize: none;
+    }
+  }
+  // 250409 손석호 추가
+  &-accordion {
+    display: flex;
+    margin-top: 6px;
+    display: grid;
+    align-items: center;
+    padding: 0 8px;
+    &.price {
+      .accordion-button {
+        color: $secondary500;
+      }
+    }
+    .name {
+      grid-column: 1/2;
+      @include fontStyle(13px, 140%, 500);
+      color: $Neutral400;
+    }
+    .accordion-button {
+      grid-column: 2/3;
+      padding: 0 15px 0 0;
+      border: none;
+      color: $Neutral400;
+      text-align: right;
+      &.active {
+        &::after {
+          background: url(/assets/image/chevron-gray-up.svg) no-repeat center;
+        }
+      }
+      &::after {
+        margin-right: -7px;
+        background: url(/assets/image/chevron-gray-down.svg) no-repeat center;
+      }
+    }
+    .accordion-content {
+      grid-column: 1/3;
+      margin-top: 7px;
+      .desc {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 6px;
+        &:last-child {
+          padding-bottom: 0;
+        }
+        .txt {
+          &:nth-of-type(1) {
+            @include fontStyle(11px, 140%, 400);
+            color: $Neutral300;
+          }
+          &:nth-of-type(2) {
+            @include fontStyle(11px, 140%, 500);
+            color: $Neutral300;
+          }
+        }
+      }
+    }
+  }
+}
+.select {
+  &-box {
+    padding: 12px;
+    /*  워드앤코드 250312 css 오류 작업 50 -> 150 */
+    border: 1px solid $Neutral150;
+    /*  워드앤코드 250312 css 오류 작업 50 -> 150 */
+    border-radius: 8px;
+    cursor: pointer;
+    @include fontStyle(14px, 140%, 400);
+    text-align: left;
+    position: relative;
+    width: 100%;
+    font-family: inherit;
+    color: $Neutral300;
+    box-sizing: border-box;
+    height: 44px;
+    line-height: 140%;
+    &:after {
+      content: "";
+      background: #fff url(/assets/image/chevron-down.svg) no-repeat 90% 50%;
+      background-size: 20px 20px;
+      width: 24px;
+      height: 24px;
+      display: block;
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &.active {
+      border-radius: 8px 8px 0 0;
+      &:after {
+        background: #fff url(/assets/image/chevron-up.svg) no-repeat 90% 50%;
+        background-size: 20px 20px;
+      }
+    }
+    &.selected {
+      color: $Neutral500;
+    }
+
+    &.done {
+      color: $Neutral500;
+      font-weight: 500;
+    }
+  }
+
+  &-options {
+    display: none;
+    /* 기본적으로 드롭다운 숨기기 */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    /*  워드앤코드 250312 css 오류 작업 50 -> 150 */
+    border: 1px solid $Neutral150;
+    /*  워드앤코드 250312 css 오류 작업 50 -> 150 */
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    z-index: 11;
+    overflow: hidden;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    li {
+      padding: 12px;
+      cursor: pointer;
+      color: $Neutral400;
+      @include fontStyle(14px, 140%, 400);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &:hover {
+        background-color: $Neutral50;
+        color: $primary500;
+        font-weight: 500;
+      }
+      &.selected {
+        background-color: $Neutral50;
+        color: $primary500;
+      }
+    }
+  }
+}
+.checkbox {
+  label {
+    color: $Neutral300;
+    @include fontStyle(13px, 20px, 400);
+    padding-left: 8px;
+    /* 250220 pub :: word-break : keep-all 추가 */
+    word-break: keep-all;
+    /*  워드앤코드 250312 css 오류 작업 */
+    position: relative;
+    &::before {
+      display: none;
+    }
+    /* // 워드앤코드 250312 css 오류 작업 */
+  }
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: 1px solid $Neutral200;
+    /* 250220 pub :: min-width:20px 추가 */
+    display: block;
+    min-width: 20px;
+  }
+  input[type="checkbox"][disabled] {
+    background: $Neutral100;
+    border-color: $Neutral150;
+  }
+  input[type="checkbox"]:checked,
+  input[type="radio"]:checked {
+    background: url(/assets/image/check_on.png) no-repeat center;
+    background-size: 20px;
+    border: 1px solid $primary500;
+    + label {
+      color: $Neutral500;
+      @include fontStyle(13px, 20px, 500);
+      width: calc(100% - 28px);
+      /*  워드앤코드 250312 css 오류 작업 */
+      &:after {
+        display: none;
+      }
+      /* // 워드앤코드 250312 css 오류 작업 */
+    }
+  }
+  &.horizontal {
+    display: flex;
+    position: relative;
+  }
+  + .checkbox {
+    margin-top: 8px;
+  }
+}
+.radio-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  .radio-toggle {
+    display: flex;
+    align-items: center;
+    input {
+      display: none;
+    }
+    .label-text {
+      margin-left: 8px;
+    }
+    label {
+      display: inline-block;
+
+      width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      user-select: none;
+      position: relative;
+      border: 1px solid $Neutral200;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: inline-block;
+        border-radius: 999px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        user-select: none;
+      }
+    }
+    input[disabled] + label {
+      background: $Neutral100;
+      border: 1px solid $Neutral150;
+    }
+    input:checked + label {
+      border: 1px solid $primary500;
+      &::before {
+        width: 12.86px;
+        height: 12.86px;
+        background: $primary500;
+      }
+    }
+  }
+}
+.switch-wrap {
+  display: flex;
+  flex-direction: column;
+  .switch-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+
+    input {
+      display: none; // 기본 체크박스 숨기기
+    }
+    .slider {
+      position: relative;
+      width: 44px;
+      height: 24px;
+      border: 1px solid $Neutral200;
+      border-radius: 24px;
+      transition: background 0.3s ease;
+    }
+
+    .slider::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 4px;
+      width: 16px;
+      height: 16px;
+      background: $Neutral150;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+
+    input:checked + .slider {
+      background: $primary500;
+      border-color: transparent;
+    }
+    input[disabled] + .slider {
+      background: $Neutral100;
+      border-color: $Neutral150;
+      &::before {
+        background: $Neutral200;
+      }
+    }
+    input:checked + .slider::before {
+      left: 24px;
+      background: $white;
+      border-color:  $white;
+    }
+
+    .label-text {
+      font-size: 16px;
+      color: #333;
+    }
+  }
+}
+

@@ -1,0 +1,256 @@
+@use "../utils/mixins" as *;
+@use "../variables/colors" as *;
+
+.tab__menu {
+  a {
+    &.new {
+      position: relative;
+      &:after {
+        content: "";
+        display: inline-block;
+        margin-left: 2px;
+        width: 12px;
+        height: 12px;
+        background-image: url(/assets/image/new_icon.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+.tab__menu.new {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: $white;
+  z-index: 50;
+  padding: 56px 20px 0;
+  //style 충돌 작업
+  padding: 0px 20px 0;
+  overflow-x: auto;
+  justify-content: unset;
+  a {
+    height: 41px;
+    box-sizing: border-box;
+    color: $Neutral300;
+    padding: 8px 4px;
+    margin-right: 8px;
+    line-height: 25.2px;
+    letter-spacing: -0.36px;
+    border-bottom: 2px solid transparent;
+    text-align: center;
+    font-size: 18px;
+    flex: 0 0 max-content;
+    &.is-active {
+      color: $black;
+      font-weight: 700;
+      border-bottom: 2px solid $primary500;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  & {
+    scrollbar-width: none;
+  }
+}
+
+.tab__menu.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  overflow-y: visible;
+  //   style.css 상쇄
+  position: relative;
+  top: 0;
+  left: 0;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    width: 68px;
+    border-bottom: none;
+    padding: 0;
+    // style.css 상쇄
+    line-height: initial;
+    font-size: initial;
+    // style.css 상쇄
+    img {
+      display: inline-block;
+      width: 52px;
+      height: 52px;
+      object-fit: contain;
+      border-radius: 50%;
+      padding: 6px 0;
+      background-color: $white;
+      box-shadow: -0.765px -3.059px 4.588px 0px rgba(250, 124, 33, 0.2) inset,
+        0px 3.059px 4.588px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    .text-box {
+        margin-top: 2px;
+        text-align: center;
+      p {
+        @include fontStyle(14px, 110%, 700);
+        color: $Neutral500;
+      }
+      span {
+        @include fontStyle(11px, 140%, 500);
+        color: $Neutral300;
+      }
+    }
+
+    &.new {
+      position: relative;
+      &:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 12px;
+        height: 12px;
+        background-image: url(/assets/image/new_icon.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+.tab__menu.cate {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  flex-wrap: nowrap;
+  gap: 8px;
+  padding-right: 0;
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+  padding: 6px 0;
+
+  //   style.css 상쇄
+  position: relative;
+  top: 0;
+  left: 0;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex: 0 0 auto;
+    width: 64px;
+    height: 75px;
+    border-radius: 8px;
+    padding: 13px 8px 6px;
+    background-color: $white;
+    box-shadow: -0.765px -3.059px 4.588px 0px rgba(250, 124, 33, 0.2) inset,
+      0px 3.059px 4.588px 0px rgba(0, 0, 0, 0.08);
+
+    img {
+      display: inline-block;
+      width: 36.7px;
+      height: 27px;
+      margin-bottom: 9px;
+    }
+    span {
+      @include fontStyle(12px, 140%, 500);
+      color: $Neutral500;
+    }
+
+    &:nth-child(2) {
+      img {
+        width: 37.3px;
+        height: 27px;
+      }
+    }
+    &:nth-child(3) {
+      padding-top: 9px;
+
+      img {
+        width: 24.6px;
+        height: 34px;
+        margin-bottom: 6px;
+      }
+    }
+    &:nth-child(4) {
+      padding-top: 11px;
+
+      img {
+        width: 32.048px;
+        height: 30px;
+        margin-bottom: 8px;
+      }
+    }
+    &:nth-child(5) {
+      padding-top: 10px;
+
+      img {
+        width: 34.088px;
+        height: 33px;
+        margin-bottom: 6px;
+      }
+    }
+  }
+}
+
+.sorting-round {
+  height: 32px;
+  margin-top: 20px;
+  padding-right: 0;
+  overflow: hidden;
+
+  ul {
+    display: flex;
+    padding: 0 20px 30px;
+    overflow-x: scroll;
+
+    li {
+        
+      flex-shrink: 0;
+
+      button {
+        padding: 5px 11px;
+        color: $Neutral300;
+        border: 1px solid $Neutral150;
+        border-radius: 50px;
+        @include fontStyle(14px, 20px, 400);
+        background-color: transparent;
+      }
+
+      &.active button {
+        color: $primary500;
+        border: 1px solid $primary400;
+        font-weight: 700;
+      }
+
+      & + li {
+        margin-left: 4px;
+      }
+    }
+  }
+}

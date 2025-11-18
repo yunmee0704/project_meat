@@ -1,0 +1,138 @@
+@use "../variables/colors" as *;
+@use "../utils/mixins" as *;
+
+.btn {
+  display: block;
+  width: max-content;
+  cursor: pointer;
+  border-radius: 8px;
+  &-center {
+    width: 100%;
+    padding: 0;
+    a {
+      text-underline-position: under;
+    }
+  }
+  &-white {
+    background: $white;
+
+    &.color {
+      &-red {
+        border: 1px solid $primary500;
+        color: $primary500;
+      }
+      &-orange {
+        border: 1px solid $secondary500;
+        color: $secondary500;
+      }
+      &-deepGray {
+        border: 1px solid $Neutral500;
+        color: $Neutral500;
+      }
+      &-gray {
+        border: 1px solid $Neutral200;
+        color: $Neutral300;
+      }
+    }
+  }
+  &-red {
+    border: 1px solid $primary500;
+    background: $primary500;
+    color: $white;
+  }
+  &-orange {
+    border: 1px solid $secondary500;
+    background: $secondary500;
+    color: $white;
+  }
+  &-deepGray {
+    border: 1px solid $Neutral500;
+    background: $Neutral500;
+    color: $white;
+  }
+  &-gray {
+    border: 1px solid $Neutral200;
+    background: $Neutral200;
+    color: $white;
+  }
+  &-small {
+    padding: 4px 12px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 140%;
+    //style.css 충돌작업
+    font-size: 14px;
+  }
+  &-medium {
+    //디자인시안에 맞게 수정_이윤미_250312
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    //디자인시안에 맞게 수정_이윤미_250312
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+    //style.css 충돌작업
+    font-size: 13px;
+  }
+  &-large {
+    padding: 11.8px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    line-height: 140%;
+
+    // 속성 disabled로 제어되는 타입 250327추가
+    &.attribute {
+      border: 1px solid $danger;
+      background: $danger;
+      color: $white;
+    
+      &:disabled {
+        border: 1px solid $Neutral200;
+        background: $Neutral200;
+      }
+    }
+  }
+
+  &-floating {
+    // 메인 글쓰기 플로팅 버튼과 스타일 공통
+    position: fixed;
+    bottom: 76px;
+    z-index: 100;
+    right: 50%;
+    transform: translateX(231px);
+
+    @media (max-width: 500px) {
+      right: 20px;
+      transform: translateX(0);
+    }
+
+    &.kakao {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background-color: #fee500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+      span {
+        display: block;
+        @include fontStyle(10px, 140%, 500);
+        color:$black;
+      }
+    }
+  }
+}

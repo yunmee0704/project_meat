@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- SEO : S -->
+    <meta name="description" content="" />
+    <meta name="keywords" content="미트매치" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- SEO : E -->
+    <!-- SNS 공유 : S -->
+    <meta property="og:url" data-role="url" content="미트매치" />
+    <meta property="og:title" data-role="title" content="미트매치" />
+    <meta property="og:image" data-role="image" content="/assets/image/sns.png" />
+    <meta property="og:description" data-role="description" content="미트매치" />
+    <!-- SNS 공유 : E -->
+    <title>미트매치</title>
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico">
+    <link rel="icon" href="../assets/favicon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../assets/css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/PS30-9.css">
+</head>
+<!-- PS7-4~PS7-7 -->
+
+<body class="main-type">
+    <div class="wrapper" id="wrapper">
+        <!-- scss 작업 : 미트뱅크 컴포넌트 추가 -->
+        <header class="header">
+            <div class="header-inner new sub">
+                <div class="product__top">
+                    <h2 class="bold-18">환불 요청</h2>
+                    <div class="action-box">
+                        <a href="#none" class="btn btn-close js-modal-close"><img src="../assets/image/ico-x.svg"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--// scss 작업 : 미트뱅크 컴포넌트 추가 -->
+        <div class="content new" id="content">
+            <div class="main scroll-zone">
+                <p class="tag"><span>주문번호 : 12305820</span></p>
+                <strong class="title">
+                    <p class="title_cont"><span>갈비살 - 미국 템코타 초이스 ‘미국</span>
+                        환불 요청에 대한 결제 내역을 선택해주세요.</p>
+                </strong>
+                <!-- 240813 툴팁추가 -->
+                <p class="count-payment">환불 요청 선택<a href="#none" class="tooltip i-info"><img
+                            src="../assets/image/ico-info.svg" alt=""></a>
+                </p>
+                <!-- //240813 툴팁추가 -->
+                <ul class="payment-list">
+                    <li>
+                        <p class="tag"><span>주문번호 : 123439102</span></p>
+                        <p class="title"><strong>갈비살 - 미국 템코타 초이스</strong></p>
+                        <p class="price"><span>5,400,000</span>원</p>
+                    </li>
+                    <li>
+                        <p class="tag"><span>주문번호 : 123439102-1</span></p>
+                        <p class="title"><strong>갈비살 - 미국 템코타 초이스</strong></p>
+                        <p class="price">
+                            <span>600,000</span>원
+                            <!-- <a href="#none"><img src="../assets/image/ico-info.svg" alt=""></a> -->
+                        </p>
+                    </li>
+                </ul>
+                <div class="detail-input-area">
+                    <div class="input-wrap">
+                        <div class="item__title">
+                            <span>환불 요청 금액(원)</span>
+                            <!-- <em class="essential">* 필수 입력</em> -->
+                        </div>
+                        <!-- error클래스 추가시 border 컬러 변경 & 메세지 출력 PS9-2-->
+                        <div class="item__input insert-price">6,000,000원</div>
+                        <!-- <p class="input-desc">에러메세지</p> -->
+                    </div>
+                    <div class="input-wrap file">
+                        <div class="item__title">
+                            <span>첨부파일</span>
+                            <!-- <em class="essential">* 필수 입력</em> -->
+                        </div>
+                        <!-- error클래스 추가시 border 컬러 변경 -->
+                        <div class="item__input">
+                            <a href="">첨부파일 등록</a>
+                        </div>
+                        <div class="item__input file">
+                            <div class="file-box">
+                                <a href="" class="btn-download"><span class="icon"><img
+                                            src="../assets/image/download-01.svg" alt=""></span></a>
+                                <div class="file-info">
+                                    <p class="file-name">스크린샷 2024-07-04 오전 11.20.14</p>
+                                    <p class="file-date">등록일시 : <span>2024-03-05</span></p>
+                                    <p class="capa">용량 : <span>689.1KB</span></p>
+                                </div>
+                                <a href="" class="btn-delete">삭제</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="item__title">
+                            <span>환불 사유</span>
+                            <!-- <em class="essential">* 필수 입력</em> -->
+                        </div>
+                        <!-- error클래스 추가시 border 컬러 변경 -->
+                        <!-- 확인 사유 확인창일 때는 done 클래스 추가 -->
+                        <div class="item__input ta">
+                            <textarea name="" id="" placeholder="내용을 입력해주세요."></textarea>
+                        </div>
+                        <!-- <p class="input-desc">에러메세지</p> -->
+                    </div>
+
+                </div>
+            </div>
+            <!-- scss 작업 : 미트뱅크 컴포넌트 추가 -->
+            <div class="fixed-button">
+
+                <button class="btn btn-large attribute">요청</button>
+            </div>
+            <!-- scss 작업 : 미트뱅크 컴포넌트 추가 -->
+        </div>
+    </div>
+
+    <!-- 'is-on' class추가 시 보여짐 -->
+     <!-- scss 작업 : 미트뱅크 컴포넌트 추가 -->
+    <div class="pop__detail message new">
+        <div class="popup__cnt">
+            <div class="popup__title">
+                <strong>환불을 요청할까요?</strong>
+            </div>
+            <div class="popup__cont">
+                환불을 판매자 승인 이후<br>영업일 기준 최대 5일 정도 소요될 수 있어요.
+                <br><br>
+                <p class="bold">
+                    환불계좌 : <span>신한은행</span> <span>129485728939</span><br>
+                    예금주 : <span>백경민</span>
+                </p>
+            </div>
+            <div class="popup__btn group" >
+                <a class="btn btn-cancel js-modal-close">아니요</a>
+                <a class="btn btn-default js-modal-close">환불 요청</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="pop__detail message new">
+        <div class="popup__cnt">
+            <div class="popup__title">
+                <strong>환불 요청이 완료되었어요.</strong>
+            </div>
+            <div class="popup__btn">
+                <!-- <a class="btn btn-cancel js-modal-close">아니요</a> -->
+                <a class="btn btn-default js-modal-close">확인</a>
+            </div>
+        </div>
+    </div>
+<!-- scss 작업 : 미트뱅크 컴포넌트 추가 -->
+
+    <script src="../assets/js/lib/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="../assets/js/lib/jquery-ui.js" type="text/javascript"></script>
+    <script src="../assets/js/lib/swiper.min.js" type="text/javascript"></script>
+    <script src="../assets/js/ui.common.js" type="text/javascript"></script>
+    <script>
+        $(function () {
+            CheckList();
+        });
+
+        function CheckList() {
+            $('.payment-list li').on('click', function () {
+                // gray클래스 추가 240804
+                $(this).addClass('gray');
+                if ($(this).hasClass('red')) {
+                    $(this).removeClass('red');
+                } else {
+                    $(this).addClass('red');
+                }
+            });
+        }
+    </script>
+
+
+</body>
+
+</html>
